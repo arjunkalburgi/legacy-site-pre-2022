@@ -240,7 +240,7 @@ nav.menu a:hover {
 
 /*My Work Section*/
 
-	.horizontalscroll {
+	.workhorizontalscroll {
 		 height: 500px;
 		 /*width:400px;*/
 		 /*border:solid 2px orange;*/
@@ -253,7 +253,7 @@ nav.menu a:hover {
 		margin-right: auto; 
 		margin-left: auto; 
 		margin-bottom: 25px;
-		height:176px;
+		height:126px;
 		width:70%;
 		color: white;
 		/*border:solid 2px orange;*/
@@ -267,8 +267,8 @@ nav.menu a:hover {
 	}
 
 	#project-graphic-scroll {
-		height: 150px;
-		width: 150px;
+		height: 100px;
+		width: 100px;
 		padding-right: 10px;
 		-webkit-filter: brightness(80%);
 		 -webkit-transition: all 1s ease;
@@ -297,12 +297,6 @@ nav.menu a:hover {
 		-webkit-filter: brightness(130%);
 		border: black;
 	}
-
-	#project-graphic-scroll {
-		height: 150px;
-		width: 150px;
-		padding-right: 10px;
-	}
 	
 	#project-link {
 		color: white;
@@ -319,6 +313,15 @@ nav.menu a:hover {
 	}
 
 /*Learn More Section*/
+	.morehorizontalscroll {
+		 height: 500px;
+		 /*width:400px;*/
+		 /*border:solid 2px orange;*/
+		 overflow:scroll;
+		 overflow-x:hidden;
+		 overflow-y:scroll;
+	}
+	
 	ul.logo-bullet {
 		list-style-type: none;
 		padding: 0;
@@ -369,6 +372,9 @@ nav.menu a:hover {
 
 	#map-canvas {
 		height: 500px;
+		width: 90%;
+		margin-right: auto; 
+		margin-left: auto; 
 	}
 
 /* ==========================================================================

@@ -16,15 +16,17 @@
 
 		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
+		<!-- Angular.js -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+
 		<script src="https://code.jquery.com/jquery-latest.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				contentHeight();
+				projectscrollHeight(); 
+				morescrollHeight();
 			});
 		</script>
-
-		<!-- Angular.js -->
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -45,7 +47,8 @@
 			</div>
 
 			<div class="main-container" ng-cloak>
-				<div class="content main wrapper clearfix" style="height:730px;">
+				<!-- <div class="content main wrapper clearfix" style="height:730px;"> -->
+				<div class="content main wrapper clearfix">
 
 					<h1 ng-show="quote || (!aboutme && !portfolio && !blog)" class="quote">
 						Striving for when every moment is a moment of 
@@ -127,7 +130,7 @@
 							<div class="clearfix"></div>
 						</div>
 
-						<div ng-show="p5" class="horizontalscroll">
+						<div ng-show="p5" class="workhorizontalscroll">
 							<div style="display: inline-block;">
 								<article>
 									Winter 2015
@@ -168,7 +171,7 @@
 							</div>
 						</div>
 
-						<div ng-show="p4" class="horizontalscroll">
+						<div ng-show="p4" class="workhorizontalscroll">
 							<div style="display: inline-block;">
 								<article>
 									Winter 2015
@@ -202,7 +205,7 @@
 							</div>
 						</div>
 
-						<div ng-show="p3" class="horizontalscroll">
+						<div ng-show="p3" class="workhorizontalscroll">
 							<div style="display: inline-block;">
 								<article>
 									Fall 2014
@@ -238,7 +241,7 @@
 							</div>
 						</div>
 
-						<div ng-show="p2" class="horizontalscroll">
+						<div ng-show="p2" class="workhorizontalscroll">
 							<div style="display: inline-block;">
 								<article>
 									Summer 2014
@@ -283,7 +286,7 @@
 							</div>
 						</div>
 
-						<div ng-show="p6" class="horizontalscroll">
+						<div ng-show="p6" class="workhorizontalscroll">
 							<div style="display: inline-block;">
 								<article>
 									Winter 2014
@@ -310,7 +313,7 @@
 							</div>
 						</div>
 
-						<div ng-show="p1" class="horizontalscroll">
+						<div ng-show="p1" class="workhorizontalscroll">
 							<div style="display: inline-block;">
 								<article>
 									Creating this website is also a project! This is the first ever responsive website I've
@@ -341,7 +344,7 @@
 					</div>
 
 					<div ng-show="blog">
-						<div class="horizontalscroll" style="height: 700px;">
+						<div class="morehorizontalscroll" style="height: 700px;">
 							<div style="display: inline-block;">
 								
 								<div class="clearfix"></div>
