@@ -241,7 +241,7 @@ nav.menu a:hover {
 /*My Work Section*/
 
 	.workhorizontalscroll {
-		 height: 500px;
+		 /*height: 500px;*/
 		 /*width:400px;*/
 		 /*border:solid 2px orange;*/
 		 overflow:scroll;
@@ -314,7 +314,7 @@ nav.menu a:hover {
 
 /*Learn More Section*/
 	.morehorizontalscroll {
-		 height: 500px;
+		 /*height: 500px;*/
 		 /*width:400px;*/
 		 /*border:solid 2px orange;*/
 		 overflow:scroll;
