@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="theme-color" content="#2196F3">
+	<title>Projects - Arjun Kalburgi</title>
+
+	<!-- CSS  -->
+	<link href="css/materialize.css" type="text/css" rel="stylesheet">
+	<link href="css/style.css" type="text/css" rel="stylesheet" >
+	<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" >
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	
+</head>
+<body id="top" class="scrollspy">
+
+<!-- Pre Loader -->
+ <div id="loader-wrapper">
+	<div id="loader"></div>
+ 
+	<div class="loader-section section-left"></div>
+	<div class="loader-section section-right"></div>
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+	<nav id="nav_f" class="default_color" role="navigation">
+		<div class="container">
+			<div class="nav-wrapper">
+				<a id="logo-container" href="#top" class="brand-logo">Arjun Kalburgi</a>
+				<ul id="nav-mobile" class="right side-nav">
+					<li><a href="index.html#intro">About</a></li>
+					<li><a href="#work">Projects</a></li>
+					<li><a href="index.html#team">More</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+					<!-- <li><a href="" target="_blank">Download</a></li> -->
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<!--Herro-->
+ <div class="section no-pad-bot" id="index-banner">
+	<div class="container" style="margin: 11% auto">
+		<h1 class="text_h center header cd-headline letters type">
+			<span>Projects</span>
+		</h1>
+	</div>
+</div>
+
+<!-- Main -->
+ <div class="section scrollspy" id="work"></div>
+ 	<!-- Sentiment Analysis Tool -->
+	 <div class="container">
+		<div class="row project">
+			<div class="col s12 m4 l4">
+				<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/project6.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Sentiment Analysis</span>
+						<p>
+							<a href="https://github.com/askalburgi/SentimentAnalysis_DjangoApp" target="_blank">GITHUB</a>
+							<br>
+							Summer 2015
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4" style="width: 66.6666%">
+				<div class="project-side">
+					This application/tool was made in July of 2015. I made it as a side project after the Connect Four 
+					game I made for my class. Flask wasn't nearly the MVC application that I thought it was. Though it
+					was really wonderful for the ConnectFour game, I had to have upper-year CompE's to help explain how
+					Flask fit into the MVC model. This brought me to Django, a Python framework that fully supported MVC. 
+					<br /><br />
+					I explain how Django's MVC works on one of the webpages of the application, you can head over to the GITHUB
+					link to read it. (It's in MVC.html in the nlpapp/templates folder)
+					<br /><br />
+					I managed to hit two birds with one stone in this project. Of course it wasn't enough for me to build 
+					an application without having it do something, this is where the Sentiment Analysis part comes in. 
+					I gained a slight interest in Machine Learning after 2015's Google I/O, which was at the same time I started
+					this project. After some research I choose to make a Natural Language Processig (NLP) application with Machine 
+					Learning in it, this is when I found sentdex's online tutorial and off I went. 
+					<br /><br />
+					Basically, Natural Language Processing analyses sentences, word by word, and uses what it knows from previous 
+					knowledge to determine something about the sentence. Sentiment Analysis specifically determines whether the 
+					sentence has a positive or negative connotation, it's very simple - thus making it the easiest of all the 
+					applications of NLP. The process of using what the computer knows from before is an idea from Machine Learning.
+					<br /><br />
+					I explain more about this app's Sentiment Analysis function over on another 
+					GITHUB page. (It's in the NLP.html in the nlpapp/templates folder)
+					<br /><br />
+					
+				</div>
+			</div>
+		</div>
+	</div>
+ 	<!-- Connect Four -->
+ 	 <div class="container">
+		<div class="row project">
+			<div class="col s12 m4 l4">
+				<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/connectfour.png">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Connect Four</span>
+						<p>
+							<a href="https://github.com/askalburgi/connectfour" target="_blank">GITHUB</a>  |  
+							<a href="https://connectfour275.herokuapp.com" target="_blank">Link</a>
+							<br>
+							Winter 2015
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4" style="width: 66.6666%">
+				<div class="project-side">
+					This Connect Four game was created for my CMPUT275 class at the University of Alberta. 
+					The course is a mix of introductory computing courses, an algorithms course and the 
+					introductory systems course. Thus the Objectives of the course are all over the place.<br /><br />
+
+					In terms of algorithms, the objectives are to understand fundamental
+					algorithm design. Thus includes searching, sorting and graphing algorithms like divide and conquer, 
+					dynamic programming, and greedy methods. Using techniques to estimate such algorithm's efficiency is 
+					also gone over. <br /><br />
+
+					In terms of systems, the objectives of the course are to be able to use all the knowledge from 
+					the rest of the course to design and implement non-trivial software solutions. These solutions 
+					require good program design, the ability to use and create data structures, algorithms and application
+					specific knowledge. <br /><br />
+
+					The final objective is fairly theoretical in that it introduces the fundamental ideas of computing 
+					- simply said, to gain a better understanding of computing and what software can help do. The course
+					has a problem-driven approach with an emphasis on the underlying process behind the solution. <br /><br />
+					
+					We were restricted to using Python for the project (the language that the course is taught in) and my partner 
+					and I had a desire to make a website. Our project was also required to have an "algorithmically challenging" 
+					component to it and we ended up choosing Connect Four, where the algorithmically challenging component would 
+					be the computers AI.
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ShoutBox -->
+	 <div class="container">
+		<div class="row project">
+			<div class="col s12 m4 l4">
+				<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/ShoutBox!.png">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">ShoutBox</span>
+						<p>
+							<a href="https://github.com/HarryPahwa/Shoutbox.Finale" target="_blank">GITHUB</a>  |  
+							<a href="https://chrome.google.com/webstore/detail/shoutbox/hbliaedcoikjfcdlebnmkhemofblkamc" target="_blank">Link</a>
+							<br>
+							Winter/Spring 2015
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4" style="width: 66.6666%">
+				<div class="project-side">
+					ShoutBox is a Google Chrome extension that allows users to tweet directly from Chrome's address bar and is now available from the Chrome Web Store!<br/><br/>
+
+					My friend and I began working on it for the UofA Computer Engineering Club's annual 24 hour long hackathon in the Winter of 2015. We won third place at the hackathon but at that time the app was far from a finished product. After the school term ended we went back and completed it. <br/><br/>
+
+					The extension is accompanied by a Node.js server/website which does all the heavy lifting of the app. Since Twitter does not allow OAuth flow with an extension, the server/website provides the means for logging into Twitter and posting tweets.
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Arduino Tetris -->
+	 <div class="container">
+		<div class="row project">
+			<div class="col s12 m4 l4">
+				<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/Arduino.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Arduino Tetris</span>
+						<p>
+							<a href="https://github.com/askalburgi/Arduino_Tetris" target="_blank">GITHUB</a>
+							<br>
+							Fall 2014
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4" style="width: 66.6666%">
+				<div class="project-side">
+					Arduino Tetris was created for my CMPUT274 class at the University of Alberta. The course itself is
+					quite broad, dealing with objectives that form a strong all-round presense in computing. <br /><br />
+
+					A large focus of the course dealt with programming Arduino's. Our assignments taught us to deal with 
+					memory and hardware circuit issues while the weekly exercises focused on learning and using C++. <br /><br /> 
+
+					We also went over some basic algorithms such as sorting and basic data structures like C's arrays 
+					and linked lists.  <br /><br />
+
+					The final objective is the same as it's sister course, CMPUT275, in that it introduces the 
+					fundamental ideas of computing to gain a better understanding of computing 
+					and what software can help do. The course has a problem-driven approach with an emphasis on the 
+					underlying process behind the solution. <br /><br />
+
+					We were restricted to using the Arduino for the project so my partner and I chose to 
+					do something with the display, making our project more interactive.
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Conference App -->
+	 <div class="container">
+		<div class="row project">
+			<div class="col s12 m4 l4">
+				<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/resnet.png">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Conference app</span>
+						<p>
+							Summer 2014
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4" style="width: 66.6666%">
+				<div class="project-side">
+					I built a mobile Confrenece app while I worked for
+					<a target="_blank" href="http://www.fourthdimensioninc.com/">fourthdimension inc.</a>
+					as an intern.
+					The mobile webapp was created using the
+					<a target="_blank" href="http://www.fourthdimensioninc.com/">Ionic Framework</a>
+					and
+					<a target="_blank" href="http://www.fourthdimensioninc.com/">Apache Cordova.</a>
+					The app was built to provide attendees with the conference schedule, details on the seminars and presenters,
+					maps of the area and provided internal staff with user feedback on seminars.<br/><br/>
+
+					The application handled all this data this with read and
+					write capabilities to an Azure Mobile Service; numerous backend JavaScript services had to be
+					created in order to manipulate the data for the app's use.
+					I worked with coworkers to create the user interface of the application, which was built with SCSS and CSS.<br/><br/>
+
+					To debug the program, I created a spreadsheet to keep track of all the issues. I set up use-case scenarios
+					to make sure the application would work properly, or give the users helpful hints as to what is
+					going wrong. The scenarios came in handy when testing offline functionality, because sitting in the office
+					I was always online and I would have forgotten to test it.
+					Since the application would be ported to both Android and iOS, debugging required using web
+					development tools for Chrome and Safari and remote debugging for Android and iOS.<br/><br/>
+
+					I also wrote the documentation for the application, which required me to go over each step of the code and
+					explain it in full detail; written in it were descriptions about the app’s repository, testing
+					the app, the plugins and libraries used, as well as a walkthrough of the code.<br/><br/>
+
+					The project required me to learn and deal with Angular.js framework, Ionic framework, Command Line, GIT, CSS
+					some JavaScript and Azure Databases. As well as taught me lessons about working with a team in an office environment.
+					Unfortunately, since the application was created under contract, I do not have access to point you to any of the work I did. 
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Runner Runner -->
+	 <div class="container">
+		<div class="row project">
+			<div class="col s12 m4 l4">
+				<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/project6.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Runner Runner</span>
+						<p>
+							<a href="https://github.com/askalburgi/runner_runner" target="_blank">GITHUB</a>
+							<br>
+							Winter 2014
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4" style="width: 66.6666%">
+				<div class="project-side">
+					Runner Runner was created for the ENCMP100 programming contest. ENCMP 100 is a first-year engineering course that teaches
+					students introductory programming using MATLAB. All engineering students at the Unuversity of Alberta are required to take 
+					the course in first year. The contest is funded from MathWorks (the creators of MATLAB) and is optional. All submissions must 
+					have an original MATLAB program and an accompanying video presentation and we were allowed to work with teams of at most two. <br/><br/>
+
+					The project was really my first project ever, Nick did most of the coding and I did all the graphics and the video. 
+					It was a really good learning experience despite the fact that I didn't code much. Here is the video we submitted.<br/><br/>
+
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/51mIwC7M6Ow" frameborder="0" allowfullscreen></iframe><br/><br/>
+
+					Nick and I placed 2nd in the competition! You can see the code on GITHUB.
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Footer -->
+ <footer id="contact" class="my-footer page-footer default_color scrollspy">
+	<div class="container">  
+		<div class="row">
+			<div class="col l6 s12">
+				<h5 class="white-text">Contact Me</h5>
+				<!-- THANK YOU RESPONSE-O-MATIC FOR THE FORM -->
+				<form class="col s12" enctype="multipart/form-data" method="post" action="http://www.response-o-matic.com/mail.php" accept-charset="UTF-8">
+					<div>
+						<input type="hidden" name="acctid" id="acctid" value="4ed0pb2iq4pv0g8v" />
+						<input type="hidden" name="formid" id="formid" value="1272365" />
+						<input type="hidden" name="required_vars" id="required_vars" value="name,email,field-fee4ae053458305" />
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<i class="mdi-action-account-circle prefix white-text"></i>
+							<input type="text" class="validate white-text" id="icon_prefix" name="name" id="name" value="" />
+							<label for="icon_prefix" class="white-text">First Name</label>
+						</div>
+						<div class="input-field col s6">
+							<i class="mdi-communication-email prefix white-text"></i>
+							<input type="email" class="validate white-text" id="icon_email" name="email" id="email" value="" >
+							<label for="icon_email" class="white-text">Email-id</label>
+						</div>
+						<div class="input-field col s12">
+							<i class="mdi-editor-mode-edit prefix white-text"></i>
+							<textarea id="icon_prefix2" class="materialize-textarea white-text" name="field-fee4ae053458305" id="field-fee4ae053458305"  ></textarea>
+							<label for="icon_prefix2" class="white-text">Message</label>
+						</div>
+						<div class="col offset-s7 s5">
+							<button class="btn waves-effect waves-light red darken-1" type="submit" name="action">Submit
+								<i class="mdi-content-send right white-text"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="social col l3 s12">
+				<h5 class="white-text">Social</h5>
+				<ul>
+					<li class="contact-media-links">
+						<a class="white-text" href="https://plus.google.com/+ArjunKalburgi/posts">
+							<i class="small fa fa-google-plus-square white-text"></i> Google+
+						</a>
+					</li>
+					<li class="contact-media-links">
+						<a class="white-text" href="https://github.com/askalburgi">
+							<i class="small fa fa-github-square white-text"></i> Github
+						</a>
+					</li>
+					<li class="contact-media-links">
+						<a class="white-text" href="https://ca.linkedin.com/pub/arjun-kalburgi/58/250/82b">
+							<i class="small fa fa-linkedin-square white-text"></i> Linkedin
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer> 
+
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	<script src="js/myjs.js"></script>
+
+	</body>
+</html>

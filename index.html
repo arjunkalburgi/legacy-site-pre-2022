@@ -1,734 +1,315 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
-<html ng-app class="no-js"> <!--<![endif]-->
-	<head lang="en">
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title></title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="theme-color" content="#2196F3">
+	<title>Arjun Kalburgi</title>
 
-		<link rel="stylesheet" href="css/normalize.min.css">
-		<link rel="stylesheet" href="css/main.css">
+	<!-- CSS  -->
+	<link href="css/materialize.css" type="text/css" rel="stylesheet">
+	<link href="css/style.css" type="text/css" rel="stylesheet" >
+	<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" >
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+<body id="top" class="scrollspy">
 
-		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<!-- Pre Loader -->
+ <div id="loader-wrapper">
+	<div id="loader"></div>
+ 
+	<div class="loader-section section-left"></div>
+	<div class="loader-section section-right"></div>
+</div>
 
-		<!-- Angular.js -->
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+<!--Navigation-->
+ <div class="navbar-fixed">
+	<nav id="nav_f" class="default_color" role="navigation">
+		<div class="container">
+			<div class="nav-wrapper">
+				<a id="logo-container" href="#top" class="brand-logo">Arjun Kalburgi</a>
+				<ul id="nav-mobile" class="right side-nav">
+					<li><a id="introScroll" class="button">About</a></li>
+					<li><a id="workScroll" class="button">Projects</a></li>
+					<li><a id="teamScroll" class="button">More</a></li>
+					<li><a id="contactScroll" class="button">Contact</a></li>
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+			</div>
+		</div>
+	</nav>
+</div>
 
-		<script src="https://code.jquery.com/jquery-latest.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				contentHeight();
-				projectscrollHeight(); 
-				morescrollHeight();
-			});
-		</script>
-	</head>
-	<body>
-		<!--[if lt IE 7]>
-			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-		<div class="top-view">
-			<div class="header-container">
-				<header class="wrapper clearfix">
-					<h2 class="title">ArjunKalburgi.com</h2>
-					<nav class="menu">
-						<ul>
-						<li><a ng-click="aboutme=!aboutme; portfolio=false; blog=false; quote=false;" ng-init="aboutme=false; quote=true;">About Me</a></li>
-						<li><a ng-click="portfolio = !portfolio; aboutme = false; blog = false; quote=false;" ng-init="portfolio=false">My Work</a></li>
-						<li><a id="blogTab" ng-click="blog = !blog; portfolio = false; aboutme = false; quote=false; initialize()" ng-init="blog=false">Learn More</a></li>
-						</ul>
-					</nav>
-				</header>
+<!--Herro-->
+ <div class="section no-pad-bot" id="index-banner">
+	<div class="container" style="margin: 11% auto">
+		<h1 class="text_h center header cd-headline letters type">
+			<span>I Love</span> 
+			<span class="cd-words-wrapper waiting">
+				<b class="is-visible">Creating</b>
+				<b>Designing</b>
+				<b>Developing</b>
+			</span>
+		</h1>
+	</div>
+</div>
+
+<!-- Intro and service -->
+ <div id="intro" class="section scrollspy">
+	<div class="container">
+		<div class="row">
+			<div  class="col s12">
+				<h4 style="font-weight: 100"> Welcome, <br> </h4>
+				<h4 class="center header text_h2"> 
+					My name is Arjun Kalburgi, I am a Canadian, a Student and a Developer. 
+					My goal is to continue to <span class="span_h2">grow</span> as a developer so I can achieve 
+					my <span class="span_h2">dream</span>, to create beautiful solutions for the world around us.
+				</h4>
 			</div>
 
-			<div class="main-container" ng-cloak>
-				<!-- <div class="content main wrapper clearfix" style="height:730px;"> -->
-				<div class="content main wrapper clearfix">
-
-					<h1 ng-show="quote || (!aboutme && !portfolio && !blog)" class="quote">
-						Striving for when every moment is a moment of 
-						satisfaction. 
-					</h1>
-
-					<div ng-show="aboutme">
-						<article>
-							<header>
-								<h2>Hey there, my name is Arjun Kalburgi!</h2>
-								<p>I'm a fun, growing, and learning developer out of the Canadian Prairies!
-								I love to code, dance, eat, jam and rock out!
-								I'm currently based in Edmonton, Alberta studying Computer Engineering
-								at the University of Alberta. My dream is to create software solutions that look beautiful and help people in their day-to-day lives.</p>
-							</header>
-							<section>
-								<h3>My Interests and Goals</h3>
-								<p>Many of my interests stem from my interests and hobbies 
-									from childhood, basketball, music and dance. Since high school,
-									I also developed an interest in websites and mobile devices.
-									At this point in my life my goals are to finish my degree
-									while learning as much as I possible can about software and my own interests. I know that it's important to love what
-									I do, so a huge goal for me is making sure I know what I love
-									and then making sure I can do that.</p>
-							</section>
-							<footer>
-								<h3>Enjoy!</h3>
-								<p>Everything in this website is for you to get a better idea of who I am, so
-								check out the other tabs for the type of work I've done before and links to other
-								places you can find more things me. Happy clicking!</p>
-							</footer>
-						</article>
-
-						<aside>
-							<h3>Me in Europe, Summer 2014</h3>
-							<p>
-								<img id="face-graphic" src="img/face.jpg">
-							</p>
-						</aside>
-					</div>
-
-					<div ng-show="portfolio">
-						<div id="projectscroll">
-							<div style="width:250%;">
-								<div class="project" ng-click="p5=!p5; p2=false; p3=false; p4=false; p1=false; p6=false;" ng-init"p5=true">
-									<img id="project-graphic-scroll" src="img/connectfour.png">
-									</br>
-								</div>
-								<div class="project" ng-click="p4=!p4; p2=false; p3=false; p1=false; p5=false; p6=false;" ng-init"p4=false">
-									<img id="project-graphic-scroll" src="img/ShoutBox!.png" >
-									</br>
-								</div>
-								<div class="project" ng-click="p3=!p3; p2=false; p1=false; p4=false; p5=false; p6=false;" ng-init"p3=false">
-									<img id="project-graphic-scroll" src="img/Arduino.jpg">
-									</br>
-								</div>
-								<div class="project" ng-click="p2=!p2; p1=false; p3=false; p4=false; p5=false; p6=false;" ng-init"p2=false">
-									<img id="project-graphic-scroll" src="img/resnet.png">
-									</br>
-								</div>
-								<div class="project" ng-click="p6=!p6; p1=false; p2=false; p3=false; p4=false; p5=false;" ng-init"p6=false">
-									<img id="project-graphic-scroll" src="img/runnerrunner.png">
-									</br>
-								</div>
-								<div class="project" ng-click="p1=!p1; p2=false; p3=false; p4=false; p5=false; p6=false;" ng-init"p1=false">
-									<img id="project-graphic-scroll" src="img/website.png">
-									</br>
-								</div>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-
-						<div ng-show="p5" class="workhorizontalscroll">
-							<div style="display: inline-block;">
-								<article>
-									Winter 2015
-									<hr>
-									This Connect Four game was created for my CMPUT275 class at the University of Alberta. 
-									The course is a mix of introductory computing courses, an algorithms course and the 
-									introductory systems course. Thus the Objectives of the course are all over the place.<br /><br />
-
-									In terms of algorithms, the objectives are to understand fundamental
-									algorithm design. Thus includes searching, sorting and graphing algorithms like divide and conquer, 
-									dynamic programming, and greedy methods. Using techniques to estimate such algorithm's efficiency is 
-									also gone over. <br /><br />
-
-									In terms of systems, the objectives of the course are to be able to use all the knowledge from 
-									the rest of the course to design and implement non-trivial software solutions. These solutions 
-									require good program design, the ability to use and create data structures, algorithms and application
-									specific knowledge. <br /><br />
-
-									The final objective is fairly theoretical in that it introduces the fundamental ideas of computing 
-									- simply said, to gain a better understanding of computing and what software can help do. The course
-									has a problem-driven approach with an emphasis on the underlying process behind the solution. <br /><br />
-									
-									We were restricted to using Python for the project (the language that the course is taught in) and my partner 
-									and I had a desire to make a website. Our project was also required to have an "algorithmically challenging" 
-									component to it and we ended up choosing Connect Four, where the algorithmically challenging component would 
-									be the computers AI. <br />
-									<hr>
-									More about the project itself can be found on the README file of the project's GITHUB page
-									It's fairly comprehensive, I apparently like to write essays for documentation. 
-								</article>
-
-								<aside style="margin-right: 25px">
-									<h3><a style="color: white;" target="_blank" href="https://github.com/askalburgi/connectfour">Connect Four</a></h3>
-									<p>
-										<img id="project-graphic" src="img/connectfour.png">
-									</p>
-								</aside>
-							</div>
-						</div>
-
-						<div ng-show="p4" class="workhorizontalscroll">
-							<div style="display: inline-block;">
-								<article>
-									Winter/Spring 2015
-									<hr>
-									ShoutBox is a Google Chrome extension that allows users to tweet directly from Chrome's address bar and is now available from the Chrome Web Store!<br/><br/>
-									My friend and I began working on it for the UofA Computer Engineering Club's annual 24 hour long hackathon in the Winter of 2015. We won third place at the hackathon but at that time the app was far from a finished product. After the school term ended we went back and completed it. <br/><br/>
-									The extension is accompanied by a Node.js server/website which does all the heavy lifting of the app. Since Twitter does not allow OAuth flow with an extension, the server/website provides the means for logging into Twitter and posting tweets.
-									<hr>
-									You can read more about the app on it's GITHUB page, linked above the picture to the left.
-								</article>
-
-								<aside style="margin-right: 25px">
-									<h3><a style="color: white;" target="_blank" href="https://github.com/askalburgi/ShoutBox">ShoutBox - HackED 2015</a></h3>
-									<p>
-										<img id="project-graphic" src="img/ShoutBox.png">
-									</p>
-								</aside>
-							</div>
-						</div>
-
-						<div ng-show="p3" class="workhorizontalscroll">
-							<div style="display: inline-block;">
-								<article>
-									Fall 2014
-									<hr>
-									Arduino Tetris was created for my CMPUT274 class at the University of Alberta. The course itself is
-									quite broad, dealing with objectives that form a strong all-round presense in computing. <br /><br />
-
-									A large focus of the course dealt with programming Arduino's. Our assignments taught us to deal with 
-									memory and hardware circuit issues while the weekly exercises focused on learning and using C++. <br /><br /> 
-
-									We also went over some basic algorithms such as sorting and basic data structures like C's arrays 
-									and linked lists.  <br /><br />
-
-									The final objective is the same as it's sister course, CMPUT275, in that it introduces the 
-									fundamental ideas of computing to gain a better understanding of computing 
-									and what software can help do. The course has a problem-driven approach with an emphasis on the 
-									underlying process behind the solution. <br /><br />
-
-									We were restricted to using the Arduino for the project so my partner and I chose to 
-									do something with the display, making our project more interactive.
-									<hr>
-									More about the project itself can be found on the README file of the project's GITHUB page
-									There you'll see that the challenge of this project was really in the design of the
-									Arduino display, not the implementation.
-								</article>
-
-								<aside style="margin-right: 25px">
-									<h3><a style="color: white;" target="_blank" href="https://github.com/askalburgi/Arduino_Tetris">Arduino Tetris</a></h3>
-									<p>
-										<img id="project-graphic" src="img/Arduino.jpg">
-									</p>
-								</aside>
-							</div>
-						</div>
-
-						<div ng-show="p2" class="workhorizontalscroll">
-							<div style="display: inline-block;">
-								<article>
-									Summer 2014
-									<hr>
-									I built a mobile Confrenece app while I worked for
-									<a style="color: white;" target="_blank" href="http://www.fourthdimensioninc.com/">fourthdimension inc.</a>
-									as an intern.
-									The mobile webapp was created using the
-									<a style="color: white;" target="_blank" href="http://www.fourthdimensioninc.com/">Ionic Framework</a>
-									and
-									<a style="color: white;" target="_blank" href="http://www.fourthdimensioninc.com/">Apache Cordova.</a>
-									The app was built to provide attendees with the conference schedule, details on the seminars and presenters,
-									maps of the area and provided internal staff with user feedback on seminars.<br/><br/>
-
-									The application handled all this data this with read and
-									write capabilities to an Azure Mobile Service; numerous backend JavaScript services had to be
-									created in order to manipulate the data for the app's use.
-									I worked with coworkers to create the user interface of the application, which was built with SCSS and CSS.<br/><br/>
-
-									To debug the program, I created a spreadsheet to keep track of all the issues. I set up use-case scenarios
-									to make sure the application would work properly, or give the users helpful hints as to what is
-									going wrong. The scenarios came in handy when testing offline functionality, because sitting in the office
-									I was always online and I would have forgotten to test it.
-									Since the application would be ported to both Android and iOS, debugging required using web
-									development tools for Chrome and Safari and remote debugging for Android and iOS.<br/><br/>
-
-									I also wrote the documentation for the application, which required me to go over each step of the code and
-									explain it in full detail; written in it were descriptions about the app’s repository, testing
-									the app, the plugins and libraries used, as well as a walkthrough of the code.
-									<hr>
-									The project required me to learn and deal with Angular.js framework, Ionic framework, Command Line, GIT, CSS
-									some JavaScript and Azure Databases. As well as taught me lessons about working with a team in an office environment.
-									Unfortunately, since the application was created under contract, I do not have access to point you to any of the work I did. 
-								</article>
-
-								<aside style="margin-right: 25px">
-									<h3>Conference app</h3>
-									<p>
-										<img id="project-graphic" src="img/resnet.png">
-									</p>
-								</aside>
-							</div>
-						</div>
-
-						<div ng-show="p6" class="workhorizontalscroll">
-							<div style="display: inline-block;">
-								<article>
-									Winter 2014
-									<hr>
-									Runner Runner was created for the ENCMP100 programming contest. ENCMP 100 is a first-year engineering course that teaches
-									students introductory programming using MATLAB. All engineering students at the Unuversity of Alberta are required to take 
-									the course in first year. The contest is funded from MathWorks (the creators of MATLAB) and is optional. All submissions must 
-									have an original MATLAB program and an accompanying video presentation and we were allowed to work with teams of at most two. <br/><br/>
-
-									The project was really my first project ever, Nick did most of the coding and I did all the graphics and the video. 
-									It was a really good learning experience despite the fact that I didn't code much. Here is the video we submitted.<br/><br/>
-
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/51mIwC7M6Ow" frameborder="0" allowfullscreen></iframe>
-									<hr>
-									Nick and I placed 2nd in the competition! You can see the code on GITHUB.
-								</article>
-
-								<aside style="margin-right: 25px">
-									<h3><a style="color: white;" target="_blank" href="https://github.com/askalburgi/runner_runner">Runner Runner</a></h3>
-									<p>
-										<img id="project-graphic" src="img/runnerrunner.png">
-									</p>
-								</aside>
-							</div>
-						</div>
-
-						<div ng-show="p1" class="workhorizontalscroll">
-							<div style="display: inline-block;">
-								<article>
-									Creating this website is also a project! This is the first ever responsive website I've
-									created and my first real standalone battle with CSS; boy was it a challenge! After
-									a long fight with trying to hack the CSS into making it look good, I finally went in
-									did everything properly. The style could be better but it's not the mess it was!
-									You can see the code for the site on the GITHUB page (hopefully I'll update that with the site).
-									One really awesome thing about the website is how the back-end is set up. The website has a Github
-									repository on the Github server; my local repository for the website
-									is stored in Google Drive, so that it is synced across all my computers. The same directory is
-									what I use to host the repository! So a project which normally would need to be stored in four places
-									(local repository for my two computers, Github repository and hosting service) is just stored in
-									two!
-									<br />
-									<br />
-									The website was a fresh coding experience after all the drag code-work of my classes.
-									Got to learn some good CSS tricks, as well as the trick to host the website via Google Drive
-								</article>
-
-								<aside style="margin-right: 25px">
-									<h3><a style="color: white;" target="_blank" href="https://github.com/askalburgi/website">This Website</a></h3>
-									<p>
-										<img id="project-graphic" src="img/website.png">
-									</p>
-								</aside>
-							</div>
-						</div>
-					</div>
-
-					<div ng-show="blog">
-						<div class="morehorizontalscroll" style="height: 700px;">
-							<div style="display: inline-block;">
-								
-								<div class="clearfix"></div>
-								<nav class="logo">
-									<div>
-										<ul class="logo-bullet">
-											<li>
-												<a id="logo-link" target="_blank" href="https://plus.google.com/+ArjunKalburgi/posts">
-													<img id="logo" src="img/glogo.png">
-												</a>
-											</li>
-											<li>
-												<a id="logo-link" target="_blank" href="https://github.com/askalburgi">
-													<img id="logo" src="img/gitlogo.png">
-												</a>
-											</li>
-											<li>
-												<a id="logo-link" target="_blank" href="https://ca.linkedin.com/pub/arjun-kalburgi/58/250/82b">
-													<img id="logo" src="img/llogo.png">
-												</a>
-											</li>
-										</ul>
-									</div>
-								</nav>
-								<div class="clearfix"></div>
-								
-								<br/>
-								<br/>
-
-								<div>
-									<b>My travels</b><br/>
-									Hover over the marker to see when I visited the place!
-									The markers don't include layovers for flights or roadstops for roadtrips!
-									<br/>
-									<div id="map-canvas"></div>
-								</div>
-
-								<br/>
-								<br/>
-
-								<div class="post">
-									<b>My Involvements (Computer Engineering Club)</b><br/>
-									Since the beginning of my Second year of Engineering (Fall 2014), I made an emphasis to be involved with the discipline for two main reasons. One reason is so I could have a chance to learn from the upper years, and the second reason is so that I would have the opportunity to meet more people. So far both these are going well. <br/>
-									In my first year with the club, I was elected as Second Year Representative. In the position, my main job was to have duties delegated to me by certain executive members. This taught me the little things necessary to carry out the events that the club hosts. <br/>
-									Now, I represent the club as Vice President External. In this executive role, it is my job to make contact and connections with all those the club wants to connect with for the aforementioned events. <br/>
-									You can find out more about the Computer Engineering Club at the following website, linked 
-									<a href="http://www.compeclub.com/">here</a>.
-								</div>
-
-								<br/>
-								<br/>
-
-								<div class="post">
-									<b>My Involvements (Dance)</b><br/>
-									From as far back as I can remember I've been in Indian/Bollywood/Bhangra dance groups. Regina has a annual cultural festival called 
-									<a href="http://www.reginamulticulturalcouncil.ca/info/mosaic-a-festival-of-cultures.html">Mosaic</a> in which my friends and I would participate in. As we grew older, our performances became self-choreographed and more professional. By the time I was in Grade 12 (my last year in Regina), we had performed at weddings, cultural events, and even business events. Some of our performances are on YouTube and are embedded below. <br/>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/-XyzAU4MuN4" frameborder="0" allowfullscreen></iframe><br/>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/5agpErOKG44" frameborder="0" allowfullscreen></iframe><br/>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/8tOKZ4k_S0k" frameborder="0" allowfullscreen></iframe><br/>
-									Since coming to Edmonton I haven't kept up with dance, mostly because I don't know the community here. Hopefully that will change soon and I can get back to the beat!
-								</div>
-
-								<br/>
-								<br/>
-
-								<div class="post">
-								</div>
-
-								<br/>
-								<br/>
-
-								<div class="post">
-								</div>
-
-								<br/>
-								<br/>
-
-								<div class="post">
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div> <!-- #main -->
-			</div> <!-- #main-container -->
-		</div>
-		
-		<div class="footer-container">
-			<footer class="wrapper">
-				<h3>Contact Me</h3>
-				<div style="padding-bottom: 5px">
-					If you'd like to contact me, please fill out the form below or
-					shoot me an email to askalburgi@gmail.com
+			<div  class="col s12 m4 l4">
+				<div class="center promo promo-example">
+					<i class="mdi-hardware-phonelink"></i>
+					<h5 class="promo-caption">Web Applications</h5>
+					<p class="light center">
+						Primarily individually, I have worked on several web-based projects ranging from mobile applications for both 
+						iOS and Android to simple MVC apps, using both Django and Flask, and Google Chrome Extensions.
+					</p>
 				</div>
-				<div id="form">
-					<!-- Begin Response-O-Matic Form -->
-						<!-- DO NOT EDIT YOUR FORM HERE, PLEASE LOG IN AND EDIT AT RESPONSE-O-MATIC.COM -->
-						<form enctype="multipart/form-data" method="post" target="_blank" action="http://www.response-o-matic.com/mail.php" accept-charset="UTF-8">
-							<div>
-								<input type="hidden" name="acctid" id="acctid" value="4ed0pb2iq4pv0g8v" />
-								<input type="hidden" name="formid" id="formid" value="1261059" />
-								<input type="hidden" name="required_vars" id="required_vars" value="name,field-bdf2b0a0cc8c1d6,email,field-2c29e67fe33e432" />
-							</div>
-							<table cellspacing="5" cellpadding="5" border="0">
-								<tr>
-									<td valign="top">
-										Name:
-									</td>
-									<td valign="top">
-										<input type="text" name="name" id="name" size="40" value="" />
-										
-									</td>
-								</tr>
-								<tr>
-									<td valign="top">
-										Subject:
-									</td>
-									<td valign="top">
-										<input type="text" name="field-bdf2b0a0cc8c1d6" id="field-bdf2b0a0cc8c1d6" size="40" value="" />
-										
-									</td>
-								</tr>
-								<tr>
-									<td valign="top">
-										Email 
-									</td>
-									<td valign="top">
-										<input type="text" name="email" id="email" size="40" value="" />
-										
-									</td>
-								</tr>
-								<tr>
-									<td valign="top">
-										Body:
-									</td>
-									<td valign="top">
-										<textarea name="field-2c29e67fe33e432" id="field-2c29e67fe33e432" rows="6" cols="40"></textarea>
-										
-									</td>
-								</tr>
-								<tr>
-									<td colspan="2" align="center">
-										<input type="submit" value=" Submit Form " />
-									</td>
-								</tr>
-							</table>
-						</form>
-						<br><font face="Arial, Helvetica" size="1"><b>
-						This <a href="http://www.response-o-matic.com">online form</a> was provided by Freedback.
-						</b></font>
-					<!-- End Response-O-Matic Form -->
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="center promo promo-example">
+					<i class="mdi-editor-merge-type"></i>
+					<h5 class="promo-caption">Python Programming</h5>
+					<p class="light center">
+						UAlberta's CMPUT275 class teaches Python while keeping algorithms and dynamic programming in focus.
+						For the final project of the class, I created an AI using the algorithm and dynamic programming skills taught. 
+					</p>
 				</div>
-			</footer>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="center promo promo-example">
+					<i class="mdi-device-sd-storage"></i>
+					<h5 class="promo-caption">Embedded Systems</h5>
+					<p class="light center">
+						Another class, CMPUT274, had us using Arduino's to create various programs, the most notable of which 
+						was a Diffie-Hellman program. The course had us use data structures and deal with the limits of weaker computing power.
+					</p>
+				</div>
+			</div>
 		</div>
+	</div>
+</div>
 
-		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>-->
+<!-- Image Divider -->
+ <div class="parallax" style="z-index:0;" id="divider-banner">
+	<div class="container">
+		<h1 class="text_h center header cd-headline letters type" style="padding: 17% 0">
+			<span>I Can</span> 
+			<span class="cd-words-wrapper waiting">
+				<b class="is-visible">Code</b>
+				<b>Design</b>
+				<b>Communicate</b>
+			</span>
+		</h1>
+	</div>
+</div>
 
-		<script src="js/main.js"></script>
+<!--Work-->
+ <div class="section scrollspy" id="work">
+	<div class="container">
+		<h2 class="header text_b">Projects </h2>
+		<div class="row">
+			<div class="col s12 m4 l4">
+				<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/connectfour.png">
+					</div>
+					<div class="card-content">
+						<span class="card-title grey-text text-darken-4">Connect Four</span>
+						<p><a href="https://github.com/askalburgi/connectfour target="_blank"">GITHUB</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/ShoutBox!.png">
+					</div>
+					<div class="card-content">
+						<span class="card-title grey-text text-darken-4">ShoutBox</span>
+						<p><a href="https://github.com/askalburgi/ShoutBox" target="_blank">GITHUB</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/resnet.png">
+					</div>
+					<div class="card-content">
+						<span class="card-title grey-text text-darken-4">Conference App</span>
+						<p style="color: white;">-<!-- <a href="#">Project link</a> --></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <a class="more-button" href="projects.html">More <i class="mdi-hardware-keyboard-arrow-right"></i></a> -->
+		<a class="more-button">More Soon<i class="mdi-hardware-keyboard-arrow-right"></i></a>
+	</div>
+</div>
 
-		<!--Google Map-->
-		<script type="text/javascript"
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsQPYuRrSrIChJFWaVZ-0CxCdBx_UJPlk">
-		</script>
-		<script type="text/javascript">
-			function initialize() {
-				var mapOptions = {
-					center: { lat: 40.405622, lng: -10.636029},
-					zoom: 2
-				};
-				var map = new google.maps.Map(document.getElementById('map-canvas'),
-				mapOptions);
-				
-				// CA
-				var homemarker = new google.maps.Marker({
-					position: new google.maps.LatLng(50.405622, -104.636029),
-					map: map,
-					title:"Born and Raised!"
-				});
-				var schoolmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(53.5333, -113.5000),
-					map: map,
-					title:"Current place of residence!"
-				});
-				var torontomarker = new google.maps.Marker({
-					position: new google.maps.LatLng(43.7, -79.4),
-					map: map,
-					title:"Summer 1995, Winter 1999/00, Summer 2008, Spring 2013, Summer 2014"
-				});
-				var quebecmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(46.8167, -71.2167),
-					map: map,
-					title:"Spring 2008"
-				});
-				var banffmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(51.1781, -115.5719),
-					map: map,
-					title:"Summer 2002"
-				});
-				var calgarymarker = new google.maps.Marker({
-					position: new google.maps.LatLng(51.0500, -114.0667),
-					map: map,
-					title:"Spring 2001"
-				});
-				var saskatoonmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(52.1333, -106.6833),
-					map: map,
-					title:"Fall 2001, Spring 2007"
-				});
-				var niagramarker = new google.maps.Marker({
-					position: new google.maps.LatLng(43.08, -79.0710),
-					map: map,
-					title:"Summer 2009"
-				});
-				var winnipegmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(49.8994, -97.1392),
-					map: map,
-					title:"Spring 1995"
-				});
-				var nakiskamarker = new google.maps.Marker({
-					position: new google.maps.LatLng(50.9440, -115.1470),
-					map: map,
-					title:"Winter 2012/13"
-				});
-				
-				// India
-				var hydrabadmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(17.3660, 78.4760),
-					map: map,
-					title:'Winter 1996, Fall/Winter 2003/04, Fall/Winter 2006/07, Summer 2013'
-				});
-				var agramarker = new google.maps.Marker({
-					position: new google.maps.LatLng(27.18, 78.02),
-					map: map,
-					title:'Summer 2013'
-				});
-				var jaipurmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(26.926, 75.8235),
-					map: map,
-					title:'Summer 2013'
-				});
-				var delhimarker = new google.maps.Marker({
-					position: new google.maps.LatLng(28.6139, 77.2089),
-					map: map,
-					title:'Winter 1996/97, Summer 2013'
-				});
-				var bengalurumarker = new google.maps.Marker({
-					position: new google.maps.LatLng(12.9667, 77.5667),
-					map: map,
-					title:'Winter 1996/97, Winter 2003/04'
-				});
-				var mumbaimarker = new google.maps.Marker({
-					position: new google.maps.LatLng(18.975, 72.8258),
-					map: map,
-					title:'Winter 2006/07'
-				});
-				var tiripatimarker = new google.maps.Marker({
-					position: new google.maps.LatLng(13.65, 79.42),
-					map: map,
-					title:'Winter 2003/04'
-				});
+<!-- Image Divider -->
+ <div class="parallax" style="z-index:0;" id="divider-banner">
+	<div class="container">
+		<h1 class="text_h center header cd-headline letters type" style="padding: 17% 0">
+			<span>I Am</span> 
+			<span class="cd-words-wrapper waiting">
+				<b class="is-visible">Adventurous</b>
+				<b>Involved</b>
+				<b>Active</b>
+			</span>
+		</h1>
+	</div>
+</div>
 
-				//US
-				var dallasmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(32.7758, -96.7967),
-					map: map,
-					title:'Fall 1999, Fall 2001, Fall 2004, Winter 2007/08, Winter 2009/10, Summer 2011'
-				});
-				var austinmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(30.25, -97.75),
-					map: map,
-					title:"Fall 2001"
-				});
-				var houstonmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(29.7628, -95.3831),
-					map: map,
-					title:"Fall 2001"
-				});
-				var midlandmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(32, -102.1),
-					map: map,
-					title:"Winter 1997/98"
-				});
-				var allenmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(33.0997, -96.6631),
-					map: map,
-					title:"Winter 2009/10, Summer 2011"
-				});
-				
-				var SFmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(37.7833, -122.4167),
-					map: map,
-					title:"Winter 2008/09, Summer 2012"
-				});
-				var fremontmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(37.5483, -121.9886),
-					map: map,
-					title:"Winter 2008/09, Summer 2012"
-				});
-				var lamarker = new google.maps.Marker({
-					position: new google.maps.LatLng(34.05, -118.25),
-					map: map,
-					title:"Winter 2008/09"
-				});
-				
-				var detroitmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(42.3086, -83.4822),
-					map: map,
-					title:"Summer 1995, Winter 2009/10"
-				});
-				var saltlakemarker = new google.maps.Marker({
-					position: new google.maps.LatLng(40.75, -111.8833),
-					map: map,
-					title:"Spring 1999, Winter 2008/09"
-				});
-				var bensalemmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(40.11, -74.9433),
-					map: map,
-					title:"Winter 1999/00"
-				});
+<!--More-->
+ <div class="section scrollspy" id="team">
+	<div class="container">
+		<h2 class="header text_b">More</h2>
+		<div class="row">
+			<!-- Traveler -->
+			 <div class="col s12 m3">
+				<div class="card card-avatar">
+					<div class="waves-effect waves-block waves-light" style="font-size:8.27rem; color:#007E60">
+						<i class="mdi-maps-map"></i>
+					</div>
+					<div class="card-content">
+						<span class="card-title grey-text text-darken-4">Traveler <br/><br/>
+							<small><em class="more-card-subtitle">Influences by Environment</em></small>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- Creator -->
+			 <div class="col s12 m3">
+				<div class="card card-avatar">
+					<div class="waves-effect waves-block waves-light" style="font-size:8.27rem; color:#007E60">
+						<i class="mdi-editor-mode-edit"></i>
+					</div>
+					<div class="card-content">
+						<span class="card-title grey-text text-darken-4">Creator<br/><br/>
+							<small><em class="more-card-subtitle">Expression by Creation</em></small>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- Event Planner -->
+			 <div class="col s12 m3">
+				<div class="card card-avatar">
+					<div class="waves-effect waves-block waves-light" style="font-size:8.27rem; color:#007E60">
+						<i class="mdi-notification-event-available"></i>
+					</div>
+					<div class="card-content">
+						<span class="card-title grey-text text-darken-4">Event Planner<br/><br/>
+							<small><em class="more-card-subtitle">Leadership by Management</em></small>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- Volunteer -->
+			 <div class="col s12 m3">
+				<div class="card card-avatar">
+					<div class="waves-effect waves-block waves-light" style="font-size:8.27rem; color:#007E60">
+						<i class="mdi-social-people"></i>
+					</div>
+					<div class="card-content">
+						<span class="card-title grey-text text-darken-4">Volunteer<br/><br/>
+							<small><em class="more-card-subtitle">Teamwork by Service</em></small>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="more-button">Details Soon<i class="mdi-hardware-keyboard-arrow-right"></i></a>
+		<!-- <a class="more-button" href="more.html">Details <i class="mdi-hardware-keyboard-arrow-right"></i></a> -->
+	</div>
+</div>
 
-				//UK
-				var bristolmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(51.45, -2.5833),
-					map: map,
-					title:"Summer 2010, Summer 2014"
-				});
-				var londonmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(51.5072, -0.1275),
-					map: map,
-					title:"August 2003, Summer 2010"
-				});
-				var bathmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(51.38, -2.3600),
-					map: map,
-					title:"Summer 2010, Summer 2014"
-				});
-				var stonehengemarker = new google.maps.Marker({
-					position: new google.maps.LatLng(51.1788, -1.8262),
-					map: map,
-					title:"Summer 2014"
-				});
-				var stratfordavonmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(52.19, -1.7100),
-					map: map,
-					title:"Summer 2010"
-				});
-				var lancastermarker = new google.maps.Marker({
-					position: new google.maps.LatLng(54.0470, -2.8010),
-					map: map,
-					title:"Summer 2003"
-				});
-				
-				// Europe
-				var parismarker = new google.maps.Marker({
-					position: new google.maps.LatLng(48.8567, 2.3508),
-					map: map,
-					title:'Summer 2010, Spring 2012, Summer 2014'
-				});
-				var biaritzmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(43.48, 1.56),
-					map: map,
-					title:'Spring 2012'
-				});
-				var nicemarker = new google.maps.Marker({
-					position: new google.maps.LatLng(43.7034, 7.2663),
-					map: map,
-					title:'Spring 2012'
-				});
-				var brusselsmarker = new google.maps.Marker({
-					position: new google.maps.LatLng(50.85, 4.35),
-					map: map,
-					title:'Summer 2014'
-				});
-				var venicemarker = new google.maps.Marker({
-					position: new google.maps.LatLng(45.4375, 12.3358),
-					map: map,
-					title:'Summer 2014'
-				});
-				var pisamarker = new google.maps.Marker({
-					position: new google.maps.LatLng(43.7167, 10.4),
-					map: map,
-					title:'Summer 2014'
-				});
-				var florencemarker = new google.maps.Marker({
-					position: new google.maps.LatLng(43.7833, 11.25),
-					map: map,
-					title:'Summer 2014'
-				});
-				var genevamarker = new google.maps.Marker({
-					position: new google.maps.LatLng(46.2, 6.15),
-					map: map,
-					title:'Summer 2014'
-				});
-				var titlismarker = new google.maps.Marker({
-					position: new google.maps.LatLng(46.7725, 8.4372),
-					map: map,
-					title:'Summer 2014'
-				});
-				
-				google.maps.event.addListenerOnce(map, 'tilesloaded', function(){
-					google.maps.event.clearListeners(blogTab, 'click');
-				});
-			}
-			var blogTab = document.getElementById('blogTab');
-			google.maps.event.addDomListener(blogTab, 'click', initialize);	
-		</script>
+<!-- Footer -->
+ <footer id="contact" class="my-footer page-footer default_color scrollspy">
+	<div class="container">  
+		<h2 class="white-text header text_b">Contact</h2>
+		<div class="row">
+			<div class="col l6 s12">
+				<h5 class="white-text">Email Me</h5>
+				<!-- THANK YOU RESPONSE-O-MATIC FOR THE FORM -->
+				<form class="col s12" enctype="multipart/form-data" method="post" action="http://www.response-o-matic.com/mail.php" accept-charset="UTF-8">
+					<div>
+						<input type="hidden" name="acctid" id="acctid" value="4ed0pb2iq4pv0g8v" />
+						<input type="hidden" name="formid" id="formid" value="1272365" />
+						<input type="hidden" name="required_vars" id="required_vars" value="name,email,field-fee4ae053458305" />
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<i class="mdi-action-account-circle prefix white-text"></i>
+							<input type="text" class="validate white-text" id="icon_prefix" name="name" id="name" value="" />
+							<label for="icon_prefix" class="white-text">First Name</label>
+						</div>
+						<div class="input-field col s6">
+							<i class="mdi-communication-email prefix white-text"></i>
+							<input type="email" class="validate white-text" id="icon_email" name="email" id="email" value="" >
+							<label for="icon_email" class="white-text">Email-id</label>
+						</div>
+						<div class="input-field col s12">
+							<i class="mdi-editor-mode-edit prefix white-text"></i>
+							<textarea id="icon_prefix2" class="materialize-textarea white-text" name="field-fee4ae053458305" id="field-fee4ae053458305"  ></textarea>
+							<label for="icon_prefix2" class="white-text">Message</label>
+						</div>
+						<div class="col offset-s7 s5">
+							<button class="btn waves-effect waves-light red darken-1" type="submit" name="action">Submit
+								<i class="mdi-content-send right white-text"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="social col l3 s12">
+				<h5 class="white-text">Social</h5>
+				<ul>
+					<li class="contact-media-links">
+						<a class="white-text" href="https://plus.google.com/+ArjunKalburgi/posts">
+							<i class="small fa fa-google-plus-square white-text"></i> Google+
+						</a>
+					</li>
+					<li class="contact-media-links">
+						<a class="white-text" href="https://github.com/askalburgi">
+							<i class="small fa fa-github-square white-text"></i> Github
+						</a>
+					</li>
+					<li class="contact-media-links">
+						<a class="white-text" href="https://ca.linkedin.com/pub/arjun-kalburgi/58/250/82b">
+							<i class="small fa fa-linkedin-square white-text"></i> Linkedin
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer> 
+
+
+	<!--  Scripts -->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+
+	<script src="js/jquery-ui.min.js"></script>
+
+	<script src="js/myjs.js"></script>
+
+	
 	</body>
 </html>
