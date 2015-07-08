@@ -8,9 +8,17 @@ $(window).ready(function (event) {
 		// other one
 		// $("nav").animate({ 'backgroundColor': '#007E60'});
 	}
-	var adjust = $(window).height() - $("nav").height();
-	$("footer").css({'height':adjust+'px'}); 
+
+	// adjust footer height
+	var height = $(window).height() - $("nav").height();
+	$("footer").css({'height':height+'px'}); 
+
+	// adjust front banner height
 	$("#index-banner").css({'height':$(window).height()+'px'}); 
+
+	// adjust banner text position
+	height = ($(window).height() - $(".text_h").innerHeight())/2;
+	$(".banner-text-pos").css({'margin':height+'px auto'}); 
 })
 
 // Nav bar colour on position
