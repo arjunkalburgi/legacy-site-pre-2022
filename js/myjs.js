@@ -7,6 +7,8 @@ $(window).ready(function (event) {
 
 		// other one
 		// $("nav").animate({ 'backgroundColor': '#007E60'});
+	} else {
+		$("nav").animate({ 'backgroundColor': '#007E60'});
 	}
 
 	// adjust footer height
@@ -19,6 +21,39 @@ $(window).ready(function (event) {
 	// adjust banner text position
 	height = ($(window).height() - $(".text_h").innerHeight())/2;
 	$(".banner-text-pos").css({'margin':height+'px auto'}); 
+
+	// intro! 
+	// if window height > div height 
+	if (($(window).height() - $("nav").height()) > $("#intro").height()) {
+		// increase div height and put up margins top and bottom. 
+		$("#intro").css({"height":($(window).height() - $("nav").height())+'px'});
+
+		// add margin
+		height = ($('#intro').height() - $('.intro').height())/2;
+		$(".intro").css({'margin':height+'px auto'}); 
+	}
+
+	// projects! 
+	// if window height > div height 
+	if (($(window).height() - $("nav").height()) > $("#work").height()) {
+		// increase div height and put up margins top and bottom. 
+		$("#work").css({"height":($(window).height() - $("nav").height())+'px'});
+
+		// add margin
+		height = ($('#work').height() - $('.work').height())/2;
+		$(".work").css({'margin':height+'px auto'}); 
+	}
+
+	// more! 
+	// if window height > div height 
+	if (($(window).height() - $("nav").height()) > $("#team").height()) {
+		// increase div height and put up margins top and bottom. 
+		$("#team").css({"height":($(window).height())+'px'});
+
+		// add margin
+		height = ($('#team').height() - $('.team').height())/2;
+		$(".team").css({'margin':height+'px auto'}); 
+	}
 })
 
 // Nav bar colour on position
