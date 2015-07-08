@@ -1,6 +1,12 @@
  /* Style from Me (Arjun Kalburgi) */
 #team {padding-bottom: 4rem;}
 
+.parallax {
+    background-size: cover;
+}
+.parallax-container {
+    margin-top: 96px;
+}
 
 #divider-banner {
     /*background: url("/img/bg-image-green.jpg") fixed;*/

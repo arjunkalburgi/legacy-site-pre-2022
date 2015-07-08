@@ -13,6 +13,9 @@
 	$("#contactScroll").click(function(){
 		$("html, body").animate({scrollTop: $('#contact').offset().top}, 2000)
 	});
+	$("#logo-container").click(function(){
+		$("html, body").animate({scrollTop: $('#top').offset().top}, 2000)
+	});
 
 
 

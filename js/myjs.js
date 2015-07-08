@@ -12,8 +12,10 @@ $(window).ready(function (event) {
 	}
 
 	// adjust footer height
-	var height = $(window).height() - $("nav").height();
-	$("footer").css({'height':height+'px'}); 
+	if (($(window).height() - $("nav").height()) > $("#contact").height()) {
+		var height = $(window).height() - $("nav").height();
+		$("footer").css({'height':height+'px'}); 
+	}
 
 	// adjust front banner height
 	$("#index-banner").css({'height':$(window).height()+'px'}); 
@@ -54,6 +56,11 @@ $(window).ready(function (event) {
 		height = ($('#team').height() - $('.team').height())/2;
 		$(".team").css({'margin':height+'px auto'}); 
 	}
+
+	// divider title pos
+	height = ($(".parallax").height() - $("h1").height())/2;
+	$(".divider-title-pos").css({'padding':height+'px 0'}); 
+
 })
 
 // Nav bar colour on position
