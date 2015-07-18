@@ -9,6 +9,22 @@
     margin-top: 96px;
 }
 
+@media only screen and (min-width: 993px) {
+    .side-card-text {
+        width: 66.6666% !important; 
+        /*width: 66.66666%;*/
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .side-card-text {
+        width: 50% !important;
+    }
+    .side-text-card {
+        width: 50% !important;
+    }
+}
+
 /*#divider-banner {
     background: url("/img/bg-image-green.jpg") fixed;
     background: url("C:/Users/Arjun/Documents/LocalProjects/askalburgi.github.io/img/bg-image-green.jpg") fixed;
