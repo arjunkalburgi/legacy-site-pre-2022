@@ -3,6 +3,7 @@
 
 .parallax {
     background-size: cover;
+    position: absolute;
 }
 .parallax-container {
     margin-top: 96px;
