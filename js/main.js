@@ -1,3 +1,6 @@
+// set the height of the sections to 
+// fit the window
+
 function contentHeight() {
 	var height = $(window).height() - 135;
 	// set height

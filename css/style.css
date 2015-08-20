@@ -170,7 +170,7 @@ nav {
     letter-spacing: 7px;
 }
 
-.text_h2 {font-weight: 100;margin-bottom: 4%; line-height: 4.5rem;}
+.text_h2 {font-weight: 100;margin-bottom: 4%; line-height: 4.5rem;width: 95%;margin: auto;}
 
 .span_h2 {font-weight: 300;color: #007E60/*084D3F,2196F3*/;}
 
