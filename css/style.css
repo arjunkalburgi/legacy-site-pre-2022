@@ -41,7 +41,7 @@
 
 .more-button {
     float: right;
-    color: #007E60;
+    background-color: #007E60;
     font-weight: bold;
 }
 .more-button:hover {color: #007E60;}
@@ -112,7 +112,7 @@ nav {
     margin: 11% auto;
 }
 
-/** 
+/****************************************************************************************************************************** 
  * I changed up some of the things below, but most 
  * of it is still Joash's.
  *   - Arjun

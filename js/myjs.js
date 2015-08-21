@@ -1,4 +1,4 @@
-// Nav bar colour on load
+// on load
 $(window).ready(function (event) {
 	poop = $(window).scrollTop();
 	if (poop == 0) {
@@ -77,7 +77,7 @@ $(window).scroll(function (event) {
 });
 
 // Scrolling
-$(function(){	
+$(function(){
 	// console.log("working");
     var $window = $(window);
 	var scrollTime = 1.2;
