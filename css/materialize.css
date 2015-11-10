@@ -5340,6 +5340,13 @@ small {
   -moz-border-radius: 2px;
   border-radius: 2px;
   background-clip: padding-box; }
+  .card.md-modal {
+    background-color: transparent; 
+    cursor: default;
+  }
+  .card.md-trigger {
+    cursor: pointer;
+  }
   .card .card-title {
     color: #fff;
     font-size: 24px;
@@ -5348,13 +5355,13 @@ small {
       cursor: pointer; }
   .card a {
     color: #ffab40;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     -webkit-transition: color 0.3s ease;
     -moz-transition: color 0.3s ease;
     -o-transition: color 0.3s ease;
     -ms-transition: color 0.3s ease;
     transition: color 0.3s ease;
-    text-transform: uppercase; }
+    /*text-transform: uppercase;*/ }
     .card a:hover {
       color: #ffd8a6; }
   .card.small {

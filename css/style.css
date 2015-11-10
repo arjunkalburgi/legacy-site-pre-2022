@@ -5,9 +5,6 @@ iframe {
     margin: 0 auto;
 }
 
-.card:hover {
-  cursor: pointer; 
-}
 
 button {
     border: none;
