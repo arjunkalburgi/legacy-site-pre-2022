@@ -13,7 +13,7 @@ iframe {
         line-height: 100%; 
         font-size: 135%; 
     }
-    .card p {
+    .card .card-content p {
         white-space: nowrap;
     }
 }
