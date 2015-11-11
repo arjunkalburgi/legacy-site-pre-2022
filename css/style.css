@@ -5,6 +5,9 @@ iframe {
     margin: 0 auto;
 }
 
+.point {
+    cursor: pointer;
+}
 
 button {
     border: none;
