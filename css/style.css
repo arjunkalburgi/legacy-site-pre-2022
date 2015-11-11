@@ -5,6 +5,20 @@ iframe {
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 600px) {
+    .parallax-container {
+        display: none;
+    }
+    .card .card-content .card-title {
+        line-height: 100%; 
+        font-size: 135%; 
+    }
+    .card p {
+        white-space: nowrap;
+    }
+}
+
+
 .point {
     cursor: pointer;
 }
@@ -200,6 +214,14 @@ nav {
 }
 
 .text_h2 {font-weight: 100;margin-bottom: 4%; line-height: 4.5rem;width: 95%;margin: auto;}
+
+@media only screen and (max-width: 600px) {
+    .text_h2 {
+        line-height: 100%; 
+        font-size: 215%;
+    }
+}
+
 
 .span_h2 {font-weight: 300;color: #007E60/*084D3F,2196F3*/;}
 
