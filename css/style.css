@@ -1,5 +1,9 @@
  /* Style from Me (Arjun Kalburgi) */
 
+.divider-title-pos {
+    margin: 0;
+}
+
 iframe {
     display: block;
     margin: 0 auto;
@@ -16,6 +20,11 @@ iframe {
     .card .card-content p {
         white-space: nowrap;
     }
+    .md-modal .md-content div {
+        max-height: 450px;
+        overflow-y: scroll;
+    }
+    .md-modal .md-content div::-webkit-scrollbar {display: none;}
 }
 
 
@@ -217,7 +226,7 @@ nav {
 
 @media only screen and (max-width: 600px) {
     .text_h2 {
-        line-height: 100%; 
+        line-height: 130%; 
         font-size: 215%;
     }
 }
