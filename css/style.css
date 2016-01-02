@@ -1,5 +1,27 @@
  /* Style from Me (Arjun Kalburgi) */
 
+ /*SIDEBAR*/
+ 
+#sidebar {
+position:fixed;
+margin-left:150px;
+margin-top:80px;
+}
+
+#sidebarimage img {
+width:188px;
+margin-top:5px;
+padding:3px;
+margin-left:-68px;
+}
+   
+#sidebarimage img:hover {
+opacity:0.7;
+-moz-transition-duration:0.6s;
+-webkit-transition-duration:0.6s;
+-o-transition-duration:0.6s;
+}
+
 .divider-title-pos {
     margin: 0;
 }
@@ -163,6 +185,7 @@ nav {
 .banner-text-pos {
     margin: 11% auto;
 }
+
 
 /****************************************************************************************************************************** 
  * I changed up some of the things below, but most 
