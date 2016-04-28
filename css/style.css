@@ -31,7 +31,7 @@ iframe {
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
     .parallax-container {
         display: none;
     }
