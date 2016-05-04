@@ -37,7 +37,7 @@ $(window).ready(function (event) {
 
 	// projects! 
 	// if window height > div height 
-	if (($(window).height() - $("nav").height()) > $("#work").height()) {
+	/*if (($(window).height() - $("nav").height()) > $("#work").height()) {
 		// increase div height and put up margins top and bottom. 
 		$("#work").css({"height":($(window).height() - $("nav").height())+'px'});
 
@@ -45,7 +45,7 @@ $(window).ready(function (event) {
 		height = ($('#work').height() - $('.work').height())/2;
 		$(".work").css({'margin':height+'px auto'}); 
 	}
-
+        */ 
 	// more! 
 	// if window height > div height 
 	if (($(window).height() - $("nav").height()) > $("#team").height()) {
@@ -56,7 +56,7 @@ $(window).ready(function (event) {
 		height = ($('#team').height() - $('.team').height())/2;
 		$(".team").css({'margin':height+'px auto'}); 
 	}
-
+        
 	// divider title pos
 	height = ($(".parallax").height() - $("h1").height())/2;
 	$(".divider-title-pos").css({'padding':height+'px 0'}); 
