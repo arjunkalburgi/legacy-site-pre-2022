@@ -25,7 +25,7 @@ $(window).ready(function (event) {
 	$(".banner-text-pos").css({'margin':height+'px auto'}); 
 
 	// intro! 
-	// if window innerHeight > div height 
+	// if window height > div height 
 	if (($(window).height() - $("nav").height()) > $("#intro").height()) {
 		// increase div height and put up margins top and bottom. 
 		$("#intro").css({"height":($(window).height() - $("nav").height())+'px'});
@@ -37,7 +37,7 @@ $(window).ready(function (event) {
 	/*
 	// projects! 
 	// if window height > div height 
-	if (($(window).height() - $("nav").height()) > $("#work").height()) {
+	/*if (($(window).height() - $("nav").height()) > $("#work").height()) {
 		// increase div height and put up margins top and bottom. 
 		$("#work").css({"height":($(window).height() - $("nav").height())+'px'});
 
@@ -45,7 +45,7 @@ $(window).ready(function (event) {
 		height = ($('#work').height() - $('.work').height())/2;
 		$(".work").css({'margin':height+'px auto'}); 
 	}
-        
+        */ 
 	// more! 
 	// if window height > div height 
 	if (($(window).height() - $("nav").height()) > $("#team").height()) {
@@ -55,7 +55,7 @@ $(window).ready(function (event) {
 		// add margin
 		height = ($('#team').height() - $('.team').height())/2;
 		$(".team").css({'margin':height+'px auto'}); 
-	}*/ 
+	}
         
 	// divider title pos
 	height = ($(".parallax").height() - $("h1").height())/2;
@@ -76,27 +76,27 @@ $(window).scroll(function (event) {
 	}
 });
 
-// set the height of the sections to 
-// fit the window
+// Scrolling
+$(function(){
+	// console.log("working");
+    var $window = $(window);
+	var scrollTime = 0.2;
+	var scrollDistance = 200;
 
-function contentHeight() {
-	var height = $(window).height() - 135;
-	// set height
-	$(".content")[0].style.height = String(height) + "px";
-	console.log("height of content is " + $(".content")[0].style.height )
-}
+	$window.on("mousewheel DOMMouseScroll", function(event){
+		// console.log("working very well"); 
 
-function projectscrollHeight() {
-	var height = $(window).height() * 0.55;
-	for (var i=0; i<$(".workhorizontalscroll").length; i++) {
-		$(".workhorizontalscroll")[i].style.height = String(height) + "px";	
-	}
-	console.log("height of projects is " + $(".workhorizontalscroll")[0].style.height )
-}
+		event.preventDefault();	
 
-function morescrollHeight() {
-	var height = $(window).height() * 0.81;
-	$(".morehorizontalscroll")[0].style.height = String(height) + "px";	
-	console.log("height of more is " + $(".morehorizontalscroll")[0].style.height )
-}
+		var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+		var scrollTop = $window.scrollTop();
+		var finalScroll = scrollTop - parseInt(delta*scrollDistance);
 
+		TweenMax.to($window, scrollTime, {
+			scrollTo : { y: finalScroll, autoKill:true },
+				ease: Power1.easeOut,
+				overwrite: 5							
+			});
+
+	});
+});
