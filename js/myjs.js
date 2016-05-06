@@ -23,9 +23,9 @@ $(window).ready(function (event) {
 	// adjust banner text position
 	height = ($(window).height() - $(".text_h").innerHeight())/2;
 	$(".banner-text-pos").css({'margin':height+'px auto'}); 
-
+/*
 	// intro! 
-	// if window height > div height 
+	// if window innerHeight > div height 
 	if (($(window).height() - $("nav").height()) > $("#intro").height()) {
 		// increase div height and put up margins top and bottom. 
 		$("#intro").css({"height":($(window).height() - $("nav").height())+'px'});
@@ -37,7 +37,7 @@ $(window).ready(function (event) {
 
 	// projects! 
 	// if window height > div height 
-	/*if (($(window).height() - $("nav").height()) > $("#work").height()) {
+	if (($(window).height() - $("nav").height()) > $("#work").height()) {
 		// increase div height and put up margins top and bottom. 
 		$("#work").css({"height":($(window).height() - $("nav").height())+'px'});
 
@@ -45,7 +45,7 @@ $(window).ready(function (event) {
 		height = ($('#work').height() - $('.work').height())/2;
 		$(".work").css({'margin':height+'px auto'}); 
 	}
-        */ 
+        
 	// more! 
 	// if window height > div height 
 	if (($(window).height() - $("nav").height()) > $("#team").height()) {
@@ -55,7 +55,7 @@ $(window).ready(function (event) {
 		// add margin
 		height = ($('#team').height() - $('.team').height())/2;
 		$(".team").css({'margin':height+'px auto'}); 
-	}
+	}*/ 
         
 	// divider title pos
 	height = ($(".parallax").height() - $("h1").height())/2;
@@ -76,27 +76,3 @@ $(window).scroll(function (event) {
 	}
 });
 
-// Scrolling
-$(function(){
-	// console.log("working");
-    var $window = $(window);
-	var scrollTime = 0.2;
-	var scrollDistance = 200;
-
-	$window.on("mousewheel DOMMouseScroll", function(event){
-		// console.log("working very well"); 
-
-		event.preventDefault();	
-
-		var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-		var scrollTop = $window.scrollTop();
-		var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-
-		TweenMax.to($window, scrollTime, {
-			scrollTo : { y: finalScroll, autoKill:true },
-				ease: Power1.easeOut,
-				overwrite: 5							
-			});
-
-	});
-});
