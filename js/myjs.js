@@ -23,7 +23,7 @@ $(window).ready(function (event) {
 	// adjust banner text position
 	height = ($(window).height() - $(".text_h").innerHeight())/2;
 	$(".banner-text-pos").css({'margin':height+'px auto'}); 
-/*
+
 	// intro! 
 	// if window innerHeight > div height 
 	if (($(window).height() - $("nav").height()) > $("#intro").height()) {
@@ -34,7 +34,7 @@ $(window).ready(function (event) {
 		height = ($('#intro').height() - $('.intro').height())/2;
 		$(".intro").css({'margin':height+'px auto'}); 
 	}
-
+	/*
 	// projects! 
 	// if window height > div height 
 	if (($(window).height() - $("nav").height()) > $("#work").height()) {
@@ -75,4 +75,28 @@ $(window).scroll(function (event) {
 		$("nav").removeClass("green-nav");
 	}
 });
+
+// set the height of the sections to 
+// fit the window
+
+function contentHeight() {
+	var height = $(window).height() - 135;
+	// set height
+	$(".content")[0].style.height = String(height) + "px";
+	console.log("height of content is " + $(".content")[0].style.height )
+}
+
+function projectscrollHeight() {
+	var height = $(window).height() * 0.55;
+	for (var i=0; i<$(".workhorizontalscroll").length; i++) {
+		$(".workhorizontalscroll")[i].style.height = String(height) + "px";	
+	}
+	console.log("height of projects is " + $(".workhorizontalscroll")[0].style.height )
+}
+
+function morescrollHeight() {
+	var height = $(window).height() * 0.81;
+	$(".morehorizontalscroll")[0].style.height = String(height) + "px";	
+	console.log("height of more is " + $(".morehorizontalscroll")[0].style.height )
+}
 
