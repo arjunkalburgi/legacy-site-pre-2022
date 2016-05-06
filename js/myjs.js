@@ -76,27 +76,26 @@ $(window).scroll(function (event) {
 	}
 });
 
-// Scrolling
-$(function(){
-	// console.log("working");
-    var $window = $(window);
-	var scrollTime = 0.2;
-	var scrollDistance = 200;
+// set the height of the sections to 
+// fit the window
 
-	$window.on("mousewheel DOMMouseScroll", function(event){
-		// console.log("working very well"); 
+function contentHeight() {
+	var height = $(window).height() - 135;
+	// set height
+	$(".content")[0].style.height = String(height) + "px";
+	console.log("height of content is " + $(".content")[0].style.height )
+}
 
-		event.preventDefault();	
+function projectscrollHeight() {
+	var height = $(window).height() * 0.55;
+	for (var i=0; i<$(".workhorizontalscroll").length; i++) {
+		$(".workhorizontalscroll")[i].style.height = String(height) + "px";	
+	}
+	console.log("height of projects is " + $(".workhorizontalscroll")[0].style.height )
+}
 
-		var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-		var scrollTop = $window.scrollTop();
-		var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-
-		TweenMax.to($window, scrollTime, {
-			scrollTo : { y: finalScroll, autoKill:true },
-				ease: Power1.easeOut,
-				overwrite: 5							
-			});
-
-	});
-});
+function morescrollHeight() {
+	var height = $(window).height() * 0.81;
+	$(".morehorizontalscroll")[0].style.height = String(height) + "px";	
+	console.log("height of more is " + $(".morehorizontalscroll")[0].style.height )
+}
