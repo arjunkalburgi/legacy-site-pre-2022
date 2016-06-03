@@ -34,10 +34,9 @@ $(window).ready(function (event) {
 		height = ($('#intro').height() - $('.intro').height())/2;
 		$(".intro").css({'margin':height+'px auto'}); 
 	}
-	/*
 	// projects! 
 	// if window height > div height 
-	/*if (($(window).height() - $("nav").height()) > $("#work").height()) {
+	if (($(window).height() - $("nav").height()) > $("#work").height()) {
 		// increase div height and put up margins top and bottom. 
 		$("#work").css({"height":($(window).height() - $("nav").height())+'px'});
 
@@ -45,7 +44,7 @@ $(window).ready(function (event) {
 		height = ($('#work').height() - $('.work').height())/2;
 		$(".work").css({'margin':height+'px auto'}); 
 	}
-        */ 
+
 	// more! 
 	// if window height > div height 
 	if (($(window).height() - $("nav").height()) > $("#team").height()) {
