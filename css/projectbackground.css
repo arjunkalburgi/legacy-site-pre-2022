@@ -1,0 +1,144 @@
+.panel.shoutbox2 {
+	background: no-repeat url(../img/proj/proj-shoutbox2.png);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: #e3dacf;
+	color: #663560 !important;
+}
+
+a.shoutbox2LinkColour {
+	color: inherit;
+}
+
+.panel.dra {
+	background: no-repeat url(../img/proj/proj-rdf.png);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: black; 
+	color: white !important;
+}
+
+a.draLinkColour {
+	color: inherit;
+}
+
+.panel.fire {
+	background: no-repeat url(../img/proj/proj-fire.jpg);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: #b3afae;
+	color: black !important;
+}
+
+a.fireLinkColour {
+	color: inherit;
+}
+
+.panel.ciao {
+	background: no-repeat url(../img/proj/proj-ciao.png);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: #374ca5; 
+	color: white !important;
+}
+
+a.ciaoLinkColour {
+	color: inherit;
+}
+
+.panel.rdf {
+	background: no-repeat url(../img/proj/proj-rdf.png);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: black; 
+	color: white !important;
+}
+
+a.rdfLinkColour {
+	color: inherit;
+}
+
+.panel.reviews {
+	background: no-repeat url(../img/proj/proj-reviews.png);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: #2c3e50; 
+	color: white !important;
+}
+
+a.reviewsLinkColour {
+	color: inherit;
+}
+.panel.senti {
+	background: no-repeat url(../img/proj/proj-senti.png);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: #222222; 
+	color: white !important;
+}
+
+a.sentiLinkColour {
+	color: inherit;
+}
+
+
+.panel.conn4 {
+	background: no-repeat url(../img/proj/proj-connectfour.png);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: #0088ff;
+	color: white !important;
+}
+
+a.conn4LinkColour {
+	color: inherit;
+}
+
+.panel.shoutbox {
+	background: no-repeat url(../img/proj/proj-Shoutbox!.png);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: #283e50;
+	color: white !important;
+}
+
+a.shoutboxLinkColour {
+	color: inherit;
+}
+
+.panel.tetris {
+	background: no-repeat url(../img/proj/proj-Arduino.jpg);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: black;
+	color: white !important;
+}
+
+a.tetrisLinkColour {
+	color: inherit;
+}
+
+.panel.resnet {
+	background: no-repeat url(../img/proj/proj-resnet.png);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: #b7703c; 
+	color: white !important;
+}
+
+a.resnetLinkColour {
+	color: inherit;
+}
+
+.panel.runner {
+	background: no-repeat url(../img/proj/proj-runnerrunner.png);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: #9ec2f4;
+	color: white !important;
+}
+
+a.runnerLinkColour {
+	color: inherit;
+}
+

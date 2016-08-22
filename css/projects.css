@@ -1,125 +1,3 @@
-/*.shoutbox2 {*/
-	/*background-image: url(img/proj-shoutbox2);*/
-/*}*/
-/*.shoutbox2 a:hover {
-	border-radius: 30px; 
-	box-shadow: 0px 0px 10px 10px white;
-	background-color: white; 
-	color: #007e60;
-}*/
-
-/*.dra {*/
-	/*background-image: url(img/proj-dra);*/
-/*}*/
-/*.dra a:hover {
-	border-radius: 30px; 
-	box-shadow: 0px 0px 10px 10px white;
-	background-color: white; 
-	color: #007e60;
-}*/
-
-/*.fire {*/
-	/*background-image: url(img/proj-fire);*/
-/*}*/
-/*.fire a:hover {
-	border-radius: 30px; 
-	box-shadow: 0px 0px 10px 10px white;
-	background-color: white; 
-	color: #007e60;
-}*/
-
-/*.ciao {*/
-	/*background-image: url(img/proj-ciao);*/
-/*}*/
-/*.ciao a:hover {
-	border-radius: 30px; 
-	box-shadow: 0px 0px 10px 10px white;
-	background-color: white; 
-	color: #007e60;
-}*/
-
-/*.rdf {*/
-	/*background-image: url(img/proj-rdf);*/
-/*}*/
-/*.rdf a:hover {
-	border-radius: 30px; 
-	box-shadow: 0px 0px 10px 10px white;
-	background-color: white; 
-	color: #007e60;
-}*/
-
-/*.reviews {*/
-	/*background-image: url(img/proj-reviews);*/
-/*}*/
-/*.reviews a:hover {
-	border-radius: 30px; 
-	box-shadow: 0px 0px 10px 10px white;
-	background-color: white; 
-	color: #007e60;
-}*/
-
-/*.senti {*/
-	/*background-image: url(img/proj-senti);*/
-/*}*/
-/*.senti a:hover {
-	border-radius: 30px; 
-	box-shadow: 0px 0px 10px 10px white;
-	background-color: white; 
-	color: #007e60;
-}*/
-
-/*.conn4 {*/
-	/*background-image: url(img/proj-conn4);*/
-/*}*/
-/*.conn4 a:hover {
-	border-radius: 30px; 
-	box-shadow: 0px 0px 10px 10px white;
-	background-color: white; 
-	color: #007e60;
-}*/
-
-/*.shoutbox {*/
-	/*background-image: url(img/proj-shoutbox);*/
-/*}*/
-/*.shoutbox a:hover {
-	border-radius: 30px; 
-	box-shadow: 0px 0px 10px 10px white;
-	background-color: white; 
-	color: #007e60;
-}*/
-
-/*.tetris {*/
-	/*background-image: url(img/proj-tetris);*/
-/*}*/
-/*.tetris a:hover {
-	border-radius: 30px; 
-	box-shadow: 0px 0px 10px 10px white;
-	background-color: white; 
-	color: #007e60;
-}*/
-
-/*.resnet {*/
-	/*background-image: url(img/proj-resnet);*/
-/*}*/
-/*.resnet a:hover {
-	border-radius: 30px; 
-	box-shadow: 0px 0px 10px 10px white;
-	background-color: white; 
-	color: #007e60;
-}*/
-
-/*.runner {*/
-	/*background-image: url(img/proj-runner);*/
-/*}*/
-/*.runner a:hover {
-	border-radius: 30px; 
-	box-shadow: 0px 0px 10px 10px white;
-	background-color: white; 
-	color: #007e60;
-}*/
-
-
-
 /*
 Theme Name: Minimal Monkey
 Theme URI: http://www.minimalmonkey.co.uk/
@@ -1223,8 +1101,8 @@ nav {
     min-height: 460px;
     position: relative;
     top: 52px;
-    -webkit-transition: opacity .3s;
-    transition: opacity .3s;
+    /*-webkit-transition: opacity .3s;*/
+    /*transition: opacity .3s;*/
     width: 100%;
     z-index: 2
 }
@@ -1232,7 +1110,7 @@ nav {
     display: none;
     height: 0;
     width: 0
-}
+}/*
 .intro-transition .panels,
 .lab .panels {
     background-color: transparent
@@ -1242,17 +1120,17 @@ nav {
 }
 .js .hidehome.home .panels {
     opacity: 1
-}
+}*/
 .panel {
-    background: #888;
+    /*background: rgba(255,0,0,0.4); #888;*/
     color: #fff;
     display: block;
     min-width: 320px;
     padding-bottom: 15px;
     position: relative;
     text-decoration: none;
-    -webkit-transition: background-color .35s, color .35s, margin .45s, -webkit-transform .5s;
-    transition: background-color .35s, color .35s, margin .45s, transform .5s;
+    /*-webkit-transition: background-color .35s, color .35s, margin .45s, -webkit-transform .5s;*/
+    /*transition: background-color .35s, color .35s, margin .45s, transform .5s;*/
     width: 100%
 }
 .panel:hover .color {
@@ -1261,7 +1139,7 @@ nav {
 .panel:hover .content {
     z-index: 4
 }
-.panel:nth-child(2) {
+/*.panel:nth-child(2) {
     -webkit-transition: background-color .35s, color .35s, margin .45s, -webkit-transform .5s ease-out .02222s;
     transition: background-color .35s, color .35s, margin .45s, transform .5s ease-out .02222s
 }
@@ -1300,7 +1178,7 @@ nav {
 .no-transition .panel {
     -webkit-transition: none;
     transition: none
-}
+}*/
 .panel .small {
     display: block;
     font-size: 12px;
@@ -1319,8 +1197,8 @@ nav {
     line-height: 23px;
     opacity: .5;
     margin-top: 28px;
-    -webkit-transition: opacity .35s;
-    transition: opacity .35s
+    /*-webkit-transition: opacity .35s;*/
+    /*transition: opacity .35s*/
 }
 .panel .read {
     bottom: 30px;
@@ -1380,8 +1258,8 @@ nav {
     overflow: hidden;
     position: relative;
     top: 0;
-    -webkit-transition: opacity .45s;
-    transition: opacity .45s;
+    /*-webkit-transition: opacity .45s;*/
+    /*transition: opacity .45s;*/
     width: 100%;
     z-index: 2
 }
