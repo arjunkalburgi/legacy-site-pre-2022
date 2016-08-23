@@ -19,7 +19,7 @@
 #right_fig {float: right;}
 
 figure i {
-    font-size: 95px;
+    font-size: 95px !important;
     color: #007e60;
 }
 
@@ -57,9 +57,10 @@ h1 a:hover {
 
 #div_d32d_0{background: #007E60;height: 100%}
 #div_d32d_1{height: 100%}
-#logo{height: 200px;width:200px;}
+#logo{height: 200px;width:200px;position: relative;}
+#logo img {width: inherit; position: absolute;}
 #h1_d32d_0{color: #FFF}
-#span_d32d_0{-webkit-animation-delay: 1750ms;animation-delay: 1750ms}
+/*#span_d32d_0{-webkit-animation-delay: 1750ms;animation-delay: 1750ms}*/
 #a_d32d_0{color: white}
 #about{/*height: 100%;*/background: white;}
 #div_d32d_2{/*height: 100%;*/ width: 80%;}
