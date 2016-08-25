@@ -7,6 +7,7 @@
 
 
 .figcontainer {
+    padding-top: 15px;
     width: inherit;
     overflow: hidden;
 }
