@@ -74,8 +74,11 @@ h1 a:hover {
     }
 
     .column2 {
-        width: 50%; 
-        float: left;
+        /*width: 50%; */
+        /*float: left;*/
+        width: 75%; 
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 #h2_d32d_0{color:#007e60;}

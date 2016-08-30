@@ -35,7 +35,7 @@
 	</header>
 	<div id="panels" class="panels">
 		<!-- ShoutBox 2 -->
-		 <div class="panel shoutbox2 wow fadeInDown" data-wow-delay="250ms">
+		 <div id="shoutbox2" class="panel shoutbox2 wow fadeInDown" data-wow-delay="250ms">
 			<div class="content">
 				<div class="fixed">
 					<span class="small">Spring 2016</span>
@@ -49,7 +49,7 @@
 		</div>
 
 		<!-- RDF DRA -->
-		 <div class="panel dra wow fadeInDown" data-wow-delay="500ms">
+		 <div id="dra" class="panel dra wow fadeInDown" data-wow-delay="500ms">
 			<div class="content">
 				<div class="fixed">
 					<span class="small">Fall 2015 / Winter 2016</span>
@@ -68,7 +68,7 @@
 		</div>
 
 		<!-- Fire Escape -->
-		 <div class="panel fire wow fadeInDown" data-wow-delay="750ms">
+		 <div id="fire" class="panel fire wow fadeInDown" data-wow-delay="750ms">
 			<div class="content">
 				<div class="fixed">
 					<span class="small">Winter 2015</span>
@@ -87,7 +87,7 @@
 		</div>
 
 		<!-- Ciao -->
-		 <div class="panel ciao wow fadeInDown" data-wow-delay="1s">
+		 <div id="ciao" class="panel ciao wow fadeInDown" data-wow-delay="1s">
 			<div class="content">
 				<div class="fixed">
 					<span class="small">Fall 2015</span>
@@ -104,7 +104,7 @@
 		</div>
 
 		<!-- RDF Research -->
-		 <div class="panel rdf wow fadeInDown" data-wow-delay="1250ms">
+		 <div id="rdf" class="panel rdf wow fadeInDown" data-wow-delay="1250ms">
 			<div class="content">
 				<div class="fixed">
 					<span class="small">Summer 2015</span>
@@ -120,7 +120,7 @@
 		</div>
 
 			<!-- Reviews Template App -->
-		 <div class="panel reviews wow fadeInDown" data-wow-delay="1500ms">
+		 <div id="reviews" class="panel reviews wow fadeInDown" data-wow-delay="1500ms">
 			<div class="content">
 				<div class="fixed">
 					<span class="small">Summer 2015</span>
@@ -138,7 +138,7 @@
 		</div>
 		
 			<!-- Sentiment Analysis Tool -->
-		 <div class="panel senti wow fadeInDown" data-wow-delay="1750ms">
+		 <div id="senti" class="panel senti wow fadeInDown" data-wow-delay="1750ms">
 			<div class="content">
 				<div class="fixed">
 					<span class="small">Summer 2015</span>
@@ -154,7 +154,7 @@
 		</div>
 
 		<!-- Connect Four -->
-		 <div class="panel conn4 wow fadeInDown" data-wow-delay="2000ms">
+		 <div id="conn4" class="panel conn4 wow fadeInDown" data-wow-delay="2000ms">
 			<div class="content">
 				<div class="fixed">
 					<span class="small">Winter 2015</span>
@@ -173,7 +173,7 @@
 		</div>
 
 		<!-- ShoutBox -->
-		 <div class="panel shoutbox wow fadeInDown" data-wow-delay="2250ms">
+		 <div id="shoutbox" class="panel shoutbox wow fadeInDown" data-wow-delay="2250ms">
 			<div class="content">
 				<div class="fixed">
 					<span class="small">Winter/Spring 2015</span>
@@ -190,7 +190,7 @@
 		</div>
 
 		<!-- Arduino Tetris -->
-		 <div class="panel tetris wow fadeInDown" data-wow-delay="2500ms">
+		 <div id="tetris" class="panel tetris wow fadeInDown" data-wow-delay="2500ms">
 			<div class="content">
 				<div class="fixed">
 					<span class="small">Fall 2014</span>
@@ -202,11 +202,12 @@
 					</br></br>
 					We were restricted to using the Arduino for the project so my partner and I chose to 
 					do something with the display, making our project more interactive.</p></span>
+				</div>
 			</div>
 		</div>
 
 		<!-- Conference App -->
-		 <div class="panel resnet wow fadeInDown" data-wow-delay="2750ms">
+		 <div id="resnet" class="panel resnet wow fadeInDown" data-wow-delay="2750ms">
 			<div class="content">
 				<div class="fixed">
 					<span class="small">Summer 2014</span>
@@ -225,7 +226,7 @@
 		</div>
 
 		<!-- Runner Runner -->
-		 <div class="panel runner wow fadeInDown" data-wow-delay="3000ms">
+		 <div id="runner" class="panel runner wow fadeInDown" data-wow-delay="3000ms">
 			<div class="content">
 				<div class="fixed">
 					<span class="small">Winter 2014</span>
@@ -248,10 +249,12 @@
 	<script type="text/javascript">
 		$('.shoutbox2').click(function() {
 			if ($('.shoutbox2').width() == 320) {
+				$('.shoutbox2').css("overflow-y","scroll");
 				$('.shoutbox2').animate({"width":($('.shoutbox2').width()*2)+"px"}, 1000);
 				$('.shoutbox2 .content .excerpt1').css("display", "none"); 
 				$('.shoutbox2 .content .text').css("display", "unset"); 
 			} else {
+				$('.shoutbox2').css("overflow-y","hidden");
 				$('.shoutbox2').animate({"width":($('.shoutbox2').width()/2)+"px"}, 1000); 
 				$('.shoutbox2 .content .excerpt1').css("display", "unset"); 
 				$('.shoutbox2 .content .text').css("display", "none"); 
@@ -259,10 +262,12 @@
 		})
 		$('.dra').click(function() {
 			if ($('.dra').width() == 320) {
+				$('.dra').css("overflow-y","scroll");
 				$('.dra').animate({"width":($('.dra').width()*2)+"px"}, 1000);
 				$('.dra .content .excerpt1').css("display", "none"); 
 				$('.dra .content .text').css("display", "unset"); 
 			} else {
+				$('.dra').css("overflow-y","hidden");
 				$('.dra').animate({"width":($('.dra').width()/2)+"px"}, 1000); 
 				$('.dra .content .excerpt1').css("display", "unset"); 
 				$('.dra .content .text').css("display", "none"); 
@@ -270,10 +275,12 @@
 		})
 		$('.fire').click(function() {
 			if ($('.fire').width() == 320) {
+				$('.fire').css("overflow-y","scroll");
 				$('.fire').animate({"width":($('.fire').width()*2)+"px"}, 1000);
 				$('.fire .content .excerpt1').css("display", "none"); 
 				$('.fire .content .text').css("display", "unset"); 
 			} else {
+				$('.fire').css("overflow-y","hidden");
 				$('.fire').animate({"width":($('.fire').width()/2)+"px"}, 1000); 
 				$('.fire .content .excerpt1').css("display", "unset"); 
 				$('.fire .content .text').css("display", "none"); 
@@ -281,10 +288,12 @@
 		})
 		$('.ciao').click(function() {
 			if ($('.ciao').width() == 320) {
+				$('.ciao').css("overflow-y","scroll");
 				$('.ciao').animate({"width":($('.ciao').width()*2)+"px"}, 1000);
 				$('.ciao .content .excerpt1').css("display", "none"); 
 				$('.ciao .content .text').css("display", "unset"); 
 			} else {
+				$('.ciao').css("overflow-y","hidden");
 				$('.ciao').animate({"width":($('.ciao').width()/2)+"px"}, 1000); 
 				$('.ciao .content .excerpt1').css("display", "unset"); 
 				$('.ciao .content .text').css("display", "none"); 
@@ -292,10 +301,12 @@
 		})
 		$('.rdf').click(function() {
 			if ($('.rdf').width() == 320) {
+				$('.rdf').css("overflow-y","scroll");
 				$('.rdf').animate({"width":($('.rdf').width()*2)+"px"}, 1000);
 				$('.rdf .content .excerpt1').css("display", "none"); 
 				$('.rdf .content .text').css("display", "unset"); 
 			} else {
+				$('.rdf').css("overflow-y","hidden");
 				$('.rdf').animate({"width":($('.rdf').width()/2)+"px"}, 1000); 
 				$('.rdf .content .excerpt1').css("display", "unset"); 
 				$('.rdf .content .text').css("display", "none"); 
@@ -303,10 +314,12 @@
 		})
 		$('.reviews').click(function() {
 			if ($('.reviews').width() == 320) {
+				$('.reviews').css("overflow-y","scroll");
 				$('.reviews').animate({"width":($('.reviews').width()*2)+"px"}, 1000);
 				$('.reviews .content .excerpt1').css("display", "none"); 
 				$('.reviews .content .text').css("display", "unset"); 
 			} else {
+				$('.reviews').css("overflow-y","hidden");
 				$('.reviews').animate({"width":($('.reviews').width()/2)+"px"}, 1000); 
 				$('.reviews .content .excerpt1').css("display", "unset"); 
 				$('.reviews .content .text').css("display", "none"); 
@@ -314,10 +327,12 @@
 		})
 		$('.senti').click(function() {
 			if ($('.senti').width() == 320) {
+				$('.senti').css("overflow-y","scroll");
 				$('.senti').animate({"width":($('.senti').width()*2)+"px"}, 1000);
 				$('.senti .content .excerpt1').css("display", "none"); 
 				$('.senti .content .text').css("display", "unset"); 
 			} else {
+				$('.senti').css("overflow-y","hidden");
 				$('.senti').animate({"width":($('.senti').width()/2)+"px"}, 1000); 
 				$('.senti .content .excerpt1').css("display", "unset"); 
 				$('.senti .content .text').css("display", "none"); 
@@ -325,10 +340,12 @@
 		})
 		$('.conn4').click(function() {
 			if ($('.conn4').width() == 320) {
+				$('.conn4').css("overflow-y","scroll");
 				$('.conn4').animate({"width":($('.conn4').width()*2)+"px"}, 1000);
 				$('.conn4 .content .excerpt1').css("display", "none"); 
 				$('.conn4 .content .text').css("display", "unset"); 
 			} else {
+				$('.conn4').css("overflow-y","hidden");
 				$('.conn4').animate({"width":($('.conn4').width()/2)+"px"}, 1000); 
 				$('.conn4 .content .excerpt1').css("display", "unset"); 
 				$('.conn4 .content .text').css("display", "none"); 
@@ -336,10 +353,12 @@
 		})
 		$('.shoutbox').click(function() {
 			if ($('.shoutbox').width() == 320) {
+				$('.shoutbox').css("overflow-y","scroll");
 				$('.shoutbox').animate({"width":($('.shoutbox').width()*2)+"px"}, 1000);
 				$('.shoutbox .content .excerpt1').css("display", "none"); 
 				$('.shoutbox .content .text').css("display", "unset"); 
 			} else {
+				$('.shoutbox').css("overflow-y","hidden");
 				$('.shoutbox').animate({"width":($('.shoutbox').width()/2)+"px"}, 1000); 
 				$('.shoutbox .content .excerpt1').css("display", "unset"); 
 				$('.shoutbox .content .text').css("display", "none"); 
@@ -347,10 +366,12 @@
 		})
 		$('.tetris').click(function() {
 			if ($('.tetris').width() == 320) {
+				$('.tetris').css("overflow-y","scroll");
 				$('.tetris').animate({"width":($('.tetris').width()*2)+"px"}, 1000);
 				$('.tetris .content .excerpt1').css("display", "none"); 
 				$('.tetris .content .text').css("display", "unset"); 
 			} else {
+				$('.tetris').css("overflow-y","hidden");
 				$('.tetris').animate({"width":($('.tetris').width()/2)+"px"}, 1000); 
 				$('.tetris .content .excerpt1').css("display", "unset"); 
 				$('.tetris .content .text').css("display", "none"); 
@@ -358,10 +379,12 @@
 		})
 		$('.resnet').click(function() {
 			if ($('.resnet').width() == 320) {
+				$('.resnet').css("overflow-y","scroll");
 				$('.resnet').animate({"width":($('.resnet').width()*2)+"px"}, 1000);
 				$('.resnet .content .excerpt1').css("display", "none"); 
 				$('.resnet .content .text').css("display", "unset"); 
 			} else {
+				$('.resnet').css("overflow-y","hidden");
 				$('.resnet').animate({"width":($('.resnet').width()/2)+"px"}, 1000); 
 				$('.resnet .content .excerpt1').css("display", "unset"); 
 				$('.resnet .content .text').css("display", "none"); 
@@ -369,10 +392,12 @@
 		})
 		$('.runner').click(function() {
 			if ($('.runner').width() == 320) {
+				$('.runner').css("overflow-y","scroll");
 				$('.runner').animate({"width":($('.runner').width()*2)+"px"}, 1000);
 				$('.runner .content .excerpt1').css("display", "none"); 
 				$('.runner .content .text').css("display", "unset"); 
 			} else {
+				$('.runner').css("overflow-y","hidden");
 				$('.runner').animate({"width":($('.runner').width()/2)+"px"}, 1000); 
 				$('.runner .content .excerpt1').css("display", "unset"); 
 				$('.runner .content .text').css("display", "none"); 

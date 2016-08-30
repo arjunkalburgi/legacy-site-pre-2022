@@ -1670,13 +1670,14 @@ nav {
         transform: scaleY(0)
     }
     .panel .content {
-        height: 100%;
+        height: inherit;
         position: absolute;
         width: 320px
     }
     .panel .content .fixed {
-        padding: 47px 40px 0;
-        width: 320px
+        padding: 47px 40px 50px;
+        width: 320px; 
+        height: 100%;
     }
     .hover .panel {
         background-color: #373737;
