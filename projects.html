@@ -34,6 +34,32 @@
 		</nav>
 	</header>
 	<div id="panels" class="panels">
+		<!-- CompEclub.com -->
+		 <div id="CEClub" class="panel CEClub wow fadeInDown" data-wow-delay="250ms">
+			<div class="content">
+				<div class="fixed">
+					<span class="small">Fall 2016</span>
+					<h1>CompEClub Website</h1>
+					<span><a class="CEClubLinkColour" href="http://www.compeclub.com/" target="_blank"><i class="medium fa fa-external-link-square"></i></a></span>
+					<span class="excerpt1"><p>Together with a few... (Click for more) </p></span>
+					<span class="text" style="display:none;"><p>Together with a few other members of the Computer Engineering Club, I worked to update the club's WordPress site. The site is hard-coded in PHP and I did much of the design and CSS work. In related work, I helped design the new club logo and paved the way for the era of the circuit theme. In the past, CompE needed a fresh and modern design and this is the year we finally delivered!</p></span>
+				</div>
+			</div>
+		</div>
+
+		<!-- PriyaKumariBilkhu -->
+		 <div id="pkb" class="panel pkb wow fadeInDown" data-wow-delay="250ms">
+			<div class="content">
+				<div class="fixed">
+					<span class="small">Summer 2016</span>
+					<h1>Priya Kumari Bilkhu</h1>
+					<span><a class="pkbLinkColour" href="http://priyakumaribilkhu.tumblr.com/" target="_blank"><i class="medium fa fa-external-link-square"></i></a></span>
+					<span class="excerpt1"><p>Needing to get back... (Click for more) </p></span>
+					<span class="text" style="display:none;"><p>Needing to get back into coding during a lax summer, I decided to help a friend out and build her a website for her brand. I really like using Tumblr for websites that need to post updates because I can easily hard-code a lot of the design elements, whereas in WordPress or Weebly much is left to the templates.</p></span>
+				</div>
+			</div>
+		</div>
+
 		<!-- ShoutBox 2 -->
 		 <div id="shoutbox2" class="panel shoutbox2 wow fadeInDown" data-wow-delay="250ms">
 			<div class="content">
@@ -119,7 +145,7 @@
 			</div>
 		</div>
 
-			<!-- Reviews Template App -->
+		<!-- Reviews Template App -->
 		 <div id="reviews" class="panel reviews wow fadeInDown" data-wow-delay="1500ms">
 			<div class="content">
 				<div class="fixed">
@@ -137,7 +163,7 @@
 			</div>
 		</div>
 		
-			<!-- Sentiment Analysis Tool -->
+		<!-- Sentiment Analysis Tool -->
 		 <div id="senti" class="panel senti wow fadeInDown" data-wow-delay="1750ms">
 			<div class="content">
 				<div class="fixed">
@@ -247,6 +273,32 @@
 	</div><!--#panels-->
 
 	<script type="text/javascript">
+		$('.CEClub').click(function() {
+			if ($('.CEClub').width() == 320) {
+				$('.CEClub').css("overflow-y","scroll");
+				$('.CEClub').animate({"width":($('.CEClub').width()*2)+"px"}, 1000);
+				$('.CEClub .content .excerpt1').css("display", "none"); 
+				$('.CEClub .content .text').css("display", "unset"); 
+			} else {
+				$('.CEClub').css("overflow-y","hidden");
+				$('.CEClub').animate({"width":($('.CEClub').width()/2)+"px"}, 1000); 
+				$('.CEClub .content .excerpt1').css("display", "unset"); 
+				$('.CEClub .content .text').css("display", "none"); 
+			}
+		})
+		$('.pkb').click(function() {
+			if ($('.pkb').width() == 320) {
+				$('.pkb').css("overflow-y","scroll");
+				$('.pkb').animate({"width":($('.pkb').width()*2)+"px"}, 1000);
+				$('.pkb .content .excerpt1').css("display", "none"); 
+				$('.pkb .content .text').css("display", "unset"); 
+			} else {
+				$('.pkb').css("overflow-y","hidden");
+				$('.pkb').animate({"width":($('.pkb').width()/2)+"px"}, 1000); 
+				$('.pkb .content .excerpt1').css("display", "unset"); 
+				$('.pkb .content .text').css("display", "none"); 
+			}
+		})
 		$('.shoutbox2').click(function() {
 			if ($('.shoutbox2').width() == 320) {
 				$('.shoutbox2').css("overflow-y","scroll");

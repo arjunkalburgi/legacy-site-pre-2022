@@ -1,3 +1,59 @@
+.panel.CEClub {
+	background: no-repeat url(https://goo.gl/gq67ec);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: #1A450F;
+	color: #fff !important;
+	height: inherit;
+}
+
+a.CEClubLinkColour {
+	color: inherit;
+}
+.CEClub::-webkit-scrollbar {
+	width:6px;
+}
+
+.CEClub::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.CEClub::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.panel.pkb {
+	background: no-repeat url(http://static.tumblr.com/fbd123d7de3c1a39808782fd22c9bcc4/av0ntqq/raHoae6j0/tumblr_static_94teqiw5i3wokg0g4www4s8sk.png);
+	background-size: 320px;
+	background-position: right bottom;
+	background-color: #222222;
+	color: #fff !important;
+	height: inherit;
+}
+
+a.pkbLinkColour {
+	color: inherit;
+}
+.pkb::-webkit-scrollbar {
+	width:6px;
+}
+
+.pkb::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.pkb::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
 .panel.shoutbox2 {
 	background: no-repeat url(../img/proj/proj-shoutbox2.png);
 	background-size: 320px;
