@@ -70,7 +70,7 @@
 						</br>
 						<h6>See what I do to create both, ranging from software prototypes to stylish outfits.</h6>
 					</h5>
-					<a href="#bottom" id="a_d32d_1"><span class="fa-stack fa-lg h1 wow fadeInUp" data-wow-delay="1s">
+					<a href="#bottom" id="a_d32d_1"><span class="fa-stack fa-lg h1 wow fadeInUp data-wow-delay="1s">
 						<i class="fa fa-circle-thin fa-stack-2x h1"></i>
 						<i class="fa fa-angle-down fa-stack-1x h1"></i>
 					</span></a>
@@ -144,6 +144,15 @@
 				}
 			}
 			this.toggleClass("active");
+		});
+		$('a[href*=#]:not([href=#]) > span').on('animationend', function(event) {
+			if (event.originalEvent.elapsedTime > 0 && !$(this).hasClass('scroll-button')) {
+				console.log(event);
+				$(this).removeClass('wow animated fadeInUp');
+				$(this).css('animation-name', '');
+				$(this).css('animation-delay', '');
+				$(this).addClass('scroll-button');
+			}
 		});
 	});
 	var divs = $('span[id^="content-"]').hide(),
