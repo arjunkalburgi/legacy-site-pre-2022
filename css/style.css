@@ -6,24 +6,35 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 
-.figcontainer .left_fig {
-    float: none;
-}
-.figcontainer #right_fig {
-    float: none;
+
+.figcontainer {
     padding-top: 15px;
+    width: inherit;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.figcontainer .left_fig {
+    width: 50%;
+    margin: 0; 
+    float: left;
+}
+
+figure i {
+    font-size: 65px !important;
+    color: #007e60;
 }
 
 @media only screen and (min-width: 528px) { 
-    .figcontainer .left_fig {
+    /*.figcontainer .left_fig {
         width: initial;
         float: left;
         margin: 0px;
-    }
+    }*/
 
-    .figcontainer #right_fig {
-        float: right; 
-        padding-top: 0px !important;
+    figure i {
+        font-size: 95px !important;
     }
 
     .row .col.s6 {
@@ -42,17 +53,6 @@
     .row {
         width: 70%;
     }
-}
-
-.figcontainer {
-    padding-top: 15px;
-    width: inherit;
-    overflow: hidden;
-}
-
-figure i {
-    font-size: 95px !important;
-    color: #007e60;
 }
 
 figure figcaption {
