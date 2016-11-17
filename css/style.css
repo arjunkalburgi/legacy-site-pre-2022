@@ -175,3 +175,26 @@ body {
 .upper {
     text-transform: uppercase;
 }
+
+.scroll-button {
+	animation-play-state: paused;
+}
+
+.scroll-button:hover {
+	animation-name: hover-bounce;
+	animation-iteration-count: infinite;
+	animation-duration: 0.5s;
+	animation-direction: alternate;
+	animation-play-state: running;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes hover-bounce {
+	from {
+		padding-top: 0;
+	}
+
+	to {
+		padding-top: 5px;
+	}
+}

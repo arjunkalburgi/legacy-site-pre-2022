@@ -133,8 +133,19 @@
 				this.toggleClass("active");
 			});
 		});
+
+		$('a[href*=#]:not([href=#]) > span').on('animationend', function(event) {
+			if (event.originalEvent.elapsedTime > 0 && !$(this).hasClass('scroll-button')) {
+				console.log(event);
+				$(this).removeClass('wow animated fadeInUp');
+				$(this).css('animation-name', '');
+				$(this).css('animation-delay', '');
+				$(this).addClass('scroll-button');
+			}
+		});
+	
 		var divs = $('span[id^="content-"]').hide(),
-			i = 0;
+		i = 0;
 
 		(function cycle() {
 
