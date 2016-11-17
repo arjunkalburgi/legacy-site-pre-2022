@@ -27,11 +27,6 @@ figure i {
 }
 
 @media only screen and (min-width: 528px) { 
-    /*.figcontainer .left_fig {
-        width: initial;
-        float: left;
-        margin: 0px;
-    }*/
 
     figure i {
         font-size: 95px !important;
@@ -68,6 +63,33 @@ figure i {
 
 figure figcaption {
     text-align: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    font-size: 15px;
+    width: 90px;
+    background-color: rgba(0, 126, 96, 0.69);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 115%; 
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
 .row .col.s6 figure:hover{
