@@ -62,13 +62,12 @@
 								<i class="fa fa-line-chart wow fadeInUp" data-wow-delay="1s"></i>
 								<figcaption>Great Solutions</figcaption>
 							</figure>
-							<figure class="left_fig" id="right_fig">
+							<figure class="left_fig">
 								<i class="fa fa-universal-access wow fadeInUp" data-wow-delay="1s"></i>
 								<figcaption>Cool Experiences</figcaption>
 							</figure>
 						</div>
-						</br>
-						<h6>See what I do to create both, ranging from software prototypes to stylish outfits.</h6>
+						<h6>See what I do to create both.</h6>
 					</h5>
 					<a href="#bottom" id="a_d32d_1"><span class="fa-stack fa-lg h1 wow fadeInUp" data-wow-delay="1s">
 						<i class="fa fa-circle-thin fa-stack-2x h1"></i>
@@ -82,85 +81,84 @@
 	<div id="bottom" class="jumbotron jumbotron-job" align="center" >
 		<div class="container">
 			<h2 class="wow fadeInUp title upper">Check <span class="wow fadeInUp title upper" data-wow-delay="250ms">It</span> <span class="wow fadeInUp title upper" data-wow-delay="500ms">Out</span></h2>
-			<hr class="wow zoomIn" data-wow-delay="750ms" id="hr_d32d_1">
+			<hr style="margin-bottom: 1.424rem" class="wow zoomIn" data-wow-delay="750ms" id="hr_d32d_1">
 
 			<div class="row">
 				<div class="col s6">
-					<figure class="">
+					<figure class="leftside">
 						<a href="projects.html"><i class="fa fa-laptop wow fadeInUp" data-wow-delay="250ms"></i></a>
 						<figcaption>Projects</figcaption>
 					</figure>
 				</div>
 				<div class="col s6">
-					<figure class="">
+					<figure class="rightside">
 						<a href="https://medium.com/projects-to-products"><i class="fa fa-medium wow fadeInUp"></i></a>
-						<figcaption>Project to Product</figcaption>
+						<figcaption>Projects to Products</figcaption>
 					</figure>
 				</div>
 				<div class="col s6">
-					<figure class="">
+					<figure class="leftside">
 						<a href="https://www.instagram.com/askalburgi/"><i class="fa fa-instagram wow fadeInUp"></i></a>
-						<figcaption>Stylish Aesthetics</figcaption>
+						<figcaption>Aesthetics</figcaption>
 					</figure>
 				</div>
 				<div class="col s6">
-					<figure class="">
+					<figure class="rightside">
 						<a href="http://blog.arjunkalburgi.com"><i class="fa fa-tumblr-square wow fadeInUp" data-wow-delay="250ms"></i></a>
 						<figcaption>Life Blog</figcaption>
 					</figure>
 				</div>
 			</div>
 
-		   <h1><a href="https://ca.linkedin.com/pub/arjun-kalburgi/58/250/82b"><i class="fa fa-linkedin-square wow fadeInUp" data-wow-delay="250ms"></i></a> <a href="mailto:askalburgi@gmail.com"><i class="fa fa-envelope-o wow fadeInUp"></i></a> <a href="http://github.com/askalburgi"><i class="fa fa-github-square wow fadeInUp" data-wow-delay="250ms"></i></a></h1>
-			
-			<!--  <script>
-			! function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0],
-					p = 'https';
-				if (!d.getElementById(id)) {
-					js = d.createElement(s);
-					js.id = id;
-					js.src = p + '://platform.twitter.com/widgets.js';
-					fjs.parentNode.insertBefore(js, fjs);
-				}
-			}(document, 'script', 'twitter-wjs');
-			</script> -->
+			<h1 style="margin-bottom: 0px"><a href="https://ca.linkedin.com/pub/arjun-kalburgi/58/250/82b"><i class="fa fa-linkedin-square wow fadeInUp" data-wow-delay="250ms"></i></a> <a href="mailto:askalburgi@gmail.com"><i class="fa fa-envelope-o wow fadeInUp"></i></a> <a href="http://github.com/askalburgi"><i class="fa fa-github-square wow fadeInUp" data-wow-delay="250ms"></i></a><br>
+			<a href="https://twitter.com/askalburgi"><i class="fa fa-twitter-square wow fadeInUp" data-wow-delay="250ms"></i></a> </h1>
 		</div>
 	</div>
 	</div>
 	<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script> -->
 	<script>
-	$(function() {
-		$('a[href*=#]:not([href=#])').click(function() {
-			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-				if (target.length) {
-					$('html,body').animate({
-						scrollTop: target.offset().top
-					}, 1000);
-					return false;
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
 				}
-			}
-			this.toggleClass("active");
+				this.toggleClass("active");
+			});
 		});
-	});
-	var divs = $('span[id^="content-"]').hide(),
+
+		$('a[href*=#]:not([href=#]) > span').on('animationend', function(event) {
+			if (event.originalEvent.elapsedTime > 0 && !$(this).hasClass('scroll-button')) {
+				console.log(event);
+				$(this).removeClass('wow animated fadeInUp');
+				$(this).css('animation-name', '');
+				$(this).css('animation-delay', '');
+				$(this).addClass('scroll-button');
+			}
+		});
+	
+		var divs = $('span[id^="content-"]').hide(),
 		i = 0;
 
-	(function cycle() {
+		(function cycle() {
 
-		divs.eq(i).fadeIn(400)
-			.delay(1000)
-			.fadeOut(400, cycle);
+			divs.eq(i).fadeIn(400)
+				.delay(1000)
+				.fadeOut(400, cycle);
 
-		i = ++i % divs.length;
+			i = ++i % divs.length;
 
-	})();
-	new Vivus('logo', {
-		duration: 75,
-		file: '/img/logo.svg'
-	}, console.log('swag'))
+		})();
+		new Vivus('logo', {
+			duration: 75,
+			file: '/img/logo.svg'
+		}, console.log('swag'))
 	</script>
 </body>
