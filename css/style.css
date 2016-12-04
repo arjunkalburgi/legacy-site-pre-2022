@@ -103,7 +103,7 @@ h1 a:hover {
 #h2_d32d_0{color:#007e60;}
 #hr_d32d_0{width: 100px;border: 2px solid #007e60}
 #a_d32d_1{color: #007e60}
-#bottom{background: url('../img/dark-bg.jpg') fixed;color: #FFF}
+#bottom{background: url('../img/dark-bg.jpg') fixed;color: #FFF;background-size: cover;}
 #hr_d32d_1{width: 100px;border: 2px solid #007e6}
 #ol_d32d_0{padding-left: 0}
 #entry_590052548{width:50%}
