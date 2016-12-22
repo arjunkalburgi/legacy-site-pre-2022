@@ -1,3 +1,36 @@
+.panel.eceweekhacked2016 {
+	background: no-repeat url(../img/proj/proj-compe.png); 
+	background-size: 320px; 
+	background-position: right bottom; 
+	height: inherit;
+	background-color: #e8e8e8; 
+	color: #8e8e8e;
+}
+.panel.makeover {
+	background: no-repeat url(../img/proj/proj-compe.png); 
+	background-size: 320px; 
+	background-position: right bottom; 
+	height: inherit;
+	background-color: #e8e8e8; 
+	color: #8e8e8e;
+}
+.panel.reactlessons {
+	background: no-repeat url(../img/proj/proj-compe.png); 
+	background-size: 320px; 
+	background-position: right bottom; 
+	height: inherit;
+	background-color: #e8e8e8; 
+	color: #8e8e8e;
+}
+.panel.howtocompe {
+	background: no-repeat url(../img/proj/proj-compe.png); 
+	background-size: 320px; 
+	background-position: right bottom; 
+	height: inherit;
+	background-color: #e8e8e8; 
+	color: #8e8e8e;
+}
+
 .panel.d3tutorial {
 	background: no-repeat url(../img/proj/proj-d3tutorial.png);
 	background-size: 320px;
@@ -5,25 +38,6 @@
 	background-color: #7f3ea5;
 	color: #f5844b !important;
 	height: inherit;
-}
-
-a.d3tutorialLinkColour {
-	color: #f5844b;
-}
-.d3tutorial::-webkit-scrollbar {
-	width:6px;
-}
-
-.d3tutorial::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.d3tutorial::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
 }
 
 .panel.C301as1 {
@@ -35,25 +49,6 @@ a.d3tutorialLinkColour {
 	height: inherit;
 }
 
-a.C301as1LinkColour {
-	color: #4d8e33;
-}
-.C301as1::-webkit-scrollbar {
-	width:6px;
-}
-
-.C301as1::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.C301as1::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
 .panel.ECEW17 {
 	background: no-repeat url(../img/proj/proj-ecew17.png);
 	background-size: 320px;
@@ -61,25 +56,6 @@ a.C301as1LinkColour {
 	background-color: #112188;
 	color: #ffbd38 !important;
 	height: inherit;
-}
-
-a.ECEW17LinkColour {
-	color: #ffbd38;
-}
-.ECEW17::-webkit-scrollbar {
-	width:6px;
-}
-
-.ECEW17::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.ECEW17::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
 }
 
 .panel.CEClub {
@@ -91,25 +67,6 @@ a.ECEW17LinkColour {
 	height: inherit;
 }
 
-a.CEClubLinkColour {
-	color: inherit;
-}
-.CEClub::-webkit-scrollbar {
-	width:6px;
-}
-
-.CEClub::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.CEClub::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
 .panel.pkb {
 	background: no-repeat url(http://static.tumblr.com/fbd123d7de3c1a39808782fd22c9bcc4/av0ntqq/raHoae6j0/tumblr_static_94teqiw5i3wokg0g4www4s8sk.png);
 	background-size: 320px;
@@ -117,25 +74,6 @@ a.CEClubLinkColour {
 	background-color: #222222;
 	color: #fff !important;
 	height: inherit;
-}
-
-a.pkbLinkColour {
-	color: inherit;
-}
-.pkb::-webkit-scrollbar {
-	width:6px;
-}
-
-.pkb::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.pkb::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
 }
 
 .panel.shoutbox2 {
@@ -147,26 +85,6 @@ a.pkbLinkColour {
 	height: inherit;
 }
 
-a.shoutbox2LinkColour {
-	color: inherit;
-}
-.shoutbox2::-webkit-scrollbar {
-	width:6px;
-}
-
-.shoutbox2::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.shoutbox2::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-
 .panel.dra {
 	background: no-repeat url(../img/proj/proj-rdf.png);
 	background-size: 320px;
@@ -174,26 +92,6 @@ a.shoutbox2LinkColour {
 	background-color: black; 
 	color: white !important;
 	height: inherit;
-}
-
-.dra::-webkit-scrollbar {
-	width:6px;
-}
-
-.dra::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.dra::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-a.draLinkColour {
-	color: inherit;
 }
 
 .panel.fire {
@@ -205,24 +103,13 @@ a.draLinkColour {
 	height: inherit;
 }
 
-.fire::-webkit-scrollbar {
-	width:6px;
-}
-
-.fire::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.fire::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-a.fireLinkColour {
-	color: inherit;
+.panel.eceweekhacked2015 {
+	background: no-repeat url(../img/proj/proj-compe.png); 
+	background-size: 320px; 
+	background-position: right bottom; 
+	height: inherit;
+	background-color: #e8e8e8; 
+	color: #8e8e8e;
 }
 
 .panel.ciao {
@@ -234,26 +121,6 @@ a.fireLinkColour {
 	height: inherit;
 }
 
-.ciao::-webkit-scrollbar {
-	width:6px;
-}
-
-.ciao::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.ciao::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-a.ciaoLinkColour {
-	color: inherit;
-}
-
 .panel.rdf {
 	background: no-repeat url(../img/proj/proj-rdf.png);
 	background-size: 320px;
@@ -261,26 +128,6 @@ a.ciaoLinkColour {
 	background-color: black; 
 	color: white !important;
 	height: inherit;
-}
-
-.rdf::-webkit-scrollbar {
-	width:6px;
-}
-
-.rdf::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.rdf::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-a.rdfLinkColour {
-	color: inherit;
 }
 
 .panel.reviews {
@@ -292,26 +139,6 @@ a.rdfLinkColour {
 	height: inherit;
 }
 
-.reviews::-webkit-scrollbar {
-	width:6px;
-}
-
-.reviews::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.reviews::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-a.reviewsLinkColour {
-	color: inherit;
-}
-
 .panel.senti {
 	background: no-repeat url(../img/proj/proj-senti.png);
 	background-size: 320px;
@@ -319,26 +146,6 @@ a.reviewsLinkColour {
 	background-color: #222222; 
 	color: white !important;
 	height: inherit;
-}
-
-a.sentiLinkColour {
-	color: inherit;
-}
-
-.senti::-webkit-scrollbar {
-	width:6px;
-}
-
-.senti::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.senti::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
 }
 
 .panel.conn4 {
@@ -350,26 +157,6 @@ a.sentiLinkColour {
 	height: inherit;
 }
 
-.conn4::-webkit-scrollbar {
-	width:6px;
-}
-
-.conn4::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.conn4::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-a.conn4LinkColour {
-	color: inherit;
-}
-
 .panel.shoutbox {
 	background: no-repeat url(../img/proj/proj-Shoutbox!.png);
 	background-size: 320px;
@@ -377,26 +164,6 @@ a.conn4LinkColour {
 	background-color: #283e50;
 	color: white !important;
 	height: inherit;
-}
-
-.shoutbox::-webkit-scrollbar {
-	width:6px;
-}
-
-.shoutbox::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.shoutbox::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-a.shoutboxLinkColour {
-	color: inherit;
 }
 
 .panel.tetris {
@@ -408,26 +175,6 @@ a.shoutboxLinkColour {
 	height: inherit;
 }
 
-.tetris::-webkit-scrollbar {
-	width:6px;
-}
-
-.tetris::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.tetris::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-a.tetrisLinkColour {
-	color: inherit;
-}
-
 .panel.resnet {
 	background: no-repeat url(../img/proj/proj-resnet.png);
 	background-size: 320px;
@@ -435,26 +182,6 @@ a.tetrisLinkColour {
 	background-color: #b7703c; 
 	color: white !important;
 	height: inherit;
-}
-
-.resnet::-webkit-scrollbar {
-	width:6px;
-}
-
-.resnet::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.resnet::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-a.resnetLinkColour {
-	color: inherit;
 }
 
 .panel.runner {
@@ -465,24 +192,3 @@ a.resnetLinkColour {
 	color: white !important;
 	height: inherit;
 }
-
-.runner::-webkit-scrollbar {
-	width:6px;
-}
-
-.runner::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.runner::-webkit-scrollbar-thumb {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-a.runnerLinkColour {
-	color: inherit;
-}
-
