@@ -1,21 +1,21 @@
 .panel.eceweekhacked2016 {
-	background: no-repeat url(../img/proj/proj-compe.png); 
+	background: no-repeat url(../img/proj/proj-empty.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
 	height: inherit;
-	background-color: #e8e8e8; 
-	color: #8e8e8e;
+	background-color: #e8e8e8;  /*#237e7c;*/
+	color: #8e8e8e; /*#ffbd38;*/
 }
 .panel.makeover {
-	background: no-repeat url(../img/proj/proj-compe.png); 
+	background: no-repeat url(../img/proj/proj-makeover.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
 	height: inherit;
-	background-color: #e8e8e8; 
-	color: #8e8e8e;
+	background-color: #EFD281; 
+	color: #ED4F67;
 }
 .panel.reactlessons {
-	background: no-repeat url(../img/proj/proj-compe.png); 
+	background: no-repeat url(../img/proj/proj-empty.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
 	height: inherit;
@@ -23,12 +23,12 @@
 	color: #8e8e8e;
 }
 .panel.howtocompe {
-	background: no-repeat url(../img/proj/proj-compe.png); 
+	background: no-repeat url(../img/proj/proj-empty.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
 	height: inherit;
-	background-color: #e8e8e8; 
-	color: #8e8e8e;
+	background-color: #E4E6E5; 
+	color: #81B8B9;
 }
 
 .panel.d3tutorial {
@@ -104,12 +104,12 @@
 }
 
 .panel.eceweekhacked2015 {
-	background: no-repeat url(../img/proj/proj-compe.png); 
+	background: no-repeat url(../img/proj/proj-empty.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
 	height: inherit;
-	background-color: #e8e8e8; 
-	color: #8e8e8e;
+	background-color: #237E7C; 
+	color: #ffbd38;
 }
 
 .panel.ciao {
