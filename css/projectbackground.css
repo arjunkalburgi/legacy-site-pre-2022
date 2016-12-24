@@ -15,7 +15,7 @@
 	background-position: right bottom; 
 	height: inherit;
 	background-color: #e8e8e8; /*#2D2D2D;*/
-	color: #8e8e8e; /*#61DAFB;*/
+	color: #8e8e8e; /*#61DAFB;*/ 
 }
 
 .panel.makeover {
@@ -37,7 +37,7 @@
 }
 
 .panel.dbhospitalapp {
-	background: no-repeat url(http://files.softicons.com/download/application-icons/cerulean-applications-icons-by-iconleak/png/256x256/9.png); 
+	background: no-repeat url(../img/proj/proj-database.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
 	height: inherit;
@@ -55,7 +55,7 @@
 }
 
 .panel.dbnormalizerapp {
-	background: no-repeat url(http://files.softicons.com/download/application-icons/cerulean-applications-icons-by-iconleak/png/256x256/9.png); 
+	background: no-repeat url(../img/proj/proj-database.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
 	height: inherit;
