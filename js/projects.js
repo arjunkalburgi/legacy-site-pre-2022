@@ -60,9 +60,9 @@ $('.dra').click(function() {
 $('.fire').click(function() {
 	open_close('fire');
 })
-// $('.eceweekhacked2015').click(function() {
-// 	open_close('eceweekhacked2015');
-// })
+$('.eceweekhacked2015').click(function() {
+	open_close('eceweekhacked2015');
+})
 $('.ciao').click(function() {
 	open_close('ciao');
 })
