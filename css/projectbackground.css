@@ -1,11 +1,23 @@
+
+
 .panel.eceweekhacked2016 {
-	background: no-repeat url(../img/proj/proj-empty.png); 
+	/*background: no-repeat url(../img/proj/proj-ecew17.png); */
 	background-size: 320px; 
 	background-position: right bottom; 
 	height: inherit;
 	background-color: #e8e8e8;  /*#237e7c;*/
 	color: #8e8e8e; /*#ffbd38;*/
 }
+
+.panel.reactlessons {
+	/*background: no-repeat url(http://daynin.github.io/clojurescript-presentation/img/react-logo.png); */
+	background-size: 320px; 
+	background-position: right bottom; 
+	height: inherit;
+	background-color: #e8e8e8; /*#2D2D2D;*/
+	color: #8e8e8e; /*#61DAFB;*/
+}
+
 .panel.makeover {
 	background: no-repeat url(../img/proj/proj-makeover.png); 
 	background-size: 320px; 
@@ -14,21 +26,50 @@
 	background-color: #EFD281; 
 	color: #ED4F67;
 }
-.panel.reactlessons {
-	background: no-repeat url(../img/proj/proj-empty.png); 
+
+.panel.testingproj {
+	background: no-repeat url(https://smartbear.com/SmartBear/media/images/product/category/icon-testing.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
 	height: inherit;
-	background-color: #e8e8e8; 
-	color: #8e8e8e;
+	background-color: #339922; 
+	color: #1A3D57; 
 }
+
+.panel.dbhospitalapp {
+	background: no-repeat url(http://files.softicons.com/download/application-icons/cerulean-applications-icons-by-iconleak/png/256x256/9.png); 
+	background-size: 320px; 
+	background-position: right bottom; 
+	height: inherit;
+	background-color: #8e8e8e;
+	color: #09FDFB;
+}
+
 .panel.howtocompe {
 	background: no-repeat url(../img/proj/proj-empty.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
 	height: inherit;
 	background-color: #E4E6E5; 
-	color: #81B8B9;
+	color: #1B4610;
+}
+
+.panel.dbnormalizerapp {
+	background: no-repeat url(http://files.softicons.com/download/application-icons/cerulean-applications-icons-by-iconleak/png/256x256/9.png); 
+	background-size: 320px; 
+	background-position: right bottom; 
+	height: inherit;
+	background-color: #8e8e8e;
+	color: #09FDFB;
+}
+
+.panel.cloudycar {
+	background: no-repeat url(https://raw.githubusercontent.com/CMPUT301F16T12/CloudyCrewImages/master/logo/car_big.png); 
+	background-size: 320px; 
+	background-position: right bottom; 
+	height: inherit;
+	background-color: #135FAB;  /*#237e7c;*/
+	color: #fff; /*#ffbd38;*/
 }
 
 .panel.d3tutorial {
@@ -104,7 +145,7 @@
 }
 
 .panel.eceweekhacked2015 {
-	background: no-repeat url(../img/proj/proj-empty.png); 
+	background: no-repeat url(../img/proj/proj-ecew17.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
 	height: inherit;

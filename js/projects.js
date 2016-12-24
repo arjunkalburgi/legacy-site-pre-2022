@@ -15,15 +15,27 @@ function open_close(className) {
 $('.eceweekhacked2016').click(function() {
 	open_close('eceweekhacked2016');
 })
+// $('.reactlessons').click(function() {
+// 	open_close('reactlessons');
+// })
 $('.makeover').click(function() {
 	open_close('makeover');
 })
-$('.reactlessons').click(function() {
-	open_close('reactlessons');
-})
+// $('.testingproj').click(function() {
+// 	open_close('testingproj');
+// })
+// $('.dbnormalizerapp').click(function() {
+// 	open_close('dbnormalizerapp');
+// })
 $('.howtocompe').click(function() {
 	open_close('howtocompe');
 })
+// $('.dbhospitalapp').click(function() {
+// 	open_close('dbhospitalapp');
+// })
+// $('.cloudycar').click(function() {
+// 	open_close('cloudycar');
+// })
 $('.d3tutorial').click(function() {
 	open_close('d3tutorial');
 })
@@ -48,9 +60,9 @@ $('.dra').click(function() {
 $('.fire').click(function() {
 	open_close('fire');
 })
-$('.eceweekhacked2015').click(function() {
-	open_close('eceweekhacked2015');
-})
+// $('.eceweekhacked2015').click(function() {
+// 	open_close('eceweekhacked2015');
+// })
 $('.ciao').click(function() {
 	open_close('ciao');
 })
