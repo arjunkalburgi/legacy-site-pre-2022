@@ -30,12 +30,12 @@ $('.makeover').click(function() {
 $('.howtocompe').click(function() {
 	open_close('howtocompe');
 })
-// $('.dbhospitalapp').click(function() {
-// 	open_close('dbhospitalapp');
-// })
-// $('.cloudycar').click(function() {
-// 	open_close('cloudycar');
-// })
+$('.dbhospitalapp').click(function() {
+	open_close('dbhospitalapp');
+})
+$('.cloudycar').click(function() {
+	open_close('cloudycar');
+})
 $('.d3tutorial').click(function() {
 	open_close('d3tutorial');
 })
