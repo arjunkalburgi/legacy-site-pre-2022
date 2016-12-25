@@ -21,12 +21,12 @@ $('.eceweekhacked2016').click(function() {
 $('.makeover').click(function() {
 	open_close('makeover');
 })
-// $('.testingproj').click(function() {
-// 	open_close('testingproj');
-// })
-// $('.dbnormalizerapp').click(function() {
-// 	open_close('dbnormalizerapp');
-// })
+$('.testingproj').click(function() {
+	open_close('testingproj');
+})
+$('.dbnormalizerapp').click(function() {
+	open_close('dbnormalizerapp');
+})
 $('.howtocompe').click(function() {
 	open_close('howtocompe');
 })
