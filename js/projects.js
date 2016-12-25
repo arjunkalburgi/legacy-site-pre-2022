@@ -15,9 +15,9 @@ function open_close(className) {
 $('.eceweekhacked2016').click(function() {
 	open_close('eceweekhacked2016');
 })
-// $('.reactlessons').click(function() {
-// 	open_close('reactlessons');
-// })
+$('.reactlessons').click(function() {
+	open_close('reactlessons');
+})
 $('.makeover').click(function() {
 	open_close('makeover');
 })
