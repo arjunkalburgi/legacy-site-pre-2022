@@ -144,3 +144,12 @@
 /* Logo */
     #logo {height: 200px; width:200px; position: relative;}
     #logo img {width: inherit; position: absolute;}
+
+/* Animated Toys */
+    .toy {
+        width: 150px; 
+        height: 200px;
+    }
+    .toy #Artboard {
+        stroke: #007E60 !important; 
+    }

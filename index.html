@@ -17,6 +17,7 @@
 	</script>
 	<script type="text/javascript" src="js/jQuery.min.js"></script>
 	<script src="js/materialize.min.js"></script>
+	<script src="js/svgConvert.min.js"></script>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -31,12 +32,12 @@
 		<div class="container">
 			<div class="element">
 				<div id="logo">
-					<img src="img/home/mockw1.svg" class="wow rotateInDownRight" data-wow-delay="100ms">
-					<img src="img/home/mockw2.svg" class="wow rotateInUpLeft" data-wow-delay="200ms">
-					<img src="img/home/mockw3.svg" class="wow rotateInDownRight" data-wow-delay="400ms">
-					<img src="img/home/mockw4.svg" class="wow rotateInUpLeft" data-wow-delay="500ms">
-					<img src="img/home/mockw5.svg" class="wow rotateInDownRight" data-wow-delay="700ms">
-					<img src="img/home/mockw6.svg" class="wow rotateInUpLeft" data-wow-delay="800ms">
+					<img src="img/home/mockw1.svg" class="wow rotateInUpLeft" data-wow-delay="100ms">
+					<img src="img/home/mockw2.svg" class="wow rotateInDownRight" data-wow-delay="200ms">
+					<img src="img/home/mockw3.svg" class="wow rotateInUpLeft" data-wow-delay="400ms">
+					<img src="img/home/mockw4.svg" class="wow rotateInDownRight" data-wow-delay="500ms">
+					<img src="img/home/mockw5.svg" class="wow rotateInUpLeft" data-wow-delay="700ms">
+					<img src="img/home/mockw6.svg" class="wow rotateInDownRight" data-wow-delay="800ms">
 					<!-- <img src="img/Logo.png" class="wow fadeIn" data-wow-delay="1500ms"> -->
 				</div>
 				<h1 class="title wow fadeInUp whitetext" data-wow-delay="1s">
@@ -55,7 +56,26 @@
 				<h5 class="wow fadeIn" data-wow-delay="750ms">
 					<div>There's something inspiring about people who are on a mission and enabled to carry it out. I want to create that engagement, whether it's designing UIs, running hackathons, modelling fashion or public speaking.</div>
 
-					<img src="img/home/mock.svg" class="spin" style="width: 150px">
+					<div class="row">
+						<div class="col s4 m2">
+							<img src="http://www.arjunkalburgi.com/img/home/mockw2.svg" class="toy animated infinite swing svg-convert">
+						</div>
+						<div class="col s4 m2">
+							<img src="http://www.arjunkalburgi.com/img/home/mockw5.svg" class="toy animated infinite bounce svg-convert">
+						</div>
+						<div class="col s4 m2">
+							<img src="http://www.arjunkalburgi.com/img/home/mockw3.svg" class="toy animated infinite wobble svg-convert">
+						</div>
+						<div class="col s4 m2">
+							<img src="http://www.arjunkalburgi.com/img/home/mockw4.svg" class="toy animated infinite pulse svg-convert">
+						</div>
+						<div class="col s4 m2">
+							<img src="http://www.arjunkalburgi.com/img/home/mockw1.svg" class="toy animated infinite tada svg-convert">
+						</div>
+						<div class="col s4 m2">
+							<img src="http://www.arjunkalburgi.com/img/home/mockw6.svg" class="toy animated infinite shake svg-convert">
+						</div>
+					</div>
 
 					<h6>See my activity below.</h6>
 				</h5>
@@ -105,7 +125,10 @@
 		</div>
 	</div>
 	<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script> -->
+
 	<script>
+		$('.svg-convert').svgConvert();
+
 		$(function() {
 			$('a[href*=#]:not([href=#])').click(function() {
 				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -145,9 +168,10 @@
 			i = ++i % divs.length;
 
 		})();
-		new Vivus('logo', {
+		/*new Vivus('logo', {
 			duration: 75,
 			file: '/img/logo.svg'
-		}, console.log('swag'))
+		}, console.log('swag'))*/
+	 
 	</script>
 </body>
