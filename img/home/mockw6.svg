@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1322px" height="1320px" viewBox="0 0 1322 1320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" stroke-width="35" stroke="#FFFFFF">
+            <g id="6" transform="translate(660.000000, 289.500000) scale(1, -1) translate(-660.000000, -289.500000) translate(460.000000, 119.000000)">
+                <polygon id="Triangle-3" points="200 1.13686838e-13 400 341 0 341"></polygon>
+                <path d="M89,203 L312,203" id="Line" stroke-linecap="square"></path>
+                <path d="M201,203 L201,341" id="Line" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

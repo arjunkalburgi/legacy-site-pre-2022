@@ -3,8 +3,13 @@
 	<link rel="icon" type="image/png" href="img/GLogo.png">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/spinanimation.css">
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" >
+	<style> 
+		#about { background-color:#007e60; height:initial; } 
+		#about .container { width:80%; bottom:50px; margin:0px auto; } 
+	</style>
 
 	<script type="text/javascript" src="js/WOW.js"></script>
 	<script type="text/javascript">
@@ -26,48 +31,34 @@
 		<div class="container">
 			<div class="element">
 				<div id="logo">
-					<img src="img/home/center.png" class="wow fadeIn" data-wow-delay="100ms">
-					<img src="img/home/middle.png" class="wow fadeInDown" data-wow-delay="250ms">
-					<img src="img/home/left.png" class="wow fadeInRight" data-wow-delay="400ms">
-					<img src="img/home/right.png" class="wow fadeInLeft" data-wow-delay="550ms">
-					<img src="img/home/bottom.png" class="wow fadeInUp" data-wow-delay="700ms">
-					<img src="img/Logo.png" class="wow fadeIn" data-wow-delay="1500ms">
+					<img src="img/home/mockw1.svg" class="wow rotateInDownRight" data-wow-delay="100ms">
+					<img src="img/home/mockw2.svg" class="wow rotateInUpLeft" data-wow-delay="200ms">
+					<img src="img/home/mockw3.svg" class="wow rotateInDownRight" data-wow-delay="400ms">
+					<img src="img/home/mockw4.svg" class="wow rotateInUpLeft" data-wow-delay="500ms">
+					<img src="img/home/mockw5.svg" class="wow rotateInDownRight" data-wow-delay="700ms">
+					<img src="img/home/mockw6.svg" class="wow rotateInUpLeft" data-wow-delay="800ms">
+					<!-- <img src="img/Logo.png" class="wow fadeIn" data-wow-delay="1500ms"> -->
 				</div>
 				<h1 class="title wow fadeInUp whitetext" data-wow-delay="1s">
 					ARJUN 
 					<span class="animated fadeInUp title"  data-wow-delay="1250ms">KALBURGI</span>
 				</h1>
-				<a href="#about" class="whitetext"><span class="fa-stack fa-lg wow fadeInUp" data-wow-delay="1500ms">
-					<i class="fa fa-circle-thin fa-stack-2x"></i>
-					<i class="fa fa-angle-down fa-stack-1x"></i>
-				</span></a>
 			</div>
 		</div>
 	</div>
 	
 	<div id="about" align="center" >
-		<div class="container">
+		<div class="card container wow bounceInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
 			<div class="spacing">
-				<h2 class="wow fadeInUp title upper greentext" data-wow-delay="250ms">I believe in <span class="wow fadeInUp title upper" data-wow-delay="500ms">engagement.</span></h2>
+				<h2 class="wow fadeIn title upper greentext" data-wow-delay="250ms">I believe in <span class="wow fadeIn title upper" data-wow-delay="500ms">engagement.</span></h2>
 				<hr class="wow zoomIn green" data-wow-delay="750ms">
-				<h5 class="wow fadeInUp" data-wow-delay="750ms">
+				<h5 class="wow fadeIn" data-wow-delay="750ms">
 					<div>There's something inspiring about people who are on a mission and enabled to carry it out. I want to create that engagement, whether it's designing UIs, running hackathons, modelling fashion or public speaking.</div>
-					<!-- <div class="figcontainer">
-						<figure>
-							<i class="fa fa-line-chart wow fadeInUp" data-wow-delay="1s"></i>
-							<figcaption>Great Solutions</figcaption>
-						</figure>
-						<figure>
-							<i class="fa fa-universal-access wow fadeInUp" data-wow-delay="1s"></i>
-							<figcaption>Cool Experiences</figcaption>
-						</figure>
-					</div> -->
+
+					<img src="img/home/mock.svg" class="spin" style="width: 150px">
+
 					<h6>See my activity below.</h6>
 				</h5>
-				<a href="#bottom" class="greentext"><span class="fa-stack fa-lg h1 wow fadeInUp" data-wow-delay="1s">
-					<i class="fa fa-circle-thin fa-stack-2x h1"></i>
-					<i class="fa fa-angle-down fa-stack-1x h1"></i>
-				</span></a>
 			</div>
 		</div>
 	</div>
@@ -81,7 +72,7 @@
 				<div class="col s6 main_link">
 					<figure class="leftside">
 						<a href="projects.html"><i class="fa fa-laptop wow fadeInUp" data-wow-delay="250ms"></i></a>
-						<figcaption>Projects</figcaption>
+						<figcaption>Portfolio</figcaption>
 					</figure>
 				</div>
 				<div class="col s6 main_link">
@@ -93,13 +84,13 @@
 				<div class="col s6 main_link">
 					<figure class="leftside">
 						<a href="https://www.instagram.com/askalburgi/"><i class="fa fa-instagram wow fadeInUp"></i></a>
-						<figcaption>Aesthetics</figcaption>
+						<figcaption>Style Blog</figcaption>
 					</figure>
 				</div>
 				<div class="col s6 main_link">
 					<figure class="rightside">
 						<a href="http://blog.arjunkalburgi.com"><i class="fa fa-tumblr-square wow fadeInUp" data-wow-delay="250ms"></i></a>
-						<figcaption>Life Blog</figcaption>
+						<figcaption>Arjun's World</figcaption>
 					</figure>
 				</div>
 			</div>
