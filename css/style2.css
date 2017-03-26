@@ -6,25 +6,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 
-/* Nav */
-	nav {
-		background-color: #007e60; 
-	}
-	.nav-links {
-		width: 40% !important; 
-	}
-	.nav-links .nav-link {
-		width: 20%; 
-		height: 100%;
-		font-size: x-large;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	.nav-links .nav-link a {
-		/*align-self: 80%; */
-	}
-
 /* Elements */
     html,body {
         height: 100%;
@@ -53,13 +34,6 @@
     	margin-left: auto; 
     }
 
-    header {
-    	padding-top: 8em; 
-    	max-width: 80%; 
-    	margin: 0 auto; 
-    	padding-bottom: 4em; 
-    }
-
 /* Text Style */
     * {font-family: 'Raleway', 'Open Sans', 'Helvetica', sans-serif; margin: 0;}
     .upper {text-transform: uppercase;}
@@ -81,6 +55,31 @@
     	 font-size: 18.7px; 
     	 font-weight: 300
     }
+
+/* Top */
+    /* Nav */
+        nav {
+            background-color: #007e60; 
+        }
+        .nav-links {
+            width: 40% !important; 
+        }
+        .nav-links .nav-link {
+            width: 20%; 
+            height: 100%;
+            font-size: x-large;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    /* Header */
+        header {
+            padding-top: 10%; 
+            max-width: 80%; 
+            margin: 0 auto; 
+            padding-bottom: 10%; 
+            height: 70%;
+        }
 
 /* Content Blocks */
 	.blocks .block {
@@ -111,7 +110,7 @@
 		text-align: center;
 	}
 
-/* footer */
+/* Footer */
 	#bottom {background: url('../img/dark-bg.jpg') fixed; color: #FFF; background-size: cover;}
 
     figure i {
@@ -162,3 +161,5 @@
             box-shadow: 0px 0px 15px 15px #007E60; 
             background-color: #007E60; 
         }
+
+/* Background Feature */

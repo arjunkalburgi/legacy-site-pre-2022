@@ -3,13 +3,26 @@
 	pick the colour two shades darker for the second colour.
 */
 
-#eceweekhacked2016 {
-	background: linear-gradient(to bottom right, #112188, #0a1351);  
-	color: rgba(199, 199, 199, 0.68); 
-}
-
-	#eceweekhacked2016 a {
+/*eceweekhacked2017*/
+	.eceweekhacked2017 {
+		background: linear-gradient(to bottom right, #112188, #0a1351) fixed;  
+	}
+	#eceweekhacked2017 {
+		color: rgba(199, 199, 199, 0.68); 
+	}
+	#eceweekhacked2017 a {
 		color: rgb(255, 189, 56) !important;
+	}
+
+/*AUcourses*/
+	.AUcourses {
+		background: linear-gradient(to bottom right, #D4B890, #6C233D) fixed; 
+	}
+	#AUcourses {
+		color: rgba(0,0,0,0.5);
+	}
+	#AUcourses a {
+		color: rgba(0,0,0,0.8) !important;
 	}
 
 #reactlessons {
@@ -48,11 +61,13 @@
 	color: #09FDFB;
 }
 
-#howtocompe {
-	background: linear-gradient(to bottom right, #E4E6E5, #b6b8b7); 
-	color: #1B4610;
-}
-
+/*howtocompe*/
+	.howtocompe {
+		background: linear-gradient(to bottom right, #E4E6E5, #b6b8b7) fixed; 
+	}
+	#howtocompe {
+		color: #1B4610;
+	}
 	#howtocompe a {
 		color: #1B4610 !important;
 	}
@@ -147,12 +162,15 @@
 	height: inherit;
 }
 
-#eceweekhacked2015 {
-	background: linear-gradient(to bottom right, #237E7C, #1c6463); 
-	color: rgba(199, 199, 199, 0.68);
-}
+/*eceweekhacked2015*/
+	.eceweekhacked2015 {
+		background: linear-gradient(to bottom right, #237E7C, #1c6463) fixed;  
+	}
+	#eceweekhacked2015 {
+		color: rgba(199, 199, 199, 0.68); 
+	}
 	#eceweekhacked2015 a {
-		color: #ffbd38;
+		color: #ffbd38; !important;
 	}
 
 #ciao {
