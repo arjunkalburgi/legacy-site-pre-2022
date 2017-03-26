@@ -49,7 +49,7 @@
 }
 
 #howtocompe {
-	background-color: #E4E6E5; 
+	background: linear-gradient(to bottom right, #E4E6E5, #b6b8b7); 
 	color: #1B4610;
 }
 
@@ -148,7 +148,7 @@
 }
 
 #eceweekhacked2015 {
-	background-color: #237E7C; 
+	background: linear-gradient(to bottom right, #237E7C, #1c6463); 
 	color: rgba(199, 199, 199, 0.68);
 }
 	#eceweekhacked2015 a {
