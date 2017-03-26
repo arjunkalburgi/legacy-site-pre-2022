@@ -1,5 +1,5 @@
 var didScroll = false;
-var offset = $(window).height()*0.3; // size of window from top to when you want the first switch to be
+var offset = $(window).height()*0.25; // size of window from top to when you want the first switch to be
 var blocksize = $(window).height()*0.9;  // this is programmed in 
 var ventures = ["eceweekhacked2017", "AUcourses", "howtocompe", "eceweekhacked2015"]
 
@@ -16,9 +16,6 @@ $(window).scroll(function() {
 	$("#background").removeClass();
 
 	//Add new class 
-	$("#background").addClass(classToAdd, 1000, callback);
+	console.log(classToAdd); 
+	$("#background").addClass(classToAdd);
 });
-
-function callback() {
-	console.log("did it"); 
-}
