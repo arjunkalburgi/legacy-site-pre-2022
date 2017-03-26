@@ -1,15 +1,18 @@
+/*
+	on the background being a linear gradient, go to the desired colour on color-hex.com 
+	pick the colour two shades darker for the second colour.
+*/
 
-
-.panel.eceweekhacked2016 {
-	/*background: no-repeat url(../img/proj/proj-ecew17.png); */
-	background-size: 320px; 
-	background-position: right bottom; 
-	height: inherit;
-	background-color: #e8e8e8;  /*#237e7c;*/
-	color: #8e8e8e; /*#ffbd38;*/
+#eceweekhacked2016 {
+	background: linear-gradient(to bottom right, #112188, #0a1351);  
+	color: rgba(199, 199, 199, 0.68); 
 }
 
-.panel.reactlessons {
+	#eceweekhacked2016 a {
+		color: rgb(255, 189, 56) !important;
+	}
+
+#reactlessons {
 	/*background: no-repeat url(http://daynin.github.io/clojurescript-presentation/img/react-logo.png); */
 	background-size: 320px; 
 	background-position: right bottom; 
@@ -18,7 +21,7 @@
 	color: #8e8e8e; /*#61DAFB;*/ 
 }
 
-.panel.makeover {
+#makeover {
 	background: no-repeat url(../img/proj/proj-makeover.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
@@ -27,7 +30,7 @@
 	color: #ED4F67;
 }
 
-.panel.testingproj {
+#testingproj {
 	background: no-repeat url(https://smartbear.com/SmartBear/media/images/product/category/icon-testing.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
@@ -36,7 +39,7 @@
 	color: #1A3D57; 
 }
 
-.panel.dbhospitalapp {
+#dbhospitalapp {
 	background: no-repeat url(../img/proj/proj-database.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
@@ -45,16 +48,16 @@
 	color: #09FDFB;
 }
 
-.panel.howtocompe {
-	background: no-repeat url(../img/proj/proj-compe2.png); 
-	background-size: 320px; 
-	background-position: right bottom; 
-	height: inherit;
+#howtocompe {
 	background-color: #E4E6E5; 
 	color: #1B4610;
 }
 
-.panel.dbnormalizerapp {
+	#howtocompe a {
+		color: #1B4610 !important;
+	}
+
+#dbnormalizerapp {
 	background: no-repeat url(../img/proj/proj-database.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
@@ -63,7 +66,7 @@
 	color: #09FDFB;
 }
 
-.panel.cloudycar {
+#cloudycar {
 	background: no-repeat url(https://raw.githubusercontent.com/CMPUT301F16T12/CloudyCrewImages/master/logo/car_big.png); 
 	background-size: 320px; 
 	background-position: right bottom; 
@@ -72,7 +75,7 @@
 	color: #fff; /*#ffbd38;*/
 }
 
-.panel.d3tutorial {
+#d3tutorial {
 	background: no-repeat url(../img/proj/proj-d3tutorial.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -81,7 +84,7 @@
 	height: inherit;
 }
 
-.panel.C301as1 {
+#C301as1 {
 	background: no-repeat url(../img/proj/proj-c301as1.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -90,7 +93,7 @@
 	height: inherit;
 }
 
-.panel.ECEW17 {
+#ECEW17 {
 	background: no-repeat url(../img/proj/proj-ecew17.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -99,7 +102,7 @@
 	height: inherit;
 }
 
-.panel.CEClub {
+#CEClub {
 	background: no-repeat url(../img/proj/proj-compe.jpg);
 	background-size: 320px;
 	background-position: right bottom;
@@ -108,7 +111,7 @@
 	height: inherit;
 }
 
-.panel.pkb {
+#pkb {
 	background: no-repeat url(http://static.tumblr.com/fbd123d7de3c1a39808782fd22c9bcc4/av0ntqq/raHoae6j0/tumblr_static_94teqiw5i3wokg0g4www4s8sk.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -117,7 +120,7 @@
 	height: inherit;
 }
 
-.panel.shoutbox2 {
+#shoutbox2 {
 	background: no-repeat url(../img/proj/proj-shoutbox2.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -126,7 +129,7 @@
 	height: inherit;
 }
 
-.panel.dra {
+#dra {
 	background: no-repeat url(../img/proj/proj-rdf.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -135,7 +138,7 @@
 	height: inherit;
 }
 
-.panel.fire {
+#fire {
 	background: no-repeat url(../img/proj/proj-fire.jpg);
 	background-size: 320px;
 	background-position: right bottom;
@@ -144,16 +147,15 @@
 	height: inherit;
 }
 
-.panel.eceweekhacked2015 {
-	background: no-repeat url(../img/proj/proj-ecew17.png); 
-	background-size: 320px; 
-	background-position: right bottom; 
-	height: inherit;
+#eceweekhacked2015 {
 	background-color: #237E7C; 
-	color: #ffbd38;
+	color: rgba(199, 199, 199, 0.68);
 }
+	#eceweekhacked2015 a {
+		color: #ffbd38;
+	}
 
-.panel.ciao {
+#ciao {
 	background: no-repeat url(../img/proj/proj-ciao.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -162,7 +164,7 @@
 	height: inherit;
 }
 
-.panel.rdf {
+#rdf {
 	background: no-repeat url(../img/proj/proj-rdf.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -171,7 +173,7 @@
 	height: inherit;
 }
 
-.panel.reviews {
+#reviews {
 	background: no-repeat url(../img/proj/proj-reviews.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -180,7 +182,7 @@
 	height: inherit;
 }
 
-.panel.senti {
+#senti {
 	background: no-repeat url(../img/proj/proj-senti.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -189,7 +191,7 @@
 	height: inherit;
 }
 
-.panel.conn4 {
+#conn4 {
 	background: no-repeat url(../img/proj/proj-connectfour.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -198,7 +200,7 @@
 	height: inherit;
 }
 
-.panel.shoutbox {
+#shoutbox {
 	background: no-repeat url(../img/proj/proj-Shoutbox!.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -207,7 +209,7 @@
 	height: inherit;
 }
 
-.panel.tetris {
+#tetris {
 	background: no-repeat url(../img/proj/proj-Arduino.jpg);
 	background-size: 320px;
 	background-position: right bottom;
@@ -216,7 +218,7 @@
 	height: inherit;
 }
 
-.panel.resnet {
+#resnet {
 	background: no-repeat url(../img/proj/proj-resnet.png);
 	background-size: 320px;
 	background-position: right bottom;
@@ -225,7 +227,7 @@
 	height: inherit;
 }
 
-.panel.runner {
+#runner {
 	background: no-repeat url(../img/proj/proj-runnerrunner.png);
 	background-size: 320px;
 	background-position: right bottom;

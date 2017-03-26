@@ -626,7 +626,7 @@ body:after {
     margin-top: -13px
 }
 .top-nav {
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 600;
     height: 52px;
     letter-spacing: 2px;
@@ -640,7 +640,7 @@ body:after {
     margin: 0;
     padding: 19px 37px 0 0;
     position: relative;
-    width: 50%;
+    /*width: 50%;*/
     vertical-align: top;
     z-index: 1
 }
@@ -728,7 +728,7 @@ body:after {
     transition: border .3s, transform .3s ease-out;
     width: 22px;
     z-index: 2;
-    content: url('../img/Logo.png');
+    content: url('../img/home/mockw.svg');
 }
 /*.top-nav .logo:after {
     background: #000;
