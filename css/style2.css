@@ -163,3 +163,6 @@
         }
 
 /* Background Feature */
+    #background {
+        transition: all 4s ease;
+    }
