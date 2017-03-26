@@ -16,7 +16,7 @@ $(window).scroll(function() {
 	$("#background").removeClass();
 
 	//Add new class 
-	$("#background").addClass(classToAdd, 2000, callback);
+	$("#background").addClass(classToAdd, 1000, callback);
 });
 
 function callback() {

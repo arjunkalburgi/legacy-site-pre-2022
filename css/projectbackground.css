@@ -5,7 +5,7 @@
 
 /*eceweekhacked2017*/
 	.eceweekhacked2017 {
-		background: linear-gradient(to bottom right, #112188, #0a1351) fixed;  
+		background: linear-gradient(to bottom right, #112188, #0a1351) fixed !important;  
 	}
 	#eceweekhacked2017 {
 		color: rgba(199, 199, 199, 0.68); 
@@ -16,7 +16,7 @@
 
 /*AUcourses*/
 	.AUcourses {
-		background: linear-gradient(to bottom right, #D4B890, #6C233D) fixed; 
+		background: linear-gradient(to bottom right, #D4B890, #6C233D) fixed !important; 
 	}
 	#AUcourses {
 		color: rgba(0,0,0,0.5);
@@ -63,7 +63,7 @@
 
 /*howtocompe*/
 	.howtocompe {
-		background: linear-gradient(to bottom right, #E4E6E5, #b6b8b7) fixed; 
+		background: linear-gradient(to bottom right, #E4E6E5, #b6b8b7) fixed !important; 
 	}
 	#howtocompe {
 		color: #1B4610;
@@ -164,7 +164,7 @@
 
 /*eceweekhacked2015*/
 	.eceweekhacked2015 {
-		background: linear-gradient(to bottom right, #237E7C, #1c6463) fixed;  
+		background: linear-gradient(to bottom right, #237E7C, #1c6463) fixed !important;  
 	}
 	#eceweekhacked2015 {
 		color: rgba(199, 199, 199, 0.68); 
