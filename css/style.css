@@ -51,30 +51,6 @@
     .greentext{color:#007e60;}
     .whitetext{color:#fff;}
 
-/* Scroll Button */
-    .scroll-button {
-    	animation-play-state: paused;
-    }
-
-    .scroll-button:hover {
-    	animation-name: hover-bounce;
-    	animation-iteration-count: infinite;
-    	animation-duration: 0.5s;
-    	animation-direction: alternate;
-    	animation-play-state: running;
-    	animation-timing-function: ease-in-out;
-    }
-
-    @keyframes hover-bounce {
-    	from {
-    		padding-top: 0;
-    	}
-
-    	to {
-    		padding-top: 5px;
-    	}
-    }
-
 /* Figures */
     figure i {
         font-size: 65px !important;
@@ -88,22 +64,6 @@
     figure figcaption {
         text-align: center;
     }
-
-    /* About Section */
-        .figcontainer {
-            padding-top: 15px;
-            width: inherit;
-            overflow: hidden;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 20px;
-        }
-
-        .figcontainer figure {
-            width: 50%;
-            margin: 0; 
-            float: left;
-        }
 
     /* Bottom Section - Main Links */
         #bottom .main_links .main_link figure:hover {
