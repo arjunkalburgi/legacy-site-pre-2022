@@ -49,45 +49,57 @@
 		color: rgba(0,0,0,0.8) !important;
 	}
 
-#reactlessons {
-	/*background: no-repeat url(http://daynin.github.io/clojurescript-presentation/img/react-logo.png); */
-	background-size: 320px; 
-	background-position: right bottom; 
-	height: inherit;
-	background-color: #e8e8e8; /*#2D2D2D;*/
-	color: #8e8e8e; /*#61DAFB;*/ 
-}
+/*reactlessons*/
+	.reactlessons {
+		background: linear-gradient(to bottom right,  #3D8599, #FF4940) fixed !important; 
+		/*(http://daynin.github.io/clojurescript-presentation/img/react-logo.png); */
+	}
+	#reactlessons {
+		color: rgba(0, 0, 0, 0.9);
+	}
+	#reactlessons a {
+		color: #61DAFB; 
+	}
 
-#makeover {
-	background: no-repeat url(../img/proj/proj-makeover.png); 
-	background-size: 320px; 
-	background-position: right bottom; 
-	height: inherit;
-	background-color: #EFD281; 
-	color: #ED4F67;
-}
+/*makeover*/
+	.makeover {
+		background: linear-gradient(to bottom right,  #ED4F67, #EFD281) fixed !important; 
+		/*(../img/proj/proj-makeover.png); */
+	}
+	#makeover {
+		color: #EFD281; 
+	}
+	#makeover a {
+		color: #ED4F67;
+	}
 
-#testingproj {
-	background: no-repeat url(https://smartbear.com/SmartBear/media/images/product/category/icon-testing.png); 
-	background-size: 320px; 
-	background-position: right bottom; 
-	height: inherit;
-	background-color: #339922; 
-	color: #1A3D57; 
-}
+/*testingproj*/
+	.testingproj {
+		background: linear-gradient(to bottom right,  #993622, #3D7299) fixed !important; 
+		/*(https://smartbear.com/SmartBear/media/images/product/category/icon-testing.png); */
+	}
+	#testingproj {
+		color: #339922; 
+	}
+	#testingproj a {
+		color: #1A3D57; 
+	}
 
-#dbhospitalapp {
-	background: no-repeat url(../img/proj/proj-database.png); 
-	background-size: 320px; 
-	background-position: right bottom; 
-	height: inherit;
-	background-color: #8e8e8e;
-	color: #09FDFB;
-}
+/*dbhospitalapp*/
+	.dbhospitalapp {
+		background: linear-gradient(to bottom right,  #18B0AF, #CAAD1B) fixed !important; 
+		/*(../img/proj/proj-database.png); */
+	}
+	#dbhospitalapp {
+		color: #8e8e8e;
+	}
+	#dbhospitalapp a {
+		color: #09FDFB;
+	}
 
 /*howtocompe*/
 	.howtocompe {
-		background: linear-gradient(to bottom right, #E4E6E5, #5b5c5b) fixed !important; 
+		background: linear-gradient(to bottom right,  #E4E6E5, #1B4610) fixed !important; 
 	}
 	#howtocompe {
 		color: #1B4610;
@@ -96,184 +108,241 @@
 		color: #1B4610 !important;
 	}
 
-#dbnormalizerapp {
-	background: no-repeat url(../img/proj/proj-database.png); 
-	background-size: 320px; 
-	background-position: right bottom; 
-	height: inherit;
-	background-color: #8e8e8e;
-	color: #09FDFB;
-}
+/*dbnormalizerapp*/
+	.dbnormalizerapp {
+		background: linear-gradient(to bottom right,  #8e8e8e, #09FDFB) fixed !important; 
+		/*(../img/proj/proj-database.png); */
+	}
+	#dbnormalizerapp {
+		color: #8e8e8e;
+	}
+	#dbnormalizerapp a {
+		color: #09FDFB;
+	}
 
-#cloudycar {
-	background: no-repeat url(https://raw.githubusercontent.com/CMPUT301F16T12/CloudyCrewImages/master/logo/car_big.png); 
-	background-size: 320px; 
-	background-position: right bottom; 
-	height: inherit;
-	background-color: #135FAB;  /*#237e7c;*/
-	color: #fff; /*#ffbd38;*/
-}
+/*cloudycar*/
+	.cloudycar {
+		background: linear-gradient(to bottom right,  #135FAB, #fffccc) fixed !important; 
+		/*(https://raw.githubusercontent.com/CMPUT301F16T12/CloudyCrewImages/master/logo/car_big.png); */
+	}
+	#cloudycar {
+		color: #135FAB;  /*#237e7c;*/
+	}
+	#cloudycar a {
+		color: #fff; /*#ffbd38;*/
+	}
 
-#d3tutorial {
-	background: no-repeat url(../img/proj/proj-d3tutorial.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #7f3ea5;
-	color: #f5844b !important;
-	height: inherit;
-}
+/*d3tutorial*/
+	.d3tutorial {
+		background: linear-gradient(to bottom right,  #7f3ea5, #f5844b) fixed !important; 
+		/*(../img/proj/proj-d3tutorial.png);*/
+	}
+	#d3tutorial {
+		color: #f5844b !important;
+	}
+	#d3tutorial a {
+		color: #f5844b !important;
+	}
 
-#C301as1 {
-	background: no-repeat url(../img/proj/proj-c301as1.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #B0BEC5;
-	color: #4d8e33 !important;
-	height: inherit;
-}
+/*C301as1*/
+	.C301as1 {
+		background: linear-gradient(to bottom right,  #B0BEC5, #B0AB18) fixed !important; 
+		/*(../img/proj/proj-c301as1.png);*/
+	}
+	#C301as1 {
+		color: #4d8e33 !important;
+	}
+	#C301as1 a {
+		color: #4d8e33 !important;
+	}
 
-#ECEW17 {
-	background: no-repeat url(../img/proj/proj-ecew17.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #112188;
-	color: #ffbd38 !important;
-	height: inherit;
-}
+/*ECEW17*/
+	.ECEW17 {
+		background: linear-gradient(to bottom right,  #112188, #040B3B) fixed !important; 
+		/*(../img/proj/proj-ecew17.png);*/
+	}
+	#ECEW17 {
+		color: #ffbd38 !important;
+	}
+	#ECEW17 a {
+		color: #ffbd38 !important;
+	}
 
-#CEClub {
-	background: no-repeat url(../img/proj/proj-compe.jpg);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #1A450F;
-	color: #fff !important;
-	height: inherit;
-}
+/*CEClub*/
+	.CEClub {
+		background: linear-gradient(to bottom right,  #1A450F, #1A450F) fixed !important; 
+		/*(../img/proj/proj-compe.jpg);*/
+	}
+	#CEClub {
+		color: #fff !important;
+	}
+	#CEClub a {
+		color: #fff !important;
+	}
 
-#pkb {
-	background: no-repeat url(http://static.tumblr.com/fbd123d7de3c1a39808782fd22c9bcc4/av0ntqq/raHoae6j0/tumblr_static_94teqiw5i3wokg0g4www4s8sk.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #222222;
-	color: #fff !important;
-	height: inherit;
-}
+/*pkb*/
+	.pkb {
+		background: linear-gradient(to bottom right,  #222222, #1b1b1b) fixed !important; 
+		/*(http://static.tumblr.com/fbd123d7de3c1a39808782fd22c9bcc4/av0ntqq/raHoae6j0/tumblr_static_94teqiw5i3wokg0g4www4s8sk.png);*/
+	}
+	#pkb {
+		color: #fff !important;
+	}
+	#pkb a {
+		color: #fff !important;
+	}
 
-#shoutbox2 {
-	background: no-repeat url(../img/proj/proj-shoutbox2.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #e3dacf;
-	color: #663560 !important;
-	height: inherit;
-}
+/*shoutbox2*/
+	.shoutbox2 {
+		background: linear-gradient(to bottom right,  #e3dacf, #e3dacf) fixed !important; 
+		/*(../img/proj/proj-shoutbox2.png);*/
+	}
+	#shoutbox2 {
+		color: #663560 !important;
+	}
+	#shoutbox2 a {
+		color: #663560 !important;
+	}
 
-#dra {
-	background: no-repeat url(../img/proj/proj-rdf.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: black; 
-	color: white !important;
-	height: inherit;
-}
+/*dra*/
+	.dra {
+		background: linear-gradient(to bottom right,  black, #323232) fixed !important; 
+		/*(../img/proj/proj-rdf.png);*/
+	}
+	#dra {
+		color: white !important;
+	}
+	#dra a {
+		color: white !important;
+	}
 
-#fire {
-	background: no-repeat url(../img/proj/proj-fire.jpg);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #b3afae;
-	color: black !important;
-	height: inherit;
-}
+/*fire*/
+	.fire {
+		background: linear-gradient(to bottom right,  #b3afae, #8f8c8b) fixed !important; 
+		/*(../img/proj/proj-fire.jpg);*/
+	}
+	#fire {
+		color: black !important;
+	}
+	#fire a {
+		color: black !important;
+	}
 
 /*eceweekhacked2015*/
 	.eceweekhacked2015 {
-		background: linear-gradient(to bottom right, #112188, #0a1351) fixed !important;  
+		background: linear-gradient(to bottom right,  #237E7C, #0a1351) fixed !important;  
 	}
 	#eceweekhacked2015 {
 		color: rgba(199, 199, 199, 0.68); 
 	}
 	#eceweekhacked2015 a {
-		color: #ffbd38; !important;
+		color: #ffbd38 !important;
 	}
 
-#ciao {
-	background: no-repeat url(../img/proj/proj-ciao.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #374ca5; 
-	color: white !important;
-	height: inherit;
-}
+/*ciao*/
+	.ciao {
+		background: linear-gradient(to bottom right,  #374ca5, #374ca5) fixed !important; 
+		/*(../img/proj/proj-ciao.png);*/
+	}
+	#ciao {
+		color: white !important;
+	}
+	#ciao a {
+		color: white !important;
+	}
 
-#rdf {
-	background: no-repeat url(../img/proj/proj-rdf.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: black; 
-	color: white !important;
-	height: inherit;
-}
+/*rdf*/
+	.rdf {
+		background: linear-gradient(to bottom right,  black, #323232) fixed !important; 
+		/*(../img/proj/proj-rdf.png);*/
+	}
+	#rdf {
+		color: white !important;
+	}
+	#rdf a {
+		color: white !important;
+	}
 
-#reviews {
-	background: no-repeat url(../img/proj/proj-reviews.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #2c3e50; 
-	color: white !important;
-	height: inherit;
-}
+/*reviews*/
+	.reviews {
+		background: linear-gradient(to bottom right,  #2c3e50, #1e2b38) fixed !important; 
+		/*(../img/proj/proj-reviews.png);*/
+	}
+	#reviews {
+		color: white !important;
+	}
+	#reviews a {
+		color: white !important;
+	}
 
-#senti {
-	background: no-repeat url(../img/proj/proj-senti.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #222222; 
-	color: white !important;
-	height: inherit;
-}
+/*senti*/
+	.senti {
+		background: linear-gradient(to bottom right,  #222222, #3BB873) fixed !important; 
+		/*(../img/proj/proj-senti.png);*/
+	}
+	#senti {
+		color: white !important;
+	}
+	#senti a {
+		color: white !important;
+	}
 
-#conn4 {
-	background: no-repeat url(../img/proj/proj-connectfour.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #0088ff;
-	color: white !important;
-	height: inherit;
-}
+/*conn4*/
+	.conn4 {
+		background: linear-gradient(to bottom right,  #0088ff, #0088ff) fixed !important; 
+		/*(../img/proj/proj-connectfour.png);*/
+	}
+	#conn4 {
+		color: white !important;
+	}
+	#conn4 a {
+		color: white !important;
+	}
 
-#shoutbox {
-	background: no-repeat url(../img/proj/proj-Shoutbox!.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #283e50;
-	color: white !important;
-	height: inherit;
-}
+/*shoutbox*/
+	.shoutbox {
+		background: linear-gradient(to bottom right,  #283e50, #283e50) fixed !important; 
+		/*(../img/proj/proj-Shoutbox!.png);*/
+	}
+	#shoutbox {
+		color: white !important;
+	}
+	#shoutbox a {
+		color: white !important;
+	}
 
-#tetris {
-	background: no-repeat url(../img/proj/proj-Arduino.jpg);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: black;
-	color: white !important;
-	height: inherit;
-}
+/*tetris*/
+	.tetris {
+		background: linear-gradient(to bottom right,  black, black) fixed !important; 
+		/*(../img/proj/proj-Arduino.jpg);*/
+	}
+	#tetris {
+		color: white !important;
+	}
+	#tetris a {
+		color: white !important;
+	}
 
-#resnet {
-	background: no-repeat url(../img/proj/proj-resnet.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #b7703c; 
-	color: white !important;
-	height: inherit;
-}
+/*resnet*/
+	.resnet {
+		background: linear-gradient(to bottom right,  #b7703c, #b7703c) fixed !important; 
+		/*(../img/proj/proj-resnet.png);*/
+	}
+	#resnet {
+		color: white !important;
+	}
+	#resnet a {
+		color: white !important;
+	}
 
-#runner {
-	background: no-repeat url(../img/proj/proj-runnerrunner.png);
-	background-size: 320px;
-	background-position: right bottom;
-	background-color: #9ec2f4;
-	color: white !important;
-	height: inherit;
-}
+/*runner*/
+	.runner {
+		background: linear-gradient(to bottom right,  #9ec2f4, #9ec2f4) fixed !important; 
+		/*(../img/proj/proj-runnerrunner.png);*/
+	}
+	#runner {
+		color: white !important;
+	}
+	#runner a {
+		color: white !important;
+	}
