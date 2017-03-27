@@ -1,17 +1,41 @@
 /*
 	on the background being a linear gradient, go to the desired colour on color-hex.com 
 	pick the colour two shades darker for the second colour.
+	OR 
+	use adobe.color.com
 */
+
+/*encmp100*/
+	.encmp100 {
+		background: linear-gradient(to bottom right, #0042FF, #FFBF19) fixed !important;  
+	}
+	#encmp100 {
+		color: rgba(229, 229, 229, 0.8); 
+	}
+	#encmp100 a {
+		color: #FFBF19 !important;
+	}
+
+/*hacktime*/
+	.hacktime {
+		background: linear-gradient(to bottom right, #112188, #16703D) fixed !important;  
+	}
+	#hacktime {
+		color: rgba(199, 199, 199, 0.68); 
+	}
+	#hacktime a {
+		color: rgb(255, 189, 56) !important;
+	}
 
 /*eceweekhacked2017*/
 	.eceweekhacked2017 {
-		background: linear-gradient(to bottom right, #112188, #0a1351) fixed !important;  
+		background: linear-gradient(to bottom right, #A319FF, #16703D) fixed !important;  
 	}
 	#eceweekhacked2017 {
 		color: rgba(199, 199, 199, 0.68); 
 	}
 	#eceweekhacked2017 a {
-		color: rgb(255, 189, 56) !important;
+		color: #C0C0C0 !important;
 	}
 
 /*AUcourses*/
@@ -63,7 +87,7 @@
 
 /*howtocompe*/
 	.howtocompe {
-		background: linear-gradient(to bottom right, #E4E6E5, #b6b8b7) fixed !important; 
+		background: linear-gradient(to bottom right, #E4E6E5, #5b5c5b) fixed !important; 
 	}
 	#howtocompe {
 		color: #1B4610;
@@ -164,7 +188,7 @@
 
 /*eceweekhacked2015*/
 	.eceweekhacked2015 {
-		background: linear-gradient(to bottom right, #237E7C, #1c6463) fixed !important;  
+		background: linear-gradient(to bottom right, #112188, #0a1351) fixed !important;  
 	}
 	#eceweekhacked2015 {
 		color: rgba(199, 199, 199, 0.68); 
