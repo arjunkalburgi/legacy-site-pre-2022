@@ -29,7 +29,7 @@
 
 /*eceweekhacked2017*/
 	.eceweekhacked2017 {
-		background: linear-gradient(to bottom right, #A319FF, #16703D) fixed !important;  
+		background: linear-gradient(to bottom right, #53147E, #16703D) fixed !important;  
 	}
 	#eceweekhacked2017 {
 		color: rgba(199, 199, 199, 0.68); 
@@ -52,7 +52,6 @@
 /*reactlessons*/
 	.reactlessons {
 		background: linear-gradient(to bottom right,  #3D8599, #FF4940) fixed !important; 
-		/*(http://daynin.github.io/clojurescript-presentation/img/react-logo.png); */
 	}
 	#reactlessons {
 		color: rgba(0, 0, 0, 0.9);
@@ -63,11 +62,10 @@
 
 /*makeover*/
 	.makeover {
-		background: linear-gradient(to bottom right,  #ED4F67, #EFD281) fixed !important; 
-		/*(../img/proj/proj-makeover.png); */
+		background: linear-gradient(to bottom right,  #ED4F67, #3E3C10) fixed !important; 
 	}
 	#makeover {
-		color: #EFD281; 
+		color: rgba(255,255,255,0.5); 
 	}
 	#makeover a {
 		color: #ED4F67;
@@ -75,11 +73,10 @@
 
 /*testingproj*/
 	.testingproj {
-		background: linear-gradient(to bottom right,  #993622, #3D7299) fixed !important; 
-		/*(https://smartbear.com/SmartBear/media/images/product/category/icon-testing.png); */
+		background: linear-gradient(to bottom right,  #898A2F, #216CA3) fixed !important; 
 	}
 	#testingproj {
-		color: #339922; 
+		color: rgba(255,255,255,0.5);
 	}
 	#testingproj a {
 		color: #1A3D57; 
@@ -87,11 +84,10 @@
 
 /*dbhospitalapp*/
 	.dbhospitalapp {
-		background: linear-gradient(to bottom right,  #18B0AF, #CAAD1B) fixed !important; 
-		/*(../img/proj/proj-database.png); */
+		background: linear-gradient(to bottom right,  #749B74, #F4AF92) fixed !important; 
 	}
 	#dbhospitalapp {
-		color: #8e8e8e;
+		color: rgba(0,0,0,0.3);
 	}
 	#dbhospitalapp a {
 		color: #09FDFB;
@@ -110,11 +106,10 @@
 
 /*dbnormalizerapp*/
 	.dbnormalizerapp {
-		background: linear-gradient(to bottom right,  #8e8e8e, #09FDFB) fixed !important; 
-		/*(../img/proj/proj-database.png); */
+		background: linear-gradient(to bottom right,  #F4AF92, #749B74) fixed !important; 
 	}
 	#dbnormalizerapp {
-		color: #8e8e8e;
+		color: rgba(0,0,0,0.3);
 	}
 	#dbnormalizerapp a {
 		color: #09FDFB;
@@ -123,7 +118,6 @@
 /*cloudycar*/
 	.cloudycar {
 		background: linear-gradient(to bottom right,  #135FAB, #fffccc) fixed !important; 
-		/*(https://raw.githubusercontent.com/CMPUT301F16T12/CloudyCrewImages/master/logo/car_big.png); */
 	}
 	#cloudycar {
 		color: #135FAB;  /*#237e7c;*/
@@ -135,7 +129,6 @@
 /*d3tutorial*/
 	.d3tutorial {
 		background: linear-gradient(to bottom right,  #7f3ea5, #f5844b) fixed !important; 
-		/*(../img/proj/proj-d3tutorial.png);*/
 	}
 	#d3tutorial {
 		color: #f5844b !important;
@@ -147,7 +140,6 @@
 /*C301as1*/
 	.C301as1 {
 		background: linear-gradient(to bottom right,  #B0BEC5, #B0AB18) fixed !important; 
-		/*(../img/proj/proj-c301as1.png);*/
 	}
 	#C301as1 {
 		color: #4d8e33 !important;
@@ -159,7 +151,6 @@
 /*ECEW17*/
 	.ECEW17 {
 		background: linear-gradient(to bottom right,  #112188, #040B3B) fixed !important; 
-		/*(../img/proj/proj-ecew17.png);*/
 	}
 	#ECEW17 {
 		color: #ffbd38 !important;
@@ -170,8 +161,7 @@
 
 /*CEClub*/
 	.CEClub {
-		background: linear-gradient(to bottom right,  #1A450F, #1A450F) fixed !important; 
-		/*(../img/proj/proj-compe.jpg);*/
+		background: linear-gradient(to bottom right,  #1A450F, #13330B) fixed !important; 
 	}
 	#CEClub {
 		color: #fff !important;
@@ -183,7 +173,6 @@
 /*pkb*/
 	.pkb {
 		background: linear-gradient(to bottom right,  #222222, #1b1b1b) fixed !important; 
-		/*(http://static.tumblr.com/fbd123d7de3c1a39808782fd22c9bcc4/av0ntqq/raHoae6j0/tumblr_static_94teqiw5i3wokg0g4www4s8sk.png);*/
 	}
 	#pkb {
 		color: #fff !important;
@@ -194,8 +183,7 @@
 
 /*shoutbox2*/
 	.shoutbox2 {
-		background: linear-gradient(to bottom right,  #e3dacf, #e3dacf) fixed !important; 
-		/*(../img/proj/proj-shoutbox2.png);*/
+		background: linear-gradient(to bottom right,  #e3dacf, #A09A92) fixed !important; 
 	}
 	#shoutbox2 {
 		color: #663560 !important;
@@ -207,7 +195,6 @@
 /*dra*/
 	.dra {
 		background: linear-gradient(to bottom right,  black, #323232) fixed !important; 
-		/*(../img/proj/proj-rdf.png);*/
 	}
 	#dra {
 		color: white !important;
@@ -218,8 +205,7 @@
 
 /*fire*/
 	.fire {
-		background: linear-gradient(to bottom right,  #b3afae, #8f8c8b) fixed !important; 
-		/*(../img/proj/proj-fire.jpg);*/
+		background: linear-gradient(to bottom right,  #b3afae, #66362A) fixed !important; 
 	}
 	#fire {
 		color: black !important;
@@ -242,7 +228,6 @@
 /*ciao*/
 	.ciao {
 		background: linear-gradient(to bottom right,  #374ca5, #374ca5) fixed !important; 
-		/*(../img/proj/proj-ciao.png);*/
 	}
 	#ciao {
 		color: white !important;
@@ -254,7 +239,6 @@
 /*rdf*/
 	.rdf {
 		background: linear-gradient(to bottom right,  black, #323232) fixed !important; 
-		/*(../img/proj/proj-rdf.png);*/
 	}
 	#rdf {
 		color: white !important;
@@ -266,7 +250,6 @@
 /*reviews*/
 	.reviews {
 		background: linear-gradient(to bottom right,  #2c3e50, #1e2b38) fixed !important; 
-		/*(../img/proj/proj-reviews.png);*/
 	}
 	#reviews {
 		color: white !important;
@@ -278,7 +261,6 @@
 /*senti*/
 	.senti {
 		background: linear-gradient(to bottom right,  #222222, #3BB873) fixed !important; 
-		/*(../img/proj/proj-senti.png);*/
 	}
 	#senti {
 		color: white !important;
@@ -290,7 +272,6 @@
 /*conn4*/
 	.conn4 {
 		background: linear-gradient(to bottom right,  #0088ff, #0088ff) fixed !important; 
-		/*(../img/proj/proj-connectfour.png);*/
 	}
 	#conn4 {
 		color: white !important;
@@ -302,7 +283,6 @@
 /*shoutbox*/
 	.shoutbox {
 		background: linear-gradient(to bottom right,  #283e50, #283e50) fixed !important; 
-		/*(../img/proj/proj-Shoutbox!.png);*/
 	}
 	#shoutbox {
 		color: white !important;
@@ -314,7 +294,6 @@
 /*tetris*/
 	.tetris {
 		background: linear-gradient(to bottom right,  black, black) fixed !important; 
-		/*(../img/proj/proj-Arduino.jpg);*/
 	}
 	#tetris {
 		color: white !important;
@@ -326,7 +305,6 @@
 /*resnet*/
 	.resnet {
 		background: linear-gradient(to bottom right,  #b7703c, #b7703c) fixed !important; 
-		/*(../img/proj/proj-resnet.png);*/
 	}
 	#resnet {
 		color: white !important;
@@ -338,7 +316,6 @@
 /*runner*/
 	.runner {
 		background: linear-gradient(to bottom right,  #9ec2f4, #9ec2f4) fixed !important; 
-		/*(../img/proj/proj-runnerrunner.png);*/
 	}
 	#runner {
 		color: white !important;
