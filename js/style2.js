@@ -46,7 +46,7 @@ $(window).scroll(function() {
 	}
 	console.log("scroll: "+ scroll + ", currprojectnum: " + currprojectnum); 
 
-	// $("#background").animate({background: projdict[projectname]}, 100); 
+	// $("#background").animate({background: projdict[projectname]}, 1000); 
 	$("#background").removeClass(); 
 	$("#background").addClass(projectname).fadeIn("slow");
 });

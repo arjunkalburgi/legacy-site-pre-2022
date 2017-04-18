@@ -7,7 +7,9 @@
 
 /*encmp100*/
 	.encmp100 {
-		background: linear-gradient(to bottom right, #0042FF, #FFBF19) fixed !important;  
+		background: #0042FF; 
+		background-image: url("../img/proj/proj-encmp.png") no-repeat fixed;
+		background-image: url("../img/proj/proj-encmp.png") no-repeat left, linear-gradient(to bottom right, #0042FF, #FFBF19) fixed !important;  
 	}
 	#encmp100 {
 		color: rgba(229, 229, 229, 0.8); 
@@ -18,7 +20,9 @@
 
 /*hacktime*/
 	.hacktime {
-		background: linear-gradient(to bottom right, #112188, #16703D) fixed !important;  
+		background: #16703D; 
+		background-image: url("../img/proj/proj-hacktime.png") no-repeat fixed;
+		background-image: linear-gradient(to bottom right, #112188, #16703D) fixed !important;  
 	}
 	#hacktime {
 		color: rgba(199, 199, 199, 0.68); 
@@ -29,7 +33,10 @@
 
 /*eceweekhacked2017*/
 	.eceweekhacked2017 {
-		background: linear-gradient(to bottom right, #53147E, #16703D) fixed !important;  
+		background: #53147E;
+		/*background: linear-gradient(to bottom right, #53147E, #16703D) fixed !important; */
+		/*background-image: url("../img/proj/proj-hacked2017.png") no-repeat fixed;*/
+		background-image: linear-gradient(to bottom right, #53147E, #16703D) fixed !important, url("https://www.transparenttextures.com/patterns/asfalt-light.png") no-repeat fixed;  
 	}
 	#eceweekhacked2017 {
 		color: rgba(199, 199, 199, 0.68); 
@@ -40,7 +47,9 @@
 
 /*AUcourses*/
 	.AUcourses {
-		background: linear-gradient(to bottom right, #D4B890, #6C233D) fixed !important; 
+		background: #D4B890; 
+		background-image: url("../img/proj/proj-compe2.png") no-repeat fixed;
+		background-image: url("../img/proj/proj-compe2.png") no-repeat fixed, linear-gradient(to bottom right, #D4B890, #6C233D) fixed !important; 
 	}
 	#AUcourses {
 		color: rgba(0,0,0,0.5);
@@ -95,7 +104,9 @@
 
 /*howtocompe*/
 	.howtocompe {
-		background: linear-gradient(to bottom right,  #E4E6E5, #1B4610) fixed !important; 
+		background: #E4E6E5; 
+		background-image: url("../img/proj/proj-compe2.png") no-repeat fixed;
+		background-image: url("../img/proj/proj-compe2.png") no-repeat fixed, linear-gradient(to bottom right,  #E4E6E5, #1B4610) fixed !important; 
 	}
 	#howtocompe {
 		color: #1B4610;
@@ -150,7 +161,9 @@
 
 /*ECEW17*/
 	.ECEW17 {
-		background: linear-gradient(to bottom right,  #112188, #040B3B) fixed !important; 
+		background: #112188; 
+		background-image: url("../img/proj/proj-ecew17.png") no-repeat fixed;
+		background-image: url("../img/proj/proj-ecew17.png") no-repeat fixed, linear-gradient(to bottom right,  #112188, #040B3B) fixed !important; 
 	}
 	#ECEW17 {
 		color: #ffbd38 !important;
@@ -216,7 +229,8 @@
 
 /*eceweekhacked2015*/
 	.eceweekhacked2015 {
-		background: linear-gradient(to bottom right,  #237E7C, #0a1351) fixed !important;  
+		background: #0a1351; 
+		/*background: linear-gradient(to bottom right,  #237E7C, #0a1351) fixed !important;  */
 	}
 	#eceweekhacked2015 {
 		color: rgba(199, 199, 199, 0.68); 

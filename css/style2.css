@@ -171,8 +171,23 @@
             background-color: #007E60; 
         }
 
-/* Background Feature */
+    /* Background Feature */
     #background {
         transition: all 2s ease;
-        background: white; 
+        mix-blend-mode: soft-light;
+    }
+
+    #overlay {
+        height: 100%; 
+        width: 100%; 
+        position: absolute;
+        top: 0; 
+        left: 0;
+        mix-blend-mode: soft-light;
+        background: linear-gradient(to bottom right, rgba(255,255,255,0.4), rgba(0,0,0,0.3)); 
+    }
+
+    #outerbox {
+        display: block;
+        position: relative;
     }
