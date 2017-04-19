@@ -25,7 +25,7 @@
             width: 70%;
         }
     }
-    hr.green {width: 100px;border: 2px solid #007e60;}
+    hr.green {width: 100px; border: 2px solid #007e60;}
     hr {
     	width: 100px;
     	margin-bottom: 1.424rem; 
@@ -107,6 +107,9 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+    .blocks .info {
+        text-align: center;
+    }
 	.blocks .description .text {
 		height: 60%; 
 		margin: auto 5%; 
@@ -171,10 +174,11 @@
             background-color: #007E60; 
         }
 
-    /* Background Feature */
+/* Background Feature */
     #background {
         transition: all 2s ease;
         mix-blend-mode: soft-light;
+        z-index: 3; 
     }
 
     #overlay {
@@ -183,8 +187,9 @@
         position: absolute;
         top: 0; 
         left: 0;
+        z-index: 0;
         mix-blend-mode: soft-light;
-        background: linear-gradient(to bottom right, rgba(255,255,255,0.4), rgba(0,0,0,0.3)); 
+        background: linear-gradient(to bottom right, rgba(255,255,255,0.8), rgba(0,0,0,0.7)); 
     }
 
     #outerbox {
