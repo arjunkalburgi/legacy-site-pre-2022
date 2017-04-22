@@ -30,11 +30,24 @@ var projdict = {
 	"runner": 'linear-gradient(to bottom right,  #9ec2f4, #9ec2f4) fixed !important'
 }
 
+var projs;
+var blocksize; 
+
+$( document ).ready(function(){
+	projs = $(".block").map(function() { return this.id; }).toArray();
+	var j = 0; 
+	for (var i = projs.length - 1; i >= 0; i--) {
+		j += $("#"+projs[i]).height(); 
+		// console.log($("#"+projs[i]).height())
+	}
+	blocksize = j/projs.length; 
+})
 
 $(window).scroll(function() {
 	var offset = $(window).height()*0.25; // size of window from top to when you want the first switch to be
-	var blocksize = $(window).height()*0.9;  // this is programmed in 
-	var projs = $(".block").map(function() { return this.id; }).toArray();
+	console.log("blocksize: " + blocksize + ", projs: " + projs.length); 
+	// var blocksize = $(window).height()*0.9;  // this is programmed in 
+	// var projs = $(".block").map(function() { return this.id; }).toArray();
 	var scroll = $(window).scrollTop(); 
 	var projectname = ""; 
 
@@ -44,7 +57,7 @@ $(window).scroll(function() {
 		console.log("hey"); 
 		projectname = projs[currprojectnum-1]; 
 	}
-	console.log("scroll: "+ scroll + ", currprojectnum: " + currprojectnum); 
+	// console.log("scroll: "+ scroll + ", currprojectnum: " + currprojectnum); 
 
 	// $("#background").animate({background: projdict[projectname]}, 1000); 
 	$("#background").removeClass(); 
