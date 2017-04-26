@@ -10,13 +10,12 @@
 #hero {background: #007E60; height: 100%;}
 #hero .container {height: 100%;}
 
-#about {background: white;}
-#about .container {width: 80%;}
-@media only screen and (min-width: 630px) {
-    #about{height: 100%; width:100%; display:flex; align-items: center;}
-    #about .container {height: initial; width: 80%;}
-    #about .container .spacing {width: 75%; margin-left: auto; margin-right: auto;}
+#about {background: white; background-color:#007e60; height:initial; }
+#about .container {width: 80%; bottom:50px; margin:0px auto; }
+@media only screen and (max-width: 630px) {
+    #about .container {height: initial; width: 99%;}
 }
+#about .cardtext {width: 90%;}
 
 #bottom {background: url('../img/dark-bg.jpg') fixed; color: #FFF; background-size: cover;}
 
