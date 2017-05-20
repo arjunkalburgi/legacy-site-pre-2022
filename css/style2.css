@@ -60,6 +60,11 @@
         .nav-links {
             width: 40% !important; 
         }
+        @media only screen and (max-width: 630px) {
+            .nav-links {
+                width: auto !important; 
+            }
+        }
         .nav-links .nav-link {
             width: 20%; 
             height: 100%;
