@@ -60,6 +60,17 @@
         .nav-links {
             width: 40% !important; 
         }
+        @media only screen and (max-width: 770px) {
+            nav {
+                height: 100px;
+            }
+            .nav-links {
+                width: 60% !important; 
+            }
+            .nav-links .nav-link { 
+                font-size: xx-large;
+            }
+        }
         @media only screen and (max-width: 630px) {
             .nav-links {
                 width: auto !important; 
@@ -88,6 +99,12 @@
             margin: 0 auto; 
             padding-bottom: 10%; 
             height: 70%;
+        }
+
+        @media only screen and (min-width: 760px) and (max-width: 1024px) {
+            header {
+                height: 50%; 
+            }
         }
 
 /* Content Blocks */
@@ -138,6 +155,7 @@
             height: inherit;
         }
     }
+
 /* Footer */
 	#bottom {background: url('../img/dark-bg.jpg') fixed; color: #FFF; background-size: cover;}
 
