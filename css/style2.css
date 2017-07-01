@@ -51,6 +51,10 @@
 	    color: #007E60;
     }
 
+    .block h3, .block div.small {
+        text-align: center;
+    }
+
 /* Top */
     /* Nav */
         nav {
@@ -126,7 +130,7 @@
 	}
 	.blocks .col {
 		/* vertical center */
-		height: 80%; 
+		height: 50%; 
 		/* vertical center: container */
 		display: flex;
 		flex-direction: column;
