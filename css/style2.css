@@ -219,6 +219,10 @@
         z-index: 3; 
     }
 
+    .start {
+        background: url("../img/dark-bg.jpg"); 
+    }
+
     #overlay {
         height: 100%; 
         width: 100%; 
