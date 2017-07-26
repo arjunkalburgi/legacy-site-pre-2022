@@ -41,11 +41,13 @@ $( document ).ready(function(){
 		// console.log($("#"+projs[i]).height())
 	}
 	blocksize = j/projs.length; 
+
+	// $("#background").addClass("start")
 })
 
 $(window).scroll(function() {
 	var offset = $(window).height()*0.25; // size of window from top to when you want the first switch to be
-	console.log("blocksize: " + blocksize + ", projs: " + projs.length); 
+	// console.log("blocksize: " + blocksize + ", projs: " + projs.length); 
 	// var blocksize = $(window).height()*0.9;  // this is programmed in 
 	// var projs = $(".block").map(function() { return this.id; }).toArray();
 	var scroll = $(window).scrollTop(); 
@@ -54,7 +56,7 @@ $(window).scroll(function() {
 	var currprojectnum = Math.floor((scroll-offset)/blocksize); 
 	projectname = projs[currprojectnum]; 
 	if (currprojectnum >= projs.length) {
-		console.log("hey"); 
+		// console.log("hey"); 
 		projectname = projs[currprojectnum-1]; 
 	}
 	// console.log("scroll: "+ scroll + ", currprojectnum: " + currprojectnum); 
