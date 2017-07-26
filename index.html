@@ -10,6 +10,7 @@
 	<meta name="mobile-web-app-capable" content="yes">
 
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/animate.css" type="text/css">
 	<link rel="stylesheet" href="css/materialize.min.css" type="text/css">
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
 
@@ -17,9 +18,6 @@
 	<script src="js/materialize.min.js"></script>
 	<script src="js/svgConvert.min.js"></script>
 	<script type="text/javascript" src="js/WOW.js"></script>
-	<script type="text/javascript">
-		new WOW().init();
-	</script>
 </head>
 
 <body>
@@ -117,55 +115,13 @@
 			</h1>
 		</div>
 	</div>
-	<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script> -->
 
 	<script>
+		new WOW().init();
+
 		$('.svg-convert').svgConvert();
 
-		$(function() {
-			$('a[href*=#]:not([href=#])').click(function() {
-				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-					if (target.length) {
-						$('html,body').animate({
-							scrollTop: target.offset().top
-						}, 1000);
-						return false;
-					}
-				}
-				this.toggleClass("active");
-			});
-		});
-
-		$('a[href*=#]:not([href=#]) > span').on('animationend', function(event) {
-			if (event.originalEvent.elapsedTime > 0 && !$(this).hasClass('scroll-button')) {
-				console.log(event);
-				$(this).removeClass('wow animated fadeInUp');
-				$(this).css('animation-name', '');
-				$(this).css('animation-delay', '');
-				$(this).addClass('scroll-button');
-			}
-		});
-	
-		var divs = $('span[id^="content-"]').hide(),
-		i = 0;
-
-		(function cycle() {
-
-			divs.eq(i).fadeIn(400)
-				.delay(1000)
-				.fadeOut(400, cycle);
-
-			i = ++i % divs.length;
-
-		})();
-		/*new Vivus('logo', {
-			duration: 75,
-			file: '/img/logo.svg'
-		}, console.log('swag'))
-		$( document ).ready(function() {
+		/*$( document ).ready(function() {
 			$(".toy").click(function() {
 				$(this).removeClass("animate"); 
 				void $(this).offsetWidth;
