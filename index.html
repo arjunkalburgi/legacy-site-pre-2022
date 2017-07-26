@@ -167,6 +167,13 @@
 		/*new Vivus('logo', {
 			duration: 75,
 			file: '/img/logo.svg'
-		}, console.log('swag'))*/
+		}, console.log('swag'))
+		$( document ).ready(function() {
+			$(".toy").click(function() {
+				$(this).removeClass("animate"); 
+				void $(this).offsetWidth;
+				$(this).addClass("animate"); 
+			})
+		});*/
 	</script>
 </body>
