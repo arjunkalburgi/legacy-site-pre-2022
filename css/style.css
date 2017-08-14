@@ -11,7 +11,7 @@
 @media only screen and (max-width: 630px) {
     #about .container {height: initial; width: 99%;}
 }
-#about .cardtext {width: 90%;}
+#about .cardtext {width: 90%;line-height: 140%; padding-top: 2%;}
 
 #bottom {background: url('../img/dark-bg.jpg') fixed; color: #FFF; background-size: cover;}
 
