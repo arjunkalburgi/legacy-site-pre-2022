@@ -3,10 +3,10 @@
 
 
 
-#hero {background: #007E60; height: 100%;}
+#hero {height: 100%; text-align: center;}
 #hero .container {height: 100%;}
 
-#about {background: white; background-color:#007e60; height:initial; }
+#about { height:initial; }
 #about .container {width: 80%; bottom:50px; margin:0px auto; }
 @media only screen and (max-width: 630px) {
     #about .container {height: initial; width: 99%;}
@@ -19,7 +19,10 @@
 /* Elements */
     html,body {
         height: 100%;
-        width: 100%
+        width: 100%; 
+
+        background-color: #F8F8FA; 
+        color: #2C453B
     }
     .container {
         padding-top: 50px;
@@ -35,21 +38,30 @@
             width: 70%;
         }
     }
-    hr.green {width: 100px;border: 2px solid #007e60;}
-    hr.white {width: 100px;/*border: 2px solid #fff;*/ margin-bottom: 1.424rem;}
+    hr {width: 100px;border: 2px solid;}
 
 /* Text Style */
     * {font-family: 'Raleway', 'Open Sans', 'Helvetica', sans-serif; margin: 0;}
     .upper {text-transform: uppercase;}
-    .title {font-family: 'Montserrat', 'Open Sans', 'Helvetica', sans-serif;}
 
-    .greentext{color:#007e60;}
-    .whitetext{color:#fff;}
+    .title {font-family: 'Montserrat', 'Open Sans', 'Helvetica', sans-serif; text-transform: uppercase; color: #2C453B; 
+        font-size: 4.84rem; line-height: 110%; margin: 2.1rem 0 1.68rem 0; font-weight: 800; 
+    }
+    .titlecolour { color: #2C453B; }
+
+    .sub.title {color: #487161; font-size: 3.56rem; margin: 1.78rem 0 1.424rem 0; font-weight: 400; }
+    .subtitlecolour { color: #487161; }
+
+    .text {font-family: 'Raleway', 'Open Sans', 'Helvetica', sans-serif; color: black; 
+        font-size: 1.64rem; line-height: 140%; margin: 0.82rem 0 0.656rem 0; 
+    }
+    .textcolour { color: black; }
+
+    .sub.text {font-size: 1rem; line-height: 110%; margin: 0.5rem 0 0.4rem 0; }
 
 /* Figures */
     figure i {
         font-size: 65px !important;
-        color: #007e60;
     }
 
     @media only screen and (min-width: 528px) { 
@@ -61,10 +73,17 @@
     }
 
     /* Bottom Section - Main Links */
+        #bottom .main_links .main_link figure i {
+            color: white; 
+        }
+
         #bottom .main_links .main_link figure:hover {
             border-radius: 60px;
             box-shadow: 0px 0px 30px 30px white;
             background-color: white;
+            color: #007E60; 
+        }
+        #bottom .main_links .main_link figure:hover i {
             color: #007E60; 
         }
         
@@ -94,19 +113,23 @@
             letter-spacing: 0.5rem; 
         }
 
-        #bottom a.whitetext:hover .fa {
+        .quick_links a {
+            color: white !important; 
+        }
+
+        .quick_links a:hover .fa {
             border-radius: 50px; 
             box-shadow: -3px 0px 15px 15px #007E60; 
             background-color: #007E60; 
         }
 
-        #bottom .quick_links .fa-envelope-o {
+        .quick_links .fa-envelope-o {
             font-size: 2.5rem; 
         }
 
 /* Logo */
-    #logo {height: 200px; width:200px; position: relative;}
-    #logo img {width: inherit; position: absolute;}
+    #logo {height: 200px; width:200px; position: relative; margin: 0 auto;}
+    #logo img {width: inherit; position: absolute; left: 0; right: 0;}
 
 /* Toys */
 
