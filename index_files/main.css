@@ -752,7 +752,8 @@ a {
     transition: max-height, 175ms; }
   .project button {
     margin: 2.25em 0 0 0;
-    max-height: 0em; }
+    max-height: 0em; 
+    overflow: hidden; }
     .project button span.arrow { 
       display: inline-block;
       width: 1.25em;
@@ -822,28 +823,16 @@ a {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), transparent);
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), transparent); } }
 
-#p-onboardiq {
-  background: url("../assets/projects/onboardiq.png") no-repeat center center;
+.project.instagram {
+  background: url("../assets/instagramimg.png") no-repeat center center;
   background-size: cover; }
 
-#p-infuture {
-  background: url("../assets/projects/infuture.png") no-repeat center center;
+.project.youtube {
+  background: url("../assets/youtubeimg.png") no-repeat center center;
   background-size: cover; }
 
-#p-flowww {
-  background: url("../assets/projects/flowww.png") no-repeat center top;
-  background-size: cover; }
-
-#p-300ui {
-  background: url("../assets/projects/300ui.png") no-repeat center center;
-  background-size: cover; }
-
-#p-6502 {
-  background: url("../assets/projects/6502.png") no-repeat center center;
-  background-size: cover; }
-
-#p-search {
-  background: url("../assets/projects/search.png") no-repeat center center;
+.project.medium {
+  background: url("../assets/mediumimg.png") no-repeat center top;
   background-size: cover; }
 
 @keyframes fadeInUp {
