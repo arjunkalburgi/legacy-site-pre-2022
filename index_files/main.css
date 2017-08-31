@@ -571,10 +571,10 @@ html, body {
       padding: 7.5em 3.5em; } }
 
 .contact {
-  padding: 1.25em 0 7.5em 0; }
+  padding: 1.25em 0 1.5em 0; }
   @media screen and (max-width: 61.625em) {
     .contact {
-      padding: 1.25em 3.5em 7.5em 3.5em; } }
+      padding: 1.25em 3.5em 1.5em 3.5em; } }
 
 .container {
   width: 80%;
@@ -611,8 +611,8 @@ html, body {
 
   .container footer {
       width: 30%;
-      max-width: 15em; 
-      margin: 10px auto; }
+      max-width: 10em; 
+      margin: 2.25em auto; }
   @media screen and (max-width: 87.5em) {
     .container footer {
       width: 40%; } }
@@ -765,7 +765,7 @@ a {
       transition: all, 175ms;
       transition-delay: 175ms; }
   .project:hover p, .project:hover button {
-    max-height: 4.5em; }
+    max-height: 5.5em; }
   .project:hover span.arrow {
     margin-left: 0;
     background-position: right center;
@@ -776,7 +776,7 @@ a {
       margin: 0 auto; }
       .project .container {
         width: 100%; }
-      .project p {
+      .project:hover p {
         max-height: 8em; }
       .project span.arrow {
         margin-left: 0 !important;
@@ -1006,6 +1006,8 @@ ul.filter {
       transition: all, 175ms; }
       .social li span:hover {
         opacity: 0.66; }
+      .social li a {
+        border-bottom: none; }
 
 span.i-messenger {
   background: url("../assets/social/messenger.svg") no-repeat center center;
