@@ -1,0 +1,153 @@
+#topNav {
+    /* display: table-cell; */
+    vertical-align: top;
+    padding-top: 20px; 
+    padding-right: 30px; 
+    text-align: right;
+    opacity: 1;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s
+}
+
+#topNav .main-nav {
+    display: inline-block;
+    vertical-align: middle
+}
+
+#topNav .main-nav ul {
+    display: inline-block;
+    margin: 0;
+    margin-top: -.35em;
+    font-size: 12px
+}
+
+#topNav .main-nav ul li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block
+}
+
+#topNav .main-nav li a {
+    font-family: Arial, verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0px;
+    /* font-family: "futura-pt"; */
+    font-size: x-small;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5em;
+    cursor: pointer; 
+    color: black;
+}
+
+#topNav .main-nav li a span {
+    border-bottom: 1px solid transparent;
+    -webkit-transition: color 0.3s, border-bottom-color 0.3s;
+    -moz-transition: color 0.3s, border-bottom-color 0.3s;
+    -o-transition: color 0.3s, border-bottom-color 0.3s;
+    transition: color 0.3s, border-bottom-color 0.3s
+}
+
+#topNav .folder {
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer
+}
+
+#topNav .folder .folder-child-wrapper {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    z-index: 1100;
+    padding-top: 18px
+}
+
+#topNav .folder .folder-child-wrapper ul.folder-child {
+    display: none;
+    padding: 15px 20px;
+    margin: 0;
+    position: relative; 
+    background: black; 
+}
+
+#topNav .folder .folder-child-wrapper ul.folder-child:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 0 0 10px;
+    border-style: solid;
+    border-right: solid 10px transparent;
+    border-left: solid 10px transparent;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px
+}
+
+#topNav .folder .folder-child-wrapper ul.folder-child li {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+#topNav .folder .folder-child-wrapper ul.folder-child li:hover span,
+#topNav .folder .folder-child-wrapper ul.folder-child li.active-link span {
+    border-color: #fbfbfb
+}
+
+#topNav .folder .folder-child-wrapper ul.folder-child li a {
+    display: block;
+    font-size: 10.2px;
+    padding: 5px 0;
+    overflow: hidden;
+    width: 150px;
+    color: #fbfbfb; 
+}
+
+#topNav .folder:hover ul.folder-child,
+#topNav .folder .folder-child-wrapper:hover ul.folder-child,
+#topNav .folder:active ul.folder-child,
+#topNav .folder .folder-child-wrapper:active ul.folder-child {
+    display: block
+}
+
+html.ie10 #topNav .folder a:hover span {
+    border-color: transparent !important
+}
+
+html.ie10 #topNav .folder .folder-child-wrapper {
+    padding-top: 10px
+}
+
+body:not(.hide-folder-symbol) .folder-parent>a:first-child:before,
+body:not(.hide-folder-symbol) .folder-parent>a:visited:first-child:before {
+    content: '+';
+    margin-right: .25em;
+    text-decoration: none !important
+}
+
+body:not(.hide-folder-symbol).dropdown-open .folder-parent>a:first-child:before {
+    content: '–'
+}
+
+body.nav-disabled:not(.show-expanded) .arrow-wrapper {
+    display: none !important
+}
+
+body.nav-disabled .slideshow.strip {
+    padding-left: 0 !important
+}
+
+body.nav-disabled .slideshow.strip .slide {
+    opacity: 1 !important
+}
