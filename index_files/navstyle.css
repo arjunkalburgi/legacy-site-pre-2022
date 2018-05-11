@@ -1,14 +1,25 @@
 #topNav {
     /* display: table-cell; */
     vertical-align: top;
-    padding-top: 20px; 
-    padding-right: 30px; 
+    padding-top: 20px;
+    padding-right: 30px;
+    margin-left: 30px;
     text-align: right;
     opacity: 1;
     -webkit-transition: opacity .3s;
     -moz-transition: opacity .3s;
     -o-transition: opacity .3s;
     transition: opacity .3s
+}
+
+#topNav img {
+    height: 17px;
+    float: left;
+}
+
+#topNav .funkycopy {
+    float: left;
+    margin-left: 3px;
 }
 
 #topNav .main-nav {
@@ -43,7 +54,7 @@
     font-weight: 700;
     font-style: normal;
     line-height: 1.5em;
-    cursor: pointer; 
+    cursor: pointer;
     color: black;
 }
 
@@ -73,8 +84,8 @@
     display: none;
     padding: 15px 20px;
     margin: 0;
-    position: relative; 
-    background: black; 
+    position: relative;
+    background: black;
 }
 
 #topNav .folder .folder-child-wrapper ul.folder-child:before {
@@ -111,7 +122,7 @@
     padding: 5px 0;
     overflow: hidden;
     width: 150px;
-    color: #fbfbfb; 
+    color: #fbfbfb;
 }
 
 #topNav .folder:hover ul.folder-child,

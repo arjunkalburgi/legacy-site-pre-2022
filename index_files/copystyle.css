@@ -1,0 +1,32 @@
+/* Main Heading */
+.mainH {
+    color: black;
+    font-size: x-large;
+}
+
+/* Section Heading */
+.sectionH {
+    color: darkgray;
+    font-size: large;
+}
+
+/* Funky Heading */
+.funkyH {
+    color: greenyellow;
+    font-style: italic;
+}
+
+/* Copy */
+.copy {
+    font-size: 1.2em;
+    color: #999999;
+    font-weight: 300;
+}
+
+/* Funky Copy */
+.funkycopy {
+    font-size: small;
+    color: greenyellow;
+    font-weight: 600;
+    font-style: italic; 
+}
