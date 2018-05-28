@@ -1009,24 +1009,24 @@ ul.filter {
       .social li a {
         border-bottom: none; }
 
-span.i-messenger {
-  background: url("../assets/social/messenger.svg") no-repeat center center;
+span.i-instagram {
+  background: url("../social/instagram.svg") no-repeat center center;
   background-size: contain; }
 
-span.i-twitter {
-  background: url("../assets/social/twitter.svg") no-repeat center center;
+span.i-medium {
+  background: url("../social/medium.svg") no-repeat center center;
   background-size: contain; }
 
-span.i-snapchat {
-  background: url("../assets/social/snapchat.svg") no-repeat center center;
+span.i-youtube {
+  background: url("../social/youtube.svg") no-repeat center center;
   background-size: contain; }
 
 span.i-github {
-  background: url("../assets/social/github.svg") no-repeat center center;
+  background: url("../social/github.svg") no-repeat center center;
   background-size: contain; }
 
 span.i-linkedin {
-  background: url("../assets/social/linkedin.svg") no-repeat center center;
+  background: url("../social/linkedin.svg") no-repeat center center;
   background-size: contain; }
 
 /*!

@@ -66,6 +66,16 @@
     transition: color 0.3s, border-bottom-color 0.3s
 }
 
+#topNav .main-nav ul.social li span {
+    width: 2.5em; 
+    height: 2.5em; 
+    margin: 0 41%; 
+}
+
+nav ul.social a:hover {
+    border: none !important; 
+}
+
 #topNav .folder {
     box-sizing: border-box;
     position: relative;
@@ -86,6 +96,11 @@
     margin: 0;
     position: relative;
     background: black;
+}
+
+#topNav .folder .folder-child-wrapper ul.folder-child.social {
+    background: white; 
+    border: 1px solid black; 
 }
 
 #topNav .folder .folder-child-wrapper ul.folder-child:before {
@@ -111,7 +126,6 @@
     padding: 0
 }
 
-#topNav .folder .folder-child-wrapper ul.folder-child li:hover span,
 #topNav .folder .folder-child-wrapper ul.folder-child li.active-link span {
     border-color: #fbfbfb
 }

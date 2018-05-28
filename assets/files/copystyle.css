@@ -37,6 +37,12 @@
     font-style: italic; 
 }
 
+/* FunkyStyle - make anything funky */
+.funkystyle {
+    color: greenyellow;
+    font-style: italic;
+}
+
 /* Main Heading text "imma product maker" */
 .intro .mainH {
     font-size: 7vw; 
