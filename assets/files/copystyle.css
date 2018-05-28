@@ -2,6 +2,7 @@
 .mainH {
     color: black;
     font-size: x-large;
+    font-family: "raleway", sans-serif;
 }
 
 /* Section Heading */
@@ -18,7 +19,7 @@
 
 /* Copy */
 .copy {
-    font-size: small;
+    font-size: 1vw;
     color: #999999;
     font-weight: 300;
 }
@@ -34,7 +35,9 @@
     color: greenyellow;
     font-weight: 600;
     font-style: italic; 
-}}    font-weight: 600;/* Main Heading text "imma product maker" */
+}
+
+/* Main Heading text "imma product maker" */
 .intro .mainH {
     font-size: 7vw; 
 }
