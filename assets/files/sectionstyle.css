@@ -3,7 +3,8 @@
     padding: 8% 5% 3% 3%;
 }
 #intro .copy {
-    padding-left: 100px;
+    width: 60%; 
+    margin: auto; 
 }
     @media screen and (max-width: 500px) {
         #intro .copy {
