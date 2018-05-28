@@ -1,7 +1,12 @@
 /* INTRO */
 #intro .text-container {
-    padding: 140px 100px 51px 40px;
+    padding: 8% 5% 3% 3%;
 }
 #intro .copy {
     padding-left: 100px;
 }
+    @media screen and (max-width: 500px) {
+        #intro .copy {
+            padding-left: 0px; 
+        }
+    }

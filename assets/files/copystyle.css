@@ -18,10 +18,15 @@
 
 /* Copy */
 .copy {
-    font-size: 1.2em;
+    font-size: small;
     color: #999999;
     font-weight: 300;
 }
+    @media screen and (max-width: 500px) {
+        .intro .copy {
+            font-size: x-small;
+        }
+    }
 
 /* Funky Copy */
 .funkycopy {
@@ -29,4 +34,12 @@
     color: greenyellow;
     font-weight: 600;
     font-style: italic; 
+}}    font-weight: 600;/* Main Heading text "imma product maker" */
+.intro .mainH {
+    font-size: 7vw; 
 }
+    @media screen and (max-width: 500px) {
+        .intro .mainH {
+            font-size: 6vw;
+        }
+    }
