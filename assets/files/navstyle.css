@@ -17,9 +17,10 @@
     float: left;
 }
 
-#topNav .funkycopy {
+.logo.funkystyle {
     float: left;
     margin-left: 3px;
+    font-size: small; 
 }
 
 #topNav .main-nav {

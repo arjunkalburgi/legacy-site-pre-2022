@@ -1,54 +1,42 @@
 /* Main Heading */
-.mainH {
+h1 {
     color: black;
-    font-size: x-large;
     font-family: "raleway", sans-serif;
-}
-
-/* Section Heading */
-.sectionH {
-    color: darkgray;
-    font-size: large;
-}
-
-/* Funky Heading */
-.funkyH {
-    color: greenyellow;
-    font-style: italic;
-}
-
-/* Copy */
-.copy {
-    font-size: 1vw;
-    color: #999999;
-    font-weight: 300;
+    font-size: 7vw;
+    line-height: 1.33;
 }
     @media screen and (max-width: 500px) {
-        .intro .copy {
-            font-size: x-small;
-        }
-    }
-
-/* Funky Copy */
-.funkycopy {
-    font-size: small;
-    color: greenyellow;
-    font-weight: 600;
-    font-style: italic; 
-}
-
-/* FunkyStyle - make anything funky */
-.funkystyle {
-    color: greenyellow;
-    font-style: italic;
-}
-
-/* Main Heading text "imma product maker" */
-.intro .mainH {
-    font-size: 7vw; 
-}
-    @media screen and (max-width: 500px) {
-        .intro .mainH {
+        h1 {
             font-size: 6vw;
         }
     }
+
+/* Copy */
+.copy {
+    font-size: 200%;
+    color: #999999;
+    font-weight: 300;
+}
+    @media screen and (min-width: 1700px) {
+        .copy {
+            font-size: 300%;
+        }
+    }
+    .copy .emphasis {
+        color: darkgray;
+        font-style: italic;
+        font-weight: bold;
+        text-indent: 2em; 
+        padding-bottom: 2em;
+    }
+        .copy .emphasis a {
+            text-decoration: none;
+            color: darkgray;
+        }
+
+/* FunkyStyle - make anything funky */
+.funkystyle {
+    color: greenyellow !important;
+    font-style: italic;
+    font-weight: bold; 
+}
