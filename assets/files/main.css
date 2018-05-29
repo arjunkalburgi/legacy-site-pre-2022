@@ -704,7 +704,10 @@ a {
   animation-name: fadeOut;
   animation-delay: 1500ms;
   animation-duration: 1500ms;
-  animation-fill-mode: both; }
+  animation-fill-mode: both; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; }
 
 @keyframes fadeOut {
   from {
