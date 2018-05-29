@@ -418,7 +418,7 @@ html, body {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d; }
   .intro h1 {
-    font-size: 7.25em;
+    /* font-size: 7.25em; */
     line-height: 1.33; }
     @media screen and (max-width: 87.5em) {
       .intro h1 {
@@ -443,7 +443,6 @@ html, body {
     .intro {
       padding: 0 3.5em; } }
   .intro p {
-    font-size: 1.2em; 
     color: #999999; 
     font-weight: 300; 
     text-align: center;
@@ -681,12 +680,11 @@ h4 {
   font-size: 1.125em; }
 
 p {
-  max-width: 37.5em;
+  /* max-width: 37.5em;
   margin: 0.625em 0;
   padding: 0;
   font-family: "raleway", sans-serif;
-  font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 600; */
   line-height: 1.8; }
 
 a {
@@ -706,7 +704,10 @@ a {
   animation-name: fadeOut;
   animation-delay: 1500ms;
   animation-duration: 1500ms;
-  animation-fill-mode: both; }
+  animation-fill-mode: both; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; }
 
 @keyframes fadeOut {
   from {
@@ -969,8 +970,8 @@ ul.filter {
   .featured .column {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
+    margin-right: 0.5%;
+    width: 33%; }
     .featured .column:last-child {
       margin-right: 0; }
   .featured ul {
@@ -1011,24 +1012,37 @@ ul.filter {
       .social li a {
         border-bottom: none; }
 
-span.i-messenger {
-  background: url("../assets/social/messenger.svg") no-repeat center center;
+span.i-instagram {
+  background: url("../social/instagram.svg") no-repeat center center;
   background-size: contain; }
 
-span.i-twitter {
-  background: url("../assets/social/twitter.svg") no-repeat center center;
+span.i-medium {
+  background: url("../social/medium.svg") no-repeat center center;
   background-size: contain; }
 
-span.i-snapchat {
-  background: url("../assets/social/snapchat.svg") no-repeat center center;
+span.i-youtube {
+  background: url("../social/youtube.svg") no-repeat center center;
   background-size: contain; }
 
 span.i-github {
-  background: url("../assets/social/github.svg") no-repeat center center;
+  background: url("../social/github.svg") no-repeat center center;
   background-size: contain; }
 
 span.i-linkedin {
-  background: url("../assets/social/linkedin.svg") no-repeat center center;
+  background: url("../social/linkedin.svg") no-repeat center center;
+  background-size: contain; }
+
+span.i-email {
+  background: url("../social/email.svg") no-repeat center center;
+  background-size: contain; }
+
+span.i-event {
+  background: url("../social/calendar.svg") no-repeat center center;
+  background-size: contain;
+}
+
+span.i-messenger {
+  background: url("../social/messenger.svg") no-repeat center center;
   background-size: contain; }
 
 /*!

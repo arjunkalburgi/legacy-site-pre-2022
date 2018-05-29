@@ -1,0 +1,50 @@
+/* Main Heading */
+h1 {
+    color: black;
+    font-family: "raleway", sans-serif;
+    font-size: 7vw;
+    line-height: 1.33;
+}
+    @media screen and (max-width: 500px) {
+        h1 {
+            font-size: 6vw;
+        }
+    }
+
+/* Copy */
+.copy {
+    font-size: 200%;
+    color: #999999;
+    font-weight: 300;
+}
+    @media screen and (min-width: 1700px) {
+        .copy {
+            font-size: 300%;
+        }
+    }
+    .copy .emphasis {
+        color: darkgray;
+        font-style: italic;
+        font-weight: bold;
+        text-indent: 2em; 
+        padding-bottom: 2em;
+    }
+        .copy .emphasis a {
+            text-decoration: none;
+            color: darkgray;
+        }
+    @media screen and (max-width: 500px) {
+        .copy {
+            font-size: 150%; 
+        }
+        .copy .emphasis {
+            text-indent: 0em;
+        }
+    }
+
+/* FunkyStyle - make anything funky */
+.funkystyle {
+    color: greenyellow !important;
+    font-style: italic;
+    font-weight: bold; 
+}
