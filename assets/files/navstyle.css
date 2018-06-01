@@ -70,7 +70,7 @@
 #topNav .main-nav ul.social li span {
     width: 2.5em; 
     height: 2.5em; 
-    margin: 0 41%; 
+    margin: 0 37%; 
 }
 
 nav ul.social a:hover {
@@ -91,6 +91,10 @@ nav ul.social a:hover {
     padding-top: 18px
 }
 
+#topNav .folder .folder-child-wrapper.social-folder-child {
+    margin-left: -50px; 
+}
+
 #topNav .folder .folder-child-wrapper ul.folder-child {
     display: none;
     padding: 15px 20px;
@@ -102,6 +106,7 @@ nav ul.social a:hover {
 #topNav .folder .folder-child-wrapper ul.folder-child.social {
     background: white; 
     border: 1px solid black; 
+    padding: 15px 0px;
 }
 
 #topNav .folder .folder-child-wrapper ul.folder-child:before {
@@ -138,6 +143,10 @@ nav ul.social a:hover {
     overflow: hidden;
     width: 150px;
     color: #fbfbfb;
+}
+
+#topNav .folder .folder-child-wrapper ul.folder-child.social li a {
+    width: 100px; 
 }
 
 #topNav .folder:hover ul.folder-child,
