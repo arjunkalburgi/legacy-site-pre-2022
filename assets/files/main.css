@@ -582,12 +582,6 @@ html, body {
     .subscribe {
       padding: 7.5em 3.5em; } }
 
-.contact {
-  padding: 1.25em 0 1.5em 0; }
-  @media screen and (max-width: 61.625em) {
-    .contact {
-      padding: 1.25em 3.5em 1.5em 3.5em; } }
-
 .container {
   width: 80%;
   max-width: 75em;

@@ -48,3 +48,46 @@ h1 {
     font-style: italic;
     font-weight: bold; 
 }
+
+.leftdiv {
+    float:left; 
+    margin-right: 2%; 
+}
+
+@-webkit-keyframes shake {
+    from, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-0.5px, 0, 0);
+        transform: translate3d(-0.5px, 0, 0);
+    }
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(0.5px, 0, 0);
+        transform: translate3d(0.5px, 0, 0);
+    }
+}
+
+@keyframes shake {
+    from, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-0.5px, 0, 0);
+        transform: translate3d(-0.5px, 0, 0);
+    }
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(0.5px, 0, 0);
+        transform: translate3d(0.5px, 0, 0);
+    }
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
