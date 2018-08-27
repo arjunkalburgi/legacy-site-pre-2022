@@ -365,7 +365,7 @@ nav svg {
 }
 
 #quiz {
-    background: #5B5B5B; 
+    background: #12A962; 
     margin: 0; 
 }
 
@@ -1204,6 +1204,16 @@ p.text-normal {
     text-align: center
 }
 
+.quiz-style a.link.button:hover {
+    color: #1fc074;
+    background: white;
+}
+
+.quiz-style a.link.button {
+    color: #12A962; 
+    background: white; 
+}
+
 a.link.button:hover {
     background-color: #1fc074;
     box-shadow: none
@@ -1212,6 +1222,8 @@ a.link.button:hover {
 a.link.button {
     background: #12A962;
     color: #fff;
+    font-family: 'Raleway'; 
+    text-transform: uppercase; 
     font-size: 15px;
     letter-spacing: 1.2px;
     font-weight: 700;
