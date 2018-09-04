@@ -168,8 +168,6 @@ section#intro {
     position: relative;
     padding: 100px 0;
     z-index: 2;
-    height: 260vh;
-    overflow-x: hidden;
     background: #ffffff
 }
 
@@ -233,7 +231,6 @@ section#intro {
     height: 350px;
     border-radius: 3px;
     float: left; 
-    left: 630px;
     position: relative;
     z-index: -1;
     top: 260px
