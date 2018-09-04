@@ -140,16 +140,16 @@ header .nav {
     margin-left: 25%
 }
 
-#quiz {
+#contact {
     background: #259f66;
     margin: 0;
 }
 
-#quiz .container {
+#contact .container {
     opacity: 0;
 }
 
-#quiz.active .container {
+#contact.active .container {
     position: relative;
     transition: opacity .4s;
     opacity: 1;
@@ -305,7 +305,7 @@ section#intro {
     transition: none
 }
 
-.quiz-style {
+.contact-style {
     z-index: 1; 
     position: relative; 
     background-image: url('');
@@ -320,32 +320,32 @@ section#intro {
     opacity: 0
 }
 
-.quiz-style .container {
+.contact-style .container {
     position: relative;
     top: 12vh
 }
 
-.quiz-style .title-section {
+.contact-style .title-section {
     background: none;
     transform: translate3d(0, 0, 0);
     padding: 0
 }
 
-.quiz-style .title {
+.contact-style .title {
     color: #ffffff
 }
 
-.quiz-style p {
+.contact-style p {
     color: #ffffff;
     text-align: center
 }
 
-.quiz-style a.link.button:hover {
+.contact-style a.link.button:hover {
     color: #1fc074;
     background: white;
 }
 
-.quiz-style a.link.button {
+.contact-style a.link.button {
     color: #12A962;
     background: white;
 }
@@ -487,7 +487,7 @@ screen and (min-width: 75em) {
         top: 50px
     }
 
-    .quiz-style .container {
+    .contact-style .container {
         position: relative;
         top: 22vh
     }
@@ -509,7 +509,7 @@ screen and (min-width: 75em) {
         padding: 40px 20px 0px 20px;
     }
 
-    .quiz-style {
+    .contact-style {
         z-index: 1;
         height: 93vh;
         position: relative;
