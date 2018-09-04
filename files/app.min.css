@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto Slab' !important;
+    font-family: 'roboto-slab' !important;
     margin: 0
 }
 
@@ -514,19 +514,19 @@ screen and (min-width: 75em) {
 }
 
 h1 {
-    font-family: 'Raleway';
+    font-family: 'raleway';
     font-weight: 900;
     font-size: 40px;
 }
 
 h2 {
-    font-family: 'Raleway';
+    font-family: 'raleway';
     font-weight: 700;
     font-size: 40px;
 }
 
 p {
-    font-family: 'Roboto Slab';
+    font-family: 'roboto-slab';
     font-size: 20px;
     color: #5B5B5B;
 }
