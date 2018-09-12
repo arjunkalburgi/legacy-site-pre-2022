@@ -1,3 +1,1 @@
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+Redirect 301 http://www.arjunkalburgi.com https://www.arjunkalburgi.com
