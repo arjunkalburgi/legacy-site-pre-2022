@@ -1,9 +1,0 @@
-RewriteEngine On
-
-RewriteCond %{HTTP_HOST} ^arjunkalburgi.com$
-RewriteCond %{SERVER_PORT} ^443
-RewriteRule ^(.*)$ https://www.arjunkalburgi.com/$1 [R=301]
-
-RewriteCond %{HTTP_HOST} ^www.arjunkalburgi.com$
-RewriteCond %{SERVER_PORT} ^443
-RewriteRule ^(.*)$ https://www.arjunkalburgi.com/$1 [R=301]
