@@ -1,1 +1,15 @@
-Redirect 301 www.arjunkalburgi.com https://www.arjunkalburgi.com
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^arjunkalburgi.com$
+RewriteRule ^(.*)$ http://www.arjunkalburgi.com/$1 [R=301]
+
+RewriteCond %{HTTP_HOST} ^www.arjunkalburgi.com$
+RewriteRule ^(.*)$ http://arjunkalburgi.com/$1 [R=301]
+
+RewriteCond %{HTTP_HOST} ^arjunkalburgi.com$
+RewriteCond %{SERVER_PORT} ^443
+RewriteRule ^(.*)$ https://www.arjunkalburgi.com/$1 [R=301]
+
+RewriteCond %{HTTP_HOST} ^www.arjunkalburgi.com$
+RewriteCond %{SERVER_PORT} ^443
+RewriteRule ^(.*)$ https://arjunkalburgi.com/$1 [R=301]
