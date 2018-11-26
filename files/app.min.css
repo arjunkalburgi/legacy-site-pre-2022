@@ -130,7 +130,9 @@ header .nav {
 }
 
 #contact {
-    background: #259f66;
+    /* background: #259f66; */
+    background: url("https://www.arjunkalburgi.com/styleguide/Imagery/leaves-green.jpg"); 
+    background-size: contain; 
     margin: 0;
 }
 
