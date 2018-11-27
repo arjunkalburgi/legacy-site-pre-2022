@@ -334,7 +334,8 @@ a.link.button:hover {
     box-shadow: none
 }
 
-a.link.button {
+a.link.button,
+.link.button {
     background: #12A962;
     color: #fff;
     font-family: 'Raleway';
