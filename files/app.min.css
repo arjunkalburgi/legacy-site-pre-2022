@@ -126,7 +126,7 @@ header .nav {
 }
 
 #contact {
-    background: #259f66;
+    background: linear-gradient(white, #259f66 0%);
     background-size: cover;
     margin: 0;
 }
