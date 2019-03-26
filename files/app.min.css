@@ -181,6 +181,13 @@ section#intro {
     background-repeat: no-repeat;
     background-position: center
 }
+@media screen and (max-width: 40em) {
+    .locationImageBig {
+        width: 70%;
+        height: 200px;
+    }
+}
+
 
 .locationImageBig.ldn {
     background-image: url("../assets/pics/innovation.jpg")
