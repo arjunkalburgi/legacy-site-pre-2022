@@ -250,8 +250,21 @@ section#intro {
     padding-bottom: 10vh;
 }
 
+.portfolio-intro { padding-top: 10vh }
+@media only screen and (min-width: 40em) {
+    .portfolio-intro {
+        text-align: center; 
+        padding-top: 15vh; 
+    }
+}
+.portfolio-intro div a.button { top: 0px; display: inline-block; margin: 0px; }
+
 .portfolio-style {
     padding: 15vh 0
+}
+
+#portfolio .portfolio-style:first-of-type {
+    padding: 10vh 0;
 }
 
 .graphics-container {
