@@ -126,8 +126,7 @@ header .nav {
 }
 
 #contact {
-    /* background: url("https://askalburgi.github.com/styleguide/Graphics/Backgrounds/leaves-green.jpg");  */
-    background: white;
+    background: #259f66;
     background-size: cover;
     margin: 0;
 }
