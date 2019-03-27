@@ -174,79 +174,60 @@ section#intro {
     transition: opacity 1s cubic-bezier(.59, .01, .28, 1), transform 1s cubic-bezier(.59, .01, .28, 1), -webkit-transform 1s cubic-bezier(.59, .01, .28, 1)
 }
 
-.locationImageBig {
-    width: 100%;
-    height: 430px;
+.image {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
+    height: 100%; 
+    border-radius: 3px;
 }
-@media screen and (max-width: 40em) {
-    .locationImageBig {
-        width: 70%;
-        height: 200px;
-    }
+.image.big {
+    width: 100%;
+    height: 430px;
 }
-
-
-.locationImageBig.ldn {
+.image.big.ldn {
     background-image: url("../assets/pics/innovation.jpg")
 }
 
-.profile-img {
-    width: 350px;
-    height: 350px;
-}
-
-.c-img-1 {
-    left: 40px;
-    top: 302px;
+.image-container {
     box-shadow: -20px 26px 54px rgba(51, 51, 51, 0.28);
     border-radius: 3px;
-    position: relative
+    position: relative;
+    width: 300px;
+    height: 300px;
 }
-
-.c-color-1 {
+.image-prep {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: none;
+}
+.image.abid { background-image: url("../assets/pics/abid.jpg"); }
+.image.red { background-image: url("../assets/pics/red.jpg"); }
+.image.sra { background-image: url("../assets/pics/sra.jpg"); }
+.color-bg {
     background: #12A962;
     border-radius: 3px;
     float: left;
     position: relative;
     z-index: -1;
-    top: 260px
+    width: 300px;
+    height: 300px;
 }
 
-.c-img-2 {
-    left: 30px;
-    top: 370px;
-    box-shadow: -20px 26px 54px rgba(51, 51, 51, 0.28);
-    border-radius: 3px;
-    position: relative
-}
-
-.c-color-2 {
-    background: #12A962;
-    border-radius: 3px;
-    float: left;
-    position: relative;
-    z-index: -1;
-    top: 330px
-}
-
-.c-color-3 {
-    background: #12A962;
-    border-radius: 3px;
-    float: left;
-    position: relative;
-    z-index: -1;
-    top: 240px
-}
-
-.c-img-3 {
-    left: 40px;
-    top: 230px;
-    box-shadow: -20px 26px 54px rgba(51, 51, 51, 0.28);
-    border-radius: 3px;
-    position: relative;
+@media screen and (max-width: 40em) {
+    .image.mobile {
+        width: 70%;
+        height: 200px;
+    }
 }
 
 #portfolio {
@@ -257,7 +238,6 @@ section#intro {
     padding-bottom: 10vh;
 }
 
-.portfolio-intro { padding-top: 10vh }
 @media only screen and (min-width: 40em) {
     .portfolio-intro {
         text-align: center; 
@@ -401,13 +381,6 @@ p {
     font-family: 'roboto-slab';
     font-size: 20px;
     color: #5B5B5B;
-}
-
-@media screen and (min-width: 45em) {
-    .profile-img {
-        width: 300px;
-        height: 300px;
-    }
 }
 
 @media screen and (max-width: 39.9375em) {
