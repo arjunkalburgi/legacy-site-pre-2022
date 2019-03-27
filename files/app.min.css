@@ -213,6 +213,9 @@ section#intro {
 .image.abid { background-image: url("../assets/pics/abid.jpg"); }
 .image.red { background-image: url("../assets/pics/red.jpg"); }
 .image.sra { background-image: url("../assets/pics/sra.jpg"); }
+.image.style { background-image: url("../assets/pics/style.jpg")}
+.image.rad { background-image: url("../assets/pics/rad.jpg")}
+.image.slack { background-image: url("../assets/pics/slack.jpeg")}
 .color-bg {
     background: #12A962;
     border-radius: 3px;
@@ -226,7 +229,8 @@ section#intro {
 @media screen and (max-width: 40em) {
     .image.mobile {
         width: 70%;
-        height: 200px;
+        max-height: 200px;
+        height: 200px; 
     }
 }
 
@@ -253,6 +257,9 @@ section#intro {
 #portfolio .portfolio-style:first-of-type {
     padding: 10vh 0;
 }
+
+.portfolio-style .image { height: 300px; }
+.portfolio-style h2 { margin-top: 0px; }
 
 .graphics-container {
     position: relative
@@ -472,7 +479,7 @@ screen and (min-width: 75em) {
     }
 
     .portfolio-style {
-        padding: 10vh 0 0
+        padding: 10vh 0
     }
 
     section#intro {
