@@ -232,6 +232,9 @@ section#intro {
         max-height: 200px;
         height: 200px; 
     }
+    #introtext .image.mobile.abid {
+        margin-top: 50px; 
+    }
 }
 
 #portfolio {
@@ -254,7 +257,7 @@ section#intro {
     padding: 15vh 0
 }
 
-#portfolio .portfolio-style:first-of-type {
+.portfolio-style:first-of-type {
     padding: 10vh 0;
 }
 
