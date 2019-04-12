@@ -1,6 +1,7 @@
 body {
     font-family: 'roboto-slab' !important;
-    margin: 0
+    margin: 0; 
+    color: #313131; 
 }
 
 a {
@@ -89,14 +90,6 @@ ul {
 #logo {
     transition: fill 0.5s ease;
     fill: #ffffff;
-}
-
-.title {
-    font-size: 42px;
-    font-weight: 900;
-    line-height: 50px;
-    color: #4e4d4d;
-    margin: 20px 0 0 0
 }
 
 header {
@@ -298,7 +291,8 @@ section#intro {
 }
 
 .contact-style .title {
-    color: #ffffff
+    color: #ffffff; 
+    margin: 20px 0 0 0; 
 }
 
 .contact-style p {
@@ -388,9 +382,9 @@ h2 {
 }
 
 p {
-    font-family: 'roboto-slab';
+    font-family: lato, sans-serif;
     font-size: 20px;
-    color: #5B5B5B;
+    /* color: #0a0a0a; */
 }
 
 @media screen and (max-width: 39.9375em) {
