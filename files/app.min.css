@@ -125,46 +125,86 @@ header .nav {
 }
 
 section#intro {
-    padding: 100px 0 0
+    position: relative; 
+    padding: 100px 0 0; 
+    width: 62.5rem; 
+    margin: auto; 
+    display: grid; 
+    grid-template-columns: 50% 50px auto; 
+    grid-template-rows: 230px 200px 7.5rem 7.5rem 15rem 7.5rem 15rem; 
 }
 
-#intro {
-    position: relative;
-    padding: 100px 0;
-    z-index: 2;
-    background: #ffffff
+.item.image.big {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1; 
+  grid-row-end: 3; 
+  background-size: cover; 
+  background-image: url("https://www.arjunkalburgi.com/assets/pics/innovation.jpg"); 
+} 
+
+.item.text.big {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+  font-family: 'raleway';
+  font-weight: 700;
+  font-size: 40px;
 }
 
-#introtext {
-    position: relative;
-    top: 50px
+@media screen and (min-width: 40em) {
+  .item.text:not(.big) {
+    padding: 10%
+  }
 }
 
-#introtext h2 {
-    line-height: 50px;
-    left: -80px;
-    text-align: left;
-    text-rendering: optimizeLegibility;
-    position: relative
+.item.text.firstpara {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2; 
+  grid-row-end: 3; 
 }
 
-#slideimagebig figure {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    margin: 0;
-    transition: opacity 1s cubic-bezier(.59, .01, .28, 1), -webkit-transform 1s cubic-bezier(.59, .01, .28, 1);
-    transition: opacity 1s cubic-bezier(.59, .01, .28, 1), transform 1s cubic-bezier(.59, .01, .28, 1);
-    transition: opacity 1s cubic-bezier(.59, .01, .28, 1), transform 1s cubic-bezier(.59, .01, .28, 1), -webkit-transform 1s cubic-bezier(.59, .01, .28, 1)
+.item.text.secondpara {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3; 
+  grid-row-end: 5; 
 }
 
-#slideimagebig figure.show {
-    opacity: 1;
-    position: static;
-    visibility: visible;
-    transition: opacity 1s cubic-bezier(.59, .01, .28, 1), -webkit-transform 1s cubic-bezier(.59, .01, .28, 1);
-    transition: opacity 1s cubic-bezier(.59, .01, .28, 1), transform 1s cubic-bezier(.59, .01, .28, 1);
-    transition: opacity 1s cubic-bezier(.59, .01, .28, 1), transform 1s cubic-bezier(.59, .01, .28, 1), -webkit-transform 1s cubic-bezier(.59, .01, .28, 1)
+.item.abid-image.small {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4; 
+  grid-row-end: 6; 
+}
+
+.item.red-image.small {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5; 
+  grid-row-end: 6; 
+}
+
+.item.sra-image.small {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6; 
+  grid-row-end: 7; 
+}
+
+.item.text.thirdpara {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 7; 
+  grid-row-end: 8; 
+}
+
+p {
+  font-family: lato, sans-serif;
+  font-size: 20px;
+  color: #313131
 }
 
 .image {
@@ -174,13 +214,6 @@ section#intro {
     height: 100%; 
     border-radius: 3px;
 }
-.image.big {
-    width: 100%;
-    height: 430px;
-}
-.image.big.ldn {
-    background-image: url("../assets/pics/innovation.jpg")
-}
 
 .image-container {
     box-shadow: -20px 26px 54px rgba(51, 51, 51, 0.28);
@@ -189,6 +222,7 @@ section#intro {
     width: 300px;
     height: 300px;
 }
+
 .image-prep {
     position: absolute;
     z-index: -1;
@@ -220,14 +254,31 @@ section#intro {
 }
 
 @media screen and (max-width: 40em) {
-    .image.mobile {
-        width: 70%;
-        max-height: 200px;
-        height: 200px; 
-    }
-    #introtext .image.mobile.abid {
-        margin-top: 50px; 
-    }
+  section#intro {
+    padding: 100px 0 0; 
+    width: 100%; 
+    display: block; 
+  }
+  
+  .item.image, .item.abid-image .image-container {
+    width: 70%;
+    max-height: 200px;
+    height: 200px; 
+  }
+  
+  .item.text {
+    padding: 0%; 
+  }
+  
+  .item.red-image, .item.sra-image, 
+  .item.abid-image .color-bg {
+    display: none; 
+  }
+  
+  .item.abid-image .image-container {
+    left: 0 !important; 
+    top: 0 !important; 
+  }
 }
 
 #portfolio {
@@ -244,21 +295,23 @@ section#intro {
         padding-top: 15vh; 
     }
 }
-.portfolio-intro div a.button { top: 0px; display: inline-block; margin: 0px; }
+
+.portfolio-intro div a.button {
+    top: 0px;
+    display: inline-block;
+    margin: 0px;
+}
 
 .portfolio-style {
     padding: 15vh 0
 }
 
-.portfolio-style:first-of-type {
-    padding: 10vh 0;
+.portfolio-style .image {
+    height: 300px;
 }
 
-.portfolio-style .image { height: 300px; }
-.portfolio-style h2 { margin-top: 0px; }
-
-.graphics-container {
-    position: relative
+.portfolio-style h2 {
+    margin-top: 0px;
 }
 
 .text {
@@ -332,12 +385,6 @@ a.link.button,
     border-radius: 3px
 }
 
-@media only screen and (max-width: 40em) {
-    div.linkbutton-container {
-        height: 6rem;
-    }
-}
-
 *,
 *:before,
 *:after {
@@ -400,39 +447,6 @@ screen and (min-width: 40em) {
     }
 }
 
-@media screen and (min-width: 40em) {
-    .productsilike {
-        margin-top: 120px;
-    }
-}
-
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .hide-for-medium-only {
-        display: none !important
-    }
-}
-
-@media screen and (min-width: 64em) {
-    .hide-for-large {
-        display: none !important
-    }
-}
-
-@media screen and (max-width: 63.9375em),
-screen and (min-width: 75em) {
-    .productsilike {
-        margin-top: 120px;
-    }
-}
-
-@media screen and (min-width: 75em) {
-
-    .productpowerimg,
-    .productpowertxt {
-        height: 15rem;
-    }
-}
-
 @media only screen and (max-width: 40em) {
     #logo {
         /* fill: #fff !important */
@@ -456,16 +470,6 @@ screen and (min-width: 75em) {
         margin-top: 5vh
     }
 
-    #introtext h2 {
-        text-align: left;
-        left: 0
-    }
-
-    .graphics-container {
-        position: relative;
-        top: 50px
-    }
-
     .contact-style .container {
         position: relative;
         top: 22vh
@@ -483,11 +487,6 @@ screen and (min-width: 75em) {
         padding: 0
     }
 
-    #introtext {
-        top: 30px;
-        padding: 40px 20px 0px 20px;
-    }
-
     .contact-style {
         z-index: 1;
         height: 93vh;
@@ -497,10 +496,6 @@ screen and (min-width: 75em) {
 
     .fixednav {
         padding: 0
-    }
-
-    .productsilike {
-        margin-top: 0px;
     }
 
     .hero {
