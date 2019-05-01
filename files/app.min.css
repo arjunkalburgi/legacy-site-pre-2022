@@ -235,7 +235,7 @@
     display: grid;
     grid-template-columns: 50% auto;
     grid-column-gap: 15%;
-    grid-template-rows: 10% 5% 30% 10% auto;
+    grid-template-rows: 18% 18% 43% auto;
     margin: 15vh 0;
 }
 
@@ -249,6 +249,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     margin-bottom: 1vh;
+    white-space: nowrap; 
 }
 
 .portfolio_item--tags {
@@ -326,6 +327,10 @@
 }
 
 @media screen and (max-width: 40em) {
+    .section {
+        width: 85%; 
+    }
+    
     .intro {
         padding: 100px 0 0;
         /* width: 100%;  */
