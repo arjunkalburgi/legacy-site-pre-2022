@@ -170,6 +170,7 @@
     grid-row-start: 7;
     grid-row-end: 8;
     justify-self: center;
+    margin-top: 10vh;
 }
 
 .item.text.thirdpara {
