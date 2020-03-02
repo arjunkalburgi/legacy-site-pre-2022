@@ -262,23 +262,8 @@
       margin-top: 200px;
   }
 
-  .image-container {
-      box-shadow: -20px 26px 54px rgba(51, 51, 51, 0.28);
-      z-index: -1;
-      background-size: cover;
-      background-color: transparent;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-image: none;
-      margin-top: 200px;
-  }
-
   .image.abid { background-image: url("../assets/pics/abid.jpg"); }
   .image.red { background-image: url("../assets/pics/red.jpg"); }
   .image.sra { background-image: url("../assets/pics/sra.jpg"); }
-  .image.slack { background-image: url("../assets/pics/slack.jpeg") }
-  .image.style { background-image: url("../assets/pics/style.jpg") }
-  .image.surf { background-image: url("../assets/pics/surf.jpg"); filter: grayscale(0.6); }
-  .image.tasks { background-image: url("../assets/pics/tasks.jpg"); filter: grayscale(0.6); }
 
 </style>
