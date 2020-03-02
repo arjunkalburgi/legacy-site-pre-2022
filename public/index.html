@@ -13,11 +13,22 @@
     <meta property="og:description" content="I bring my optimism and positivity to every conversation and strive to build focused products that real people use. I love to talk about integrating technology and design into something new, but mostly I love they all need to take a backseat in order to create value that empowers users.">
     <meta property="og:image" content="/website_assets/pics/sra.jpg">
   </head>
-  <body>
+  <body style="margin: 0;">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105683253-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-105683253-1');
+    </script>
+
   </body>
 </html>

@@ -3,25 +3,24 @@
     <Hero />
     <Intro />
     <Portfolio />
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Footer />
   </div>
 </template>
 
 <script>
 
-import HelloWorld from './components/HelloWorld.vue'
 import Hero from './components/Hero.vue'
 import Intro from './components/Intro.vue'
 import Portfolio from './components/Portfolio.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     Hero,
     Intro,
     Portfolio,
+    Footer,
   }
 }
 </script>
@@ -33,7 +32,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 .section {
