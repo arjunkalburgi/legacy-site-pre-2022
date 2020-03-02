@@ -53,12 +53,6 @@
 </script>
 
 <style scoped lang="scss">
-  .section {
-    width: 70%;
-    margin: 25vh auto 15vh;
-    text-align: left;
-  }
-
   .hero {
     > * {
       width: 50%;
