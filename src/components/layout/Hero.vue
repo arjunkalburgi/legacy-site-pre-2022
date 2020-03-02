@@ -6,7 +6,7 @@
 		<p class="hero_text--intro"> I am a developer and designer but I don't care much for titles or roles. Instead I like to learn as much as I can because I believe that every random thing I learn will somehow help me make an impact in this world. I'm currently based out of Toronto, where I take every chance I get to explore culture and build something new.</p>
 		<ul class="hero_Links">
 			<li>
-				<a class="hero_button" href="writing" title="Blog">WRITING</a>
+        <Button link="writing" text="writing" />
 			</li>
 			<li>
 				<a href="https://twitter.com/arjunkalburgi"><span class="fab fa-twitter"></span></a>
@@ -30,8 +30,13 @@
 
 <script lang="js">
 
+  import Button from './../system/Button.vue'
+
   export default  {
     name: 'hero',
+    components: {
+      Button
+    },
     props: [],
     mounted () {
 
@@ -74,22 +79,6 @@
         list-style: none
       }
       li:not(:first-of-type) { margin: 0 0 0 15px; }
-    }
-
-    &_button {
-      background: #12A962;
-      color: #fff;
-      font-family: 'Raleway';
-      text-transform: uppercase;
-      font-size: 15px;
-      letter-spacing: 1.2px;
-      font-weight: 700;
-      line-height: 17px;
-      padding: 1rem 2rem;
-      position: relative;
-      margin: 20px 0;
-      border-radius: 3px;
-      text-decoration: none;
     }
   }
 </style>

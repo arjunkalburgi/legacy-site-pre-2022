@@ -4,8 +4,8 @@
 		<div class="portfolio-intro">
 			<p>Working on these products requires constant learning and work.</p>
 			<div>
-				<a class="portfolio_button" href="writing" target="_blank">Learning</a>
-				<a class="portfolio_button" href="https://github.com/arjunkalburgi" target="_blank">Work</a>
+        <Button class="" link="writing" text="Learning" />
+        <Button class="" link="https://github.com/arjunkalburgi" text="Work" />
 			</div>
 			<small>View all my content or some highlights below.</small>
 		</div>
@@ -18,7 +18,7 @@
 				student hackathon in Alberta even larger. My solution was custom Slack emojis and I built a way to democratize them.
 			</p>
 			<div class="portfolio_item--button">
-				<a class="portfolio_button" href="https://github.com/arjunkalburgi/slackify">View on Github</a>
+        <Button link="https://github.com/arjunkalburgi/slackify" text="View on Github" />
 			</div>
 			<div class="portfolio_item--image">
 				<div class="image slack b-lazy"></div>
@@ -33,7 +33,7 @@
 				ER diagrams helped me build an app that can bring stylists to the amount of business personal trainers enjoy.
 			</p>
 			<div class="portfolio_item--button">
-				<a class="portfolio_button" href="https://github.com/arjunkalburgi/stylist-assistant">View on Github</a>
+        <Button link="https://github.com/arjunkalburgi/stylist-assistant" text="View on Github" />
 			</div>
 			<div class="portfolio_item--image">
 				<div class="image style b-lazy"></div>
@@ -48,7 +48,7 @@
 				focused on the details of what I was doing, because the details are where you find success.
 			</p>
 			<div class="portfolio_item--button">
-				<a class="portfolio_button" href="https://medium.com/arjunkalburgi/learning-to-surf-a-mindset-practice-17fe3bbbd560">Read the Story</a>
+        <Button link="https://www.arjunkalburgi.com/writing/Learning-to-Surf---a-Mindset-practice" text="Read the Story" />
 			</div>
 			<div class="portfolio_item--image">
 				<div class="image surf b-lazy"></div>
@@ -63,7 +63,7 @@
 				course were being overwhelmed by the workload. I experimented with how a tool could help them change.
 			</p>
 			<div class="portfolio_item--button">
-				<a class="portfolio_button" href="https://medium.com/arjunkalburgi/stressful-tasks-a-behavioural-design-experiment-ff59a23bf1e5">Read the Story</a>
+        <Button link="https://www.arjunkalburgi.com/writing/Stressful-Tasks--a-behavioural-design-experiment" text="Read the Story" />
 			</div>
 			<div class="portfolio_item--image">
 				<div class="image tasks b-lazy"></div>
@@ -75,8 +75,13 @@
 
 <script lang="js">
 
+  import Button from './../system/Button.vue'
+
   export default  {
     name: 'portfolio',
+    components: {
+      Button
+    },
     props: [],
     mounted () {
 
