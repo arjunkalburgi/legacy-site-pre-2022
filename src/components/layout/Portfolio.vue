@@ -99,10 +99,10 @@
 
 <style scoped lang="scss">
 
-  .image.slack { background-image: url("../assets/pics/slack.jpeg") }
-  .image.style { background-image: url("../assets/pics/style.jpg") }
-  .image.surf { background-image: url("../assets/pics/surf.jpg"); filter: grayscale(0.6); }
-  .image.tasks { background-image: url("../assets/pics/tasks.jpg"); filter: grayscale(0.6); }
+  .image.slack { background-image: url("../../assets/pics/slack.jpeg") }
+  .image.style { background-image: url("../../assets/pics/style.jpg") }
+  .image.surf { background-image: url("../../assets/pics/surf.jpg"); filter: grayscale(0.6); }
+  .image.tasks { background-image: url("../../assets/pics/tasks.jpg"); filter: grayscale(0.6); }
 
   .portfolio_button {
       background: #12A962;

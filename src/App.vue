@@ -9,10 +9,10 @@
 
 <script>
 
-import Hero from './components/Hero.vue'
-import Intro from './components/Intro.vue'
-import Portfolio from './components/Portfolio.vue'
-import Footer from './components/Footer.vue'
+import Hero from './components/layout/Hero.vue'
+import Intro from './components/layout/Intro.vue'
+import Portfolio from './components/layout/Portfolio.vue'
+import Footer from './components/layout/Footer.vue'
 
 export default {
   name: 'App',
@@ -39,23 +39,23 @@ export default {
   margin: 25vh auto 15vh;
 }
 
-  .portfolio_item--title,
-  .text.big,
-  .contact_contents--title {
-    font-family: 'raleway';
-    font-weight: 700;
-    font-size: 30px;
-  }
+.portfolio_item--title,
+.text.big,
+.contact_contents--title {
+  font-family: 'raleway';
+  font-weight: 700;
+  font-size: 30px;
+}
 
-  .image-container {
-    box-shadow: -20px 26px 54px rgba(51, 51, 51, 0.28);
-    z-index: -1;
-    background-size: cover;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-image: none;
-    margin-top: 200px;
-  }
+.image-container {
+  box-shadow: -20px 26px 54px rgba(51, 51, 51, 0.28);
+  z-index: -1;
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: none;
+  margin-top: 200px;
+}
 
 </style>

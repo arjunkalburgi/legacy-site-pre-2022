@@ -143,14 +143,14 @@
       opacity: 0.5;
   }
 
-  .bgicon1 { background-image: url('../assets/elements/element01.svg') }
-  .bgicon2 { background-image: url('../assets/elements/element02.svg') }
-  .bgicon3 { background-image: url('../assets/elements/element03.svg') }
-  .bgicon4 { background-image: url('../assets/elements/element04.svg'); }
-  .bgicon5 { background-image: url('../assets/elements/element05.svg'); }
-  .bgicon6 { background-image: url('../assets/elements/element06.svg') }
-  .bgicon7 { background-image: url('../assets/elements/element07.svg') }
-  .bgicon8 { background-image: url('../assets/elements/element08.svg') }
+  .bgicon1 { background-image: url('../../assets/elements/element01.svg') }
+  .bgicon2 { background-image: url('../../assets/elements/element02.svg') }
+  .bgicon3 { background-image: url('../../assets/elements/element03.svg') }
+  .bgicon4 { background-image: url('../../assets/elements/element04.svg'); }
+  .bgicon5 { background-image: url('../../assets/elements/element05.svg'); }
+  .bgicon6 { background-image: url('../../assets/elements/element06.svg') }
+  .bgicon7 { background-image: url('../../assets/elements/element07.svg') }
+  .bgicon8 { background-image: url('../../assets/elements/element08.svg') }
 
   .intro {
       position: relative;
@@ -262,8 +262,8 @@
       margin-top: 200px;
   }
 
-  .image.abid { background-image: url("../assets/pics/abid.jpg"); }
-  .image.red { background-image: url("../assets/pics/red.jpg"); }
-  .image.sra { background-image: url("../assets/pics/sra.jpg"); }
+  .image.abid { background-image: url("../../assets/pics/abid.jpg"); }
+  .image.red { background-image: url("../../assets/pics/red.jpg"); }
+  .image.sra { background-image: url("../../assets/pics/sra.jpg"); }
 
 </style>
