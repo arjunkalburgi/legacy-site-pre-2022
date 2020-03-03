@@ -50,6 +50,11 @@ export default {
   }
 
   .image {
+    background: linear-gradient(135deg, #dedede 0%, #dedede 40%, #bfbfbf 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
     border-radius: 3px;
   }
 
