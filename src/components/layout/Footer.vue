@@ -30,43 +30,34 @@
 
 		<div class="contact_contents">
 			<h2 class="contact_contents--title">More</h2>
-			
-			<ul class="contact_contents--links">
-				<li>
-					<a href="writing"><span class="far fa-edit light"></span></a>
-				</li>
-				<li>
-					<a href="https://twitter.com/arjunkalburgi"><span class="fab fa-twitter light"></span></a>
-				</li>
-				<li>
-					<a href="https://github.com/arjunkalburgi"><span class="fab fa-github light"></span></a>
-				</li>
-				<li>
-					<a href="https://linkedin.com/in/arjunkalburgi"><span class="fab fa-linkedin light"></span></a>
-				</li>
-				<li>
-					<a href="https://codepen.io/arjunkalburgi/"><span class="fab fa-codepen light"></span></a>
-				</li>
-				<li>
-					<a href="mailto:me@arjunkalburgi.com"><span class="far fa-envelope light"></span></a>
-				</li>
-			</ul>
+      <ButtonList class="contact_contents--links" :hasButton=false v-bind:list='list' />
 		</div>
   </section>
 
 </template>
 
 <script lang="js">
+  import ButtonList from './../system/ButtonList.vue'
 
   export default  {
     name: 'footer',
+    components: {
+      ButtonList
+    },
     props: [],
     mounted () {
 
     },
     data () {
     return {
-
+        list: [
+          {link: "arjunkalburgi.com/writing",     icon: "edit"},
+          {link: "twitter.com/arjunkalburgi",     icon: "twitter"},
+          {link: "github.com/arjunkalburgi",      icon: "github"},
+          {link: "linkedin.com/in/arjunkalburgi", icon: "linkedin"},
+          {link: "codepen.io/arjunkalburgi",      icon: "codepen"},
+          {link: "mailto:me@arjunkalburgi.com",   icon: "envelope"},
+        ]
     }
     },
     methods: {
@@ -119,19 +110,5 @@
     grid-row-end: 3;
     position: relative;
     margin: auto;
-  }
-
-  .contact_contents--links li:not(:first-of-type) {
-    margin: 0 0 0 35px;
-  }
-
-  .contact_contents--links {
-    position: absolute;
-    padding-left: 0px;
-  }
-
-  .contact_contents--links li {
-    float: left;
-    list-style: none
   }
 </style>

@@ -30,9 +30,10 @@ export default {
   :root {
     --brand-colour: #12A962;
     --brand-contrastlight: white;
-    --brand-contrastdark: black;
+    --brand-contrastdark: #313131;
 
     --button-text: normal 700 15px 'Raleway';
+    --icon-text: normal 18px/1.3 'Lato';
   }
 
   #app {

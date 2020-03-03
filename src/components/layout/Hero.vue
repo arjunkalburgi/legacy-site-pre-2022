@@ -4,38 +4,19 @@
 		<img class="hero_nameImg b-lazy" src="https://cdn.jsdelivr.net/gh/askalburgi/styleguide@fcd922db42282219a7ba68996c404f41578c8416/Logo/Main/BlackFull.svg" title="Arjun Kalburgi" />
 		<p class="hero_text--tag">learning, finding, designing, developing impact</p>
 		<p class="hero_text--intro"> I am a developer and designer but I don't care much for titles or roles. Instead I like to learn as much as I can because I believe that every random thing I learn will somehow help me make an impact in this world. I'm currently based out of Toronto, where I take every chance I get to explore culture and build something new.</p>
-		<ul class="hero_Links">
-			<li>
-        <Button link="writing" text="writing" />
-			</li>
-			<li>
-				<a href="https://twitter.com/arjunkalburgi"><span class="fab fa-twitter"></span></a>
-			</li>
-			<li>
-				<a href="https://github.com/arjunkalburgi"><span class="fab fa-github"></span></a>
-			</li>
-			<li>
-				<a href="https://linkedin.com/in/arjunkalburgi"><span class="fab fa-linkedin"></span></a>
-			</li>
-			<li>
-				<a href="https://codepen.io/arjunkalburgi/"><span class="fab fa-codepen"></span></a>
-			</li>
-			<li>
-				<a href="mailto:me@arjunkalburgi.com"><span class="far fa-envelope"></span></a>
-			</li>
-		</ul>
+    <ButtonList :hasButton=true v-bind:button='button' v-bind:list='list' />
   </section>
 
 </template>
 
 <script lang="js">
 
-  import Button from './../system/Button.vue'
+  import ButtonList from './../system/ButtonList.vue'
 
   export default  {
     name: 'hero',
     components: {
-      Button
+      ButtonList
     },
     props: [],
     mounted () {
@@ -43,7 +24,14 @@
     },
     data () {
       return {
-
+        button: {link: "writing", text: "writing"},
+        list: [
+          {link: "twitter.com/arjunkalburgi",     icon: "twitter"},
+          {link: "github.com/arjunkalburgi",      icon: "github"},
+          {link: "linkedin.com/in/arjunkalburgi", icon: "linkedin"},
+          {link: "codepen.io/arjunkalburgi",      icon: "codepen"},
+          {link: "mailto:me@arjunkalburgi.com",   icon: "envelope"},
+        ]
       }
     },
     methods: {
@@ -68,17 +56,6 @@
     &_text--tag {
       margin-top: 7px;
       margin-bottom: 30px;
-    }
-
-    &_Links {
-      position: absolute;
-      padding-left: 0px;
-    
-      li {
-        float: left;
-        list-style: none
-      }
-      li:not(:first-of-type) { margin: 0 0 0 15px; }
     }
   }
 </style>
