@@ -64,29 +64,14 @@
       <br>who and what I need to build so that
       <br>I find the problems that need to be solved.
     </p>
-    <div class="item abid-image small">
-      <div class="color-bg intro_image--box small-3"></div>
-      <div class="image-container intro_image--box small-3" style="position: relative; left: 40px; top: -20px;">
-        <div class="b-lazy image abid"></div>
-      </div>
-    </div>
-    <div class="item red-image small">
-      <div class="color-bg intro_image--box small-3"></div>
-      <div class="image-container intro_image--box small-3" style="left: 30px; top: -30px;">
-        <div class="b-lazy image red"></div>
-      </div>
-    </div>
+    <FloatingImage image="abid" class="item abid-image small" />
+    <FloatingImage image="red" class="item red-image small" />
     <p class="item text thirdpara">
       I’ll then iterate on possible designs,
       <br>theorizing what could solve the problem
       <br>and testing to see what does.
     </p>
-    <div class="item sra-image small">
-      <div class="color-bg intro_image--box small-3"></div>
-      <div class="image-container intro_image--box small-3" style="left: 40px; top: -32px;">
-        <div class="b-lazy image sra"></div>
-      </div>
-    </div>
+    <FloatingImage image="sra" class="item sra-image small" />
     <p class="item text fourthpara">
       And finally, I’ll develop the solution in code
       <br>so that I can deploy it to real people
@@ -98,8 +83,13 @@
 
 <script lang="js">
 
+  import FloatingImage from './../system/FloatingImage.vue'
+
   export default  {
     name: 'intro',
+    components: {
+      FloatingImage
+    },
     props: [],
     mounted () {
 
@@ -236,34 +226,4 @@
       grid-row-start: 7;
       grid-row-end: 8;
   }
-
-
-
-  .image {
-      background: linear-gradient(135deg, #dedede 0%, #dedede 40%, #bfbfbf 100%);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 100%;
-      border-radius: 3px;
-  }
-
-  .intro_image--box {
-      width: 250px;
-      height: 250px;
-      border-radius: 3px;
-      position: relative;
-  }
-
-  .color-bg {
-      background: #12A962;
-      float: left;
-      z-index: -1;
-      margin-top: 200px;
-  }
-
-  .image.abid { background-image: url("../../assets/pics/abid.jpg"); }
-  .image.red { background-image: url("../../assets/pics/red.jpg"); }
-  .image.sra { background-image: url("../../assets/pics/sra.jpg"); }
-
 </style>
