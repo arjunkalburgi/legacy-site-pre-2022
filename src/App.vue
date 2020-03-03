@@ -30,23 +30,27 @@ export default {
   :root {
     --brand-colour: #12A962;
     --brand-contrastlight: white;
-    --brand-contrastdark: #313131;
+    --brand-contrastdark: #2c3e50;
 
+    --brand-text: normal 18px/1.3 'Lato';
     --button-text: normal 700 15px 'Raleway';
     --icon-text: normal 18px/1.3 'Lato';
   }
 
   #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font: var(--brand-text);
+    color: var(--brand-contrastdark);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: left;
-    color: #2c3e50;
   }
 
   .section {
     width: 70%;
     margin: 25vh auto 15vh;
+  }
+
+  .image {
+    border-radius: 3px;
   }
 
   .portfolio_item--title,
@@ -57,14 +61,4 @@ export default {
     font-size: 30px;
   }
 
-  .image-container {
-    box-shadow: -20px 26px 54px rgba(51, 51, 51, 0.28);
-    z-index: -1;
-    background-size: cover;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-image: none;
-    margin-top: 200px;
-  }
 </style>

@@ -3,9 +3,9 @@
   <section class="portfolio section" id="portfolio">
 		<div class="portfolio-intro">
 			<p>Working on these products requires constant learning and work.</p>
-			<div>
-        <Button class="" link="writing" text="Learning" />
-        <Button class="" link="https://github.com/arjunkalburgi" text="Work" />
+			<div class="portfolio_introbuttons">
+        <Button class="portfolio_introbutton" link="writing" text="Learning" />
+        <Button class="portfolio_introbutton" link="https://github.com/arjunkalburgi" text="Work" />
 			</div>
 			<small>View all my content or some highlights below.</small>
 		</div>
@@ -109,24 +109,6 @@
   .image.surf { background-image: url("../../assets/pics/surf.jpg"); filter: grayscale(0.6); }
   .image.tasks { background-image: url("../../assets/pics/tasks.jpg"); filter: grayscale(0.6); }
 
-  .portfolio_button {
-      background: #12A962;
-      color: #fff;
-      font-family: 'Raleway';
-      text-transform: uppercase;
-      font-size: 15px;
-      letter-spacing: 1.2px;
-      font-weight: 700;
-      line-height: 17px;
-      padding: 1rem 2rem;
-      position: relative;
-      margin: 20px 0;
-      border-radius: 3px;
-      text-decoration: none;
-      display: inline-block;
-      margin: 0;
-  }
-
   .portfolio_item {
       display: grid;
       grid-template-columns: 50% auto;
@@ -138,6 +120,13 @@
   .portfolio_item>* {
       margin: 0;
   }
+
+  .portfolio-intro {
+    text-align: center;
+  }
+
+  .portfolio_introbutton { display: inline-block; }
+  .portfolio_introbutton:first-of-type { margin-right: 10px; }
 
   .portfolio_item--title {
       grid-column-start: 1;

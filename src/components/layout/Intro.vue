@@ -1,97 +1,97 @@
 <template lang="html">
 
   <section class="intro section" id="intro">
-		<div class="bgicons b-lazy">
-			<div class="bgicon bgicon1 b-lazy"></div>
-			<div class="bgicon bgicon2 b-lazy"></div>
-			<div class="bgicon bgicon3 b-lazy"></div>
-			<div class="bgicon bgicon4 b-lazy"></div>
-			<div class="bgicon bgicon5 b-lazy"></div>
-			<div class="bgicon bgicon6 b-lazy"></div>
-			<div class="bgicon bgicon7 b-lazy"></div>
-			<div class="bgicon bgicon8 b-lazy"></div>
-			<div class="bgicon bgicon1 b-lazy"></div>
-			<div class="bgicon bgicon2 b-lazy"></div>
-			<div class="bgicon bgicon3 b-lazy"></div>
-			<div class="bgicon bgicon4 b-lazy"></div>
-			<div class="bgicon bgicon5 b-lazy"></div>
-			<div class="bgicon bgicon6 b-lazy"></div>
-			<div class="bgicon bgicon7 b-lazy"></div>
-			<div class="bgicon bgicon8 b-lazy"></div>
-			<div class="bgicon bgicon1 b-lazy"></div>
-			<div class="bgicon bgicon2 b-lazy"></div>
-			<div class="bgicon bgicon3 b-lazy"></div>
-			<div class="bgicon bgicon4 b-lazy"></div>
-			<div class="bgicon bgicon5 b-lazy"></div>
-			<div class="bgicon bgicon6 b-lazy"></div>
-			<div class="bgicon bgicon7 b-lazy"></div>
-			<div class="bgicon bgicon8 b-lazy"></div>
-			<div class="bgicon bgicon1 b-lazy"></div>
-			<div class="bgicon bgicon2 b-lazy"></div>
-			<div class="bgicon bgicon3 b-lazy"></div>
-			<div class="bgicon bgicon4 b-lazy"></div>
-			<div class="bgicon bgicon5 b-lazy"></div>
-			<div class="bgicon bgicon6 b-lazy"></div>
-			<div class="bgicon bgicon7 b-lazy"></div>
-			<div class="bgicon bgicon8 b-lazy"></div>
-			<div class="bgicon bgicon1 b-lazy"></div>
-			<div class="bgicon bgicon2 b-lazy"></div>
-			<div class="bgicon bgicon3 b-lazy"></div>
-			<div class="bgicon bgicon4 b-lazy"></div>
-			<div class="bgicon bgicon5 b-lazy"></div>
-			<div class="bgicon bgicon6 b-lazy"></div>
-			<div class="bgicon bgicon7 b-lazy"></div>
-			<div class="bgicon bgicon8 b-lazy"></div>
-			<div class="bgicon bgicon1 b-lazy"></div>
-			<div class="bgicon bgicon2 b-lazy"></div>
-			<div class="bgicon bgicon3 b-lazy"></div>
-			<div class="bgicon bgicon4 b-lazy"></div>
-			<div class="bgicon bgicon5 b-lazy"></div>
-			<div class="bgicon bgicon6 b-lazy"></div>
-			<div class="bgicon bgicon7 b-lazy"></div>
-			<div class="bgicon bgicon8 b-lazy"></div>
-		</div>
-		
-		<div class="item image big"></div>
-		<h2 class="item text big">Products work like magic when everyone is focused on the people it’s for.</h2>
-		<p class="item text firstpara">
-			I love developing websites and apps
-			<br>that deliver magical experiences
-			<br>by providing real value.
-		</p>
-		<p class="item text secondpara">
-			First I learn everything I can about
-			<br>who and what I need to build so that
-			<br>I find the problems that need to be solved.
-		</p>
-		<div class="item abid-image small">
-			<div class="color-bg intro_image--box small-3"></div>
-			<div class="image-container intro_image--box small-3" style="position: relative; left: 40px; top: -20px;">
-				<div class="b-lazy image abid"></div>
-			</div>
-		</div>
-		<div class="item red-image small">
-			<div class="color-bg intro_image--box small-3"></div>
-			<div class="image-container intro_image--box small-3" style="left: 30px; top: -30px;">
-				<div class="b-lazy image red"></div>
-			</div>
-		</div>
-		<p class="item text thirdpara">
-			I’ll then iterate on possible designs,
-			<br>theorizing what could solve the problem
-			<br>and testing to see what does.
-		</p>
-		<div class="item sra-image small">
-			<div class="color-bg intro_image--box small-3"></div>
-			<div class="image-container intro_image--box small-3" style="left: 40px; top: -32px;">
-				<div class="b-lazy image sra"></div>
-			</div>
-		</div>
-		<p class="item text fourthpara">
-			And finally, I’ll develop the solution in code
-			<br>so that I can deploy it to real people
-			<br>and create a real impact.
-		</p>
+    <div class="bgicons b-lazy">
+      <div class="bgicon bgicon1 b-lazy"></div>
+      <div class="bgicon bgicon2 b-lazy"></div>
+      <div class="bgicon bgicon3 b-lazy"></div>
+      <div class="bgicon bgicon4 b-lazy"></div>
+      <div class="bgicon bgicon5 b-lazy"></div>
+      <div class="bgicon bgicon6 b-lazy"></div>
+      <div class="bgicon bgicon7 b-lazy"></div>
+      <div class="bgicon bgicon8 b-lazy"></div>
+      <div class="bgicon bgicon1 b-lazy"></div>
+      <div class="bgicon bgicon2 b-lazy"></div>
+      <div class="bgicon bgicon3 b-lazy"></div>
+      <div class="bgicon bgicon4 b-lazy"></div>
+      <div class="bgicon bgicon5 b-lazy"></div>
+      <div class="bgicon bgicon6 b-lazy"></div>
+      <div class="bgicon bgicon7 b-lazy"></div>
+      <div class="bgicon bgicon8 b-lazy"></div>
+      <div class="bgicon bgicon1 b-lazy"></div>
+      <div class="bgicon bgicon2 b-lazy"></div>
+      <div class="bgicon bgicon3 b-lazy"></div>
+      <div class="bgicon bgicon4 b-lazy"></div>
+      <div class="bgicon bgicon5 b-lazy"></div>
+      <div class="bgicon bgicon6 b-lazy"></div>
+      <div class="bgicon bgicon7 b-lazy"></div>
+      <div class="bgicon bgicon8 b-lazy"></div>
+      <div class="bgicon bgicon1 b-lazy"></div>
+      <div class="bgicon bgicon2 b-lazy"></div>
+      <div class="bgicon bgicon3 b-lazy"></div>
+      <div class="bgicon bgicon4 b-lazy"></div>
+      <div class="bgicon bgicon5 b-lazy"></div>
+      <div class="bgicon bgicon6 b-lazy"></div>
+      <div class="bgicon bgicon7 b-lazy"></div>
+      <div class="bgicon bgicon8 b-lazy"></div>
+      <div class="bgicon bgicon1 b-lazy"></div>
+      <div class="bgicon bgicon2 b-lazy"></div>
+      <div class="bgicon bgicon3 b-lazy"></div>
+      <div class="bgicon bgicon4 b-lazy"></div>
+      <div class="bgicon bgicon5 b-lazy"></div>
+      <div class="bgicon bgicon6 b-lazy"></div>
+      <div class="bgicon bgicon7 b-lazy"></div>
+      <div class="bgicon bgicon8 b-lazy"></div>
+      <div class="bgicon bgicon1 b-lazy"></div>
+      <div class="bgicon bgicon2 b-lazy"></div>
+      <div class="bgicon bgicon3 b-lazy"></div>
+      <div class="bgicon bgicon4 b-lazy"></div>
+      <div class="bgicon bgicon5 b-lazy"></div>
+      <div class="bgicon bgicon6 b-lazy"></div>
+      <div class="bgicon bgicon7 b-lazy"></div>
+      <div class="bgicon bgicon8 b-lazy"></div>
+    </div>
+    
+    <div class="item image big"></div>
+    <h2 class="item text big">Products work like magic when everyone is focused on the people it’s for.</h2>
+    <p class="item text firstpara">
+      I love developing websites and apps
+      <br>that deliver magical experiences
+      <br>by providing real value.
+    </p>
+    <p class="item text secondpara">
+      First I learn everything I can about
+      <br>who and what I need to build so that
+      <br>I find the problems that need to be solved.
+    </p>
+    <div class="item abid-image small">
+      <div class="color-bg intro_image--box small-3"></div>
+      <div class="image-container intro_image--box small-3" style="position: relative; left: 40px; top: -20px;">
+        <div class="b-lazy image abid"></div>
+      </div>
+    </div>
+    <div class="item red-image small">
+      <div class="color-bg intro_image--box small-3"></div>
+      <div class="image-container intro_image--box small-3" style="left: 30px; top: -30px;">
+        <div class="b-lazy image red"></div>
+      </div>
+    </div>
+    <p class="item text thirdpara">
+      I’ll then iterate on possible designs,
+      <br>theorizing what could solve the problem
+      <br>and testing to see what does.
+    </p>
+    <div class="item sra-image small">
+      <div class="color-bg intro_image--box small-3"></div>
+      <div class="image-container intro_image--box small-3" style="left: 40px; top: -32px;">
+        <div class="b-lazy image sra"></div>
+      </div>
+    </div>
+    <p class="item text fourthpara">
+      And finally, I’ll develop the solution in code
+      <br>so that I can deploy it to real people
+      <br>and create a real impact.
+    </p>
   </section>
 
 </template>
@@ -179,11 +179,11 @@
 
   @media screen and (min-width: 40em) {
       .item.text:not(.big) {
-          padding: 10%
+        padding: 10%
       }
 
       .item.text.thirdpara {
-          padding: 0 10%;
+        padding: 0 10%;
       }
   }
 
