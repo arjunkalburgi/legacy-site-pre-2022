@@ -1,57 +1,8 @@
 <template lang="html">
 
   <section class="intro section" id="intro">
-    <div class="bgicons b-lazy">
-      <div class="bgicon bgicon1 b-lazy"></div>
-      <div class="bgicon bgicon2 b-lazy"></div>
-      <div class="bgicon bgicon3 b-lazy"></div>
-      <div class="bgicon bgicon4 b-lazy"></div>
-      <div class="bgicon bgicon5 b-lazy"></div>
-      <div class="bgicon bgicon6 b-lazy"></div>
-      <div class="bgicon bgicon7 b-lazy"></div>
-      <div class="bgicon bgicon8 b-lazy"></div>
-      <div class="bgicon bgicon1 b-lazy"></div>
-      <div class="bgicon bgicon2 b-lazy"></div>
-      <div class="bgicon bgicon3 b-lazy"></div>
-      <div class="bgicon bgicon4 b-lazy"></div>
-      <div class="bgicon bgicon5 b-lazy"></div>
-      <div class="bgicon bgicon6 b-lazy"></div>
-      <div class="bgicon bgicon7 b-lazy"></div>
-      <div class="bgicon bgicon8 b-lazy"></div>
-      <div class="bgicon bgicon1 b-lazy"></div>
-      <div class="bgicon bgicon2 b-lazy"></div>
-      <div class="bgicon bgicon3 b-lazy"></div>
-      <div class="bgicon bgicon4 b-lazy"></div>
-      <div class="bgicon bgicon5 b-lazy"></div>
-      <div class="bgicon bgicon6 b-lazy"></div>
-      <div class="bgicon bgicon7 b-lazy"></div>
-      <div class="bgicon bgicon8 b-lazy"></div>
-      <div class="bgicon bgicon1 b-lazy"></div>
-      <div class="bgicon bgicon2 b-lazy"></div>
-      <div class="bgicon bgicon3 b-lazy"></div>
-      <div class="bgicon bgicon4 b-lazy"></div>
-      <div class="bgicon bgicon5 b-lazy"></div>
-      <div class="bgicon bgicon6 b-lazy"></div>
-      <div class="bgicon bgicon7 b-lazy"></div>
-      <div class="bgicon bgicon8 b-lazy"></div>
-      <div class="bgicon bgicon1 b-lazy"></div>
-      <div class="bgicon bgicon2 b-lazy"></div>
-      <div class="bgicon bgicon3 b-lazy"></div>
-      <div class="bgicon bgicon4 b-lazy"></div>
-      <div class="bgicon bgicon5 b-lazy"></div>
-      <div class="bgicon bgicon6 b-lazy"></div>
-      <div class="bgicon bgicon7 b-lazy"></div>
-      <div class="bgicon bgicon8 b-lazy"></div>
-      <div class="bgicon bgicon1 b-lazy"></div>
-      <div class="bgicon bgicon2 b-lazy"></div>
-      <div class="bgicon bgicon3 b-lazy"></div>
-      <div class="bgicon bgicon4 b-lazy"></div>
-      <div class="bgicon bgicon5 b-lazy"></div>
-      <div class="bgicon bgicon6 b-lazy"></div>
-      <div class="bgicon bgicon7 b-lazy"></div>
-      <div class="bgicon bgicon8 b-lazy"></div>
-    </div>
-    
+    <BackgroundAnimation :total='number_of_leaves' />
+
     <div class="item image big"></div>
     <h2 class="item text big">Products work like magic when everyone is focused on the people it’s for.</h2>
     <p class="item text firstpara">
@@ -84,11 +35,13 @@
 <script lang="js">
 
   import FloatingImage from './../system/FloatingImage.vue'
+  import BackgroundAnimation from './../system/BackgroundAnimation.vue'
 
   export default  {
     name: 'intro',
     components: {
-      FloatingImage
+      FloatingImage,
+      BackgroundAnimation
     },
     props: [],
     mounted () {
@@ -96,7 +49,7 @@
     },
     data () {
       return {
-
+        number_of_leaves: 40
       }
     },
     methods: {
@@ -111,37 +64,6 @@
 </script>
 
 <style scoped lang="scss">
-  .bgicons {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-      overflow: hidden;
-      pointer-events: none
-  }
-
-  .bgicon {
-      position: absolute;
-      pointer-events: none;
-      z-index: -1;
-      width: 35px;
-      height: 35px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0.5;
-  }
-
-  .bgicon1 { background-image: url('../../assets/elements/element01.svg') }
-  .bgicon2 { background-image: url('../../assets/elements/element02.svg') }
-  .bgicon3 { background-image: url('../../assets/elements/element03.svg') }
-  .bgicon4 { background-image: url('../../assets/elements/element04.svg'); }
-  .bgicon5 { background-image: url('../../assets/elements/element05.svg'); }
-  .bgicon6 { background-image: url('../../assets/elements/element06.svg') }
-  .bgicon7 { background-image: url('../../assets/elements/element07.svg') }
-  .bgicon8 { background-image: url('../../assets/elements/element08.svg') }
-
   .intro {
       position: relative;
       padding: 100px 0 0;
