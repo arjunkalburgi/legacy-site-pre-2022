@@ -37,7 +37,7 @@
             repeat: 1,
             yoyo: true,
             ease: "easeInOut",
-            onComplete() { this.iconRotate(icon, tween_max); }
+            onComplete: () => { this.iconRotate(icon, tween_max); }
         });
       },
       iconSway (icon, tween_max) {
@@ -49,7 +49,7 @@
             repeat: 0,
             yoyo: false,
             ease: "easeInOut",
-            onComplete() { this.iconSway(icon, tween_max); }
+            onComplete: () => { this.iconSway(icon, tween_max); }
         });
       },
     },
