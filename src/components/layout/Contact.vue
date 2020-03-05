@@ -40,7 +40,7 @@
   import ButtonList from './../system/ButtonList.vue'
 
   export default  {
-    name: 'footer',
+    name: 'contact',
     components: {
       ButtonList
     },

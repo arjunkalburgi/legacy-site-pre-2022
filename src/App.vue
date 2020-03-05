@@ -3,7 +3,7 @@
     <Hero />
     <Intro />
     <Portfolio />
-    <Footer />
+    <Contact />
   </div>
 </template>
 
@@ -12,7 +12,7 @@
 import Hero from './components/layout/Hero.vue'
 import Intro from './components/layout/Intro.vue'
 import Portfolio from './components/layout/Portfolio.vue'
-import Footer from './components/layout/Footer.vue'
+import Contact from './components/layout/Contact.vue'
 
 export default {
   name: 'App',
@@ -20,7 +20,7 @@ export default {
     Hero,
     Intro,
     Portfolio,
-    Footer,
+    Contact,
   }
 }
 </script>
