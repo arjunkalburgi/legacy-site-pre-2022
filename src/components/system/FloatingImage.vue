@@ -31,7 +31,7 @@
 
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 
   .FloatingImage {
     &_box {

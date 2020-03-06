@@ -3,7 +3,7 @@
   <section class="intro section" id="intro">
     <BackgroundAnimation class="intro_bgani" :total='number_of_leaves' />
 
-    <div class="intro_item--image big"></div>
+    <div class="intro_item--image big mobile"></div>
     <h2 class="intro_item text big">Products work like magic when everyone is focused on the people it’s for.</h2>
     <p class="intro_item text firstpara">
       I love developing websites and apps
@@ -16,6 +16,9 @@
       <br>I find the problems that need to be solved.
     </p>
     <FloatingImage image="abid" class="intro_item--image small abid-image" />
+    <div class="intro_item--image mobile abid-image FloatingImage_box">
+      <div class="b-lazy image abid"></div>
+    </div>
     <FloatingImage image="red" class="intro_item--image small red-image" />
     <p class="intro_item text thirdpara">
       I’ll then iterate on possible designs,
@@ -70,11 +73,17 @@
       display: grid;
       grid-template-columns: 50% 50px auto;
       grid-template-rows: 230px 200px 7.5rem 7.5rem 15rem 7.5rem 15rem;
+      @media screen and (max-width: 40em) {
+        padding: 100px 7.5% 0px;
+        display: block;
+      }
 
       &_bgani {
-        left: -15vw;
-        bottom: -10vw;
-        right: -15vw;
+        @media screen and (min-width: 40em) {
+          left: -15vw;
+          bottom: -10vw;
+          right: -15vw;
+        }
       }
 
       &_item.text {
@@ -84,6 +93,7 @@
           grid-row-start: 1;
           grid-row-end: 2;
           width: 80%;
+          @media screen and (max-width: 40em) { width: 100%; }
         }
 
         &:not(.big) {
@@ -128,15 +138,19 @@
           grid-row-end: 3;
           background-size: cover;
           background-image: url("https://www.arjunkalburgi.com/website_assets/pics/innovation.jpg");
+          background-position-y: center !important;
         }
 
         &.small {
+          @media screen and (max-width: 40em) { display: none; }
+          
           &.abid-image {
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 4;
             grid-row-end: 6;
             margin-left: 5%;
+
           }
 
           &.red-image {
@@ -156,6 +170,16 @@
             margin-top: 10vh;
             margin-left: 20%;
           }
+        }
+
+        &.mobile {
+          display: none;
+
+          width: 90%;
+          max-height: 200px;
+          height: 200px;
+          background-position-y: top;
+          @media screen and (max-width: 40em) { display: block; }
         }
       }
   }

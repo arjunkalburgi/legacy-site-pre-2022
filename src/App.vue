@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
   :root {
     --brand-colour: #12A962;
@@ -47,6 +47,7 @@ export default {
   .section {
     width: 70%;
     margin: 25vh auto 15vh;
+    @media screen and (max-width: 40em) { width: 85%; }
   }
 
   .image {

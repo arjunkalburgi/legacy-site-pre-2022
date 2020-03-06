@@ -49,6 +49,7 @@
   .hero {
     > * {
       width: 50%;
+      @media screen and (max-width: 40em) { width: unset; }
     }
 
     &_nameImg { width: 200px; }

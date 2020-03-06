@@ -49,6 +49,8 @@
     grid-template-rows: 18% 18% 43% auto;
     margin: 15vh 0;
 
+    @media screen and (max-width: 40em) { grid-template-columns: 100%; }
+
     > * { margin: 0; }
 
     &_title {
@@ -89,6 +91,8 @@
       grid-row-start: 1;
       grid-row-end: 5;
       margin: 20px;
+
+      @media screen and (max-width: 40em) { display: none; }
     }
   }
 

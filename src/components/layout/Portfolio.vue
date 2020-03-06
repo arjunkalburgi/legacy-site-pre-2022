@@ -81,7 +81,10 @@
 
 <style scoped lang="scss">
   .portfolio {
-    &-intro { text-align: center; }
+    &-intro { 
+      text-align: center;
+      @media screen and (max-width: 40em) { text-align: left; }
+    }
 
     &_introbutton { 
       display: inline-block;
