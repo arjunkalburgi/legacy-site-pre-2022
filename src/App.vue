@@ -4,7 +4,6 @@
     <Intro />
     <Portfolio />
     <Contact />
-    <p>test</p>
   </div>
 </template>
 
