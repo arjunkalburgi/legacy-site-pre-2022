@@ -136,6 +136,7 @@
             grid-column-end: 2;
             grid-row-start: 4;
             grid-row-end: 6;
+            margin-left: 5%;
           }
 
           &.red-image {
@@ -143,6 +144,7 @@
             grid-column-end: 4;
             grid-row-start: 5;
             grid-row-end: 6;
+            margin-left: 10%;
           }
 
           &.sra-image {
@@ -152,6 +154,7 @@
             grid-row-end: 8;
             justify-self: center;
             margin-top: 10vh;
+            margin-left: 20%;
           }
         }
       }

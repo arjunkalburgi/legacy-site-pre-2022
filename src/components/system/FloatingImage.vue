@@ -1,5 +1,5 @@
 <template lang="html">
-  <div>
+  <div v-parallax="-0.15">
     <div class="color-bg intro_image--box"></div>
     <div class="image-container intro_image--box">
       <div class="b-lazy image" :class="image"></div>
