@@ -59,6 +59,7 @@
     li {
       float: left;
       list-style: none;
+      &:not(:first-of-type) { margin: 0 0 0 20px; }
 
       a.buttonlist_icon {
         font: var(--icon-text);
@@ -69,6 +70,5 @@
         }
       }
     }
-    li:not(:first-of-type) { margin: 0 0 0 20px; }
   }
 </style>
