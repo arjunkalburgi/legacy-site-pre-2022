@@ -26,11 +26,11 @@
       return {
         button: {link: "writing", text: "writing"},
         list: [
-          {link: "twitter.com/arjunkalburgi",     icon: "twitter"},
-          {link: "github.com/arjunkalburgi",      icon: "github"},
-          {link: "linkedin.com/in/arjunkalburgi", icon: "linkedin"},
-          {link: "codepen.io/arjunkalburgi",      icon: "codepen"},
-          {link: "mailto:me@arjunkalburgi.com",   icon: "envelope"},
+          {link: "https://twitter.com/arjunkalburgi",     icon: "twitter"},
+          {link: "https://github.com/arjunkalburgi",      icon: "github"},
+          {link: "https://linkedin.com/in/arjunkalburgi", icon: "linkedin"},
+          {link: "https://codepen.io/arjunkalburgi",      icon: "codepen"},
+          {link: "mailto:askalburgi@gmail.com",           icon: "envelope"},
         ]
       }
     },
