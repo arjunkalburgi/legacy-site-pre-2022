@@ -137,7 +137,7 @@
           grid-row-start: 1;
           grid-row-end: 3;
           background-size: cover;
-          background-image: url("https://www.arjunkalburgi.com/website_assets/pics/innovation.jpg");
+          background-image: url("../../assets/pics/innovation.jpg");
           background-position-y: center !important;
         }
 
