@@ -3,7 +3,7 @@
   <section class="intro section" id="intro">
     <BackgroundAnimation class="intro_bgani" :total='number_of_leaves' />
 
-    <div class="intro_item--image big mobile"></div>
+    <div class="intro_item--image image big mobile"></div>
     <h2 class="intro_item text big">Products work like magic when everyone is focused on the people it’s for.</h2>
     <p class="intro_item text firstpara">
       I love developing websites and apps
@@ -150,7 +150,6 @@
             grid-row-start: 4;
             grid-row-end: 6;
             margin-left: 5%;
-
           }
 
           &.red-image {
@@ -173,13 +172,15 @@
         }
 
         &.mobile {
-          display: none;
-
-          width: 90%;
-          max-height: 200px;
-          height: 200px;
-          background-position-y: top;
-          @media screen and (max-width: 40em) { display: block; }
+          &.abid-image { display: none; }
+          
+          @media screen and (max-width: 40em) {
+            display: block !important;
+            width: 90%;
+            max-height: 200px;
+            height: 200px;
+            background-position-y: top;
+          }
         }
       }
   }
