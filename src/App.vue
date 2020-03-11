@@ -27,14 +27,25 @@ export default {
 
 <style lang="scss">
 
+  @font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Raleway';
+    src: url('./assets/fonts/Raleway-Bold.ttf');
+  }
+
   :root {
     --brand-colour: #12A962;
     --brand-contrastlight: white;
     --brand-contrastdark: #2c3e50;
 
     --brand-text: normal 18px/1.3 'Lato';
-    --button-text: normal 700 15px 'Raleway';
-    --icon-text: normal 18px/1.3 'Lato';
+    --bold-text: normal 700 30px/1.3 'Raleway';
+    --button-text: normal 15px 'Raleway';
+    --icon-text: normal 20px/1.3 'Lato';
   }
 
   #app {
@@ -42,6 +53,12 @@ export default {
     color: var(--brand-contrastdark);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  .portfolioitem_title,
+  .text.big,
+  .contact_contents--title {
+    font: var(--bold-text);
   }
 
   .section {
@@ -57,14 +74,6 @@ export default {
     background-position: center;
     height: 100%;
     border-radius: 3px;
-  }
-
-  .portfolio_item--title,
-  .text.big,
-  .contact_contents--title {
-    font-family: 'raleway';
-    font-weight: 700;
-    font-size: 30px;
   }
 
 </style>

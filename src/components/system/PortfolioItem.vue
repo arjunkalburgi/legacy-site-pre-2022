@@ -60,6 +60,7 @@
       grid-row-end: 2;
       margin-bottom: 1vh;
       white-space: nowrap; 
+      @media screen and (max-width: 40em) { white-space: unset; }
     }
 
     &_tags {
