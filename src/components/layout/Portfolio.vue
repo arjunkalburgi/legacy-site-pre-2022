@@ -40,6 +40,7 @@
             buttonlink: "https://github.com/arjunkalburgi/slackify",
             buttontext: "View on Github",
             image: "slack",
+            alt: "Stock photo of someone having a good time at their work desk"
           },
           {
             title: "Coding a Business Model",
@@ -48,6 +49,7 @@
             buttonlink: "https://github.com/arjunkalburgi/stylist-assistant",
             buttontext: "View on Github",
             image: "style",
+            alt: "Stock photo of an outfit laid out on the floor"
           },
           {
             title: "Persevering using details",
@@ -56,6 +58,7 @@
             buttonlink: "https://www.arjunkalburgi.com/writing/Learning-to-Surf---a-Mindset-practice",
             buttontext: "Read the Story",
             image: "surf",
+            alt: "Stock photo of a surfer dude waving his hand out of the water, signaling he's ok"
           },
           {
             title: "Developing Behaviour",
@@ -64,6 +67,7 @@
             buttonlink: "https://www.arjunkalburgi.com/writing/Stressful-Tasks--a-behavioural-design-experiment",
             buttontext: "Read the Story",
             image: "tasks",
+            alt: "Stock photo of a silhouette of a man thinking"
           },
         ]
       }

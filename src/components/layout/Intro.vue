@@ -15,17 +15,17 @@
       <br>who and what I need to build so that
       <br>I find the problems that need to be solved.
     </p>
-    <FloatingImage image="abid" class="intro_item--image small abid-image" />
+    <FloatingImage image="abid" class="intro_item--image small abid-image" title="Me laughing with one of my best friends" />
     <div class="intro_item--image mobile abid-image FloatingImage_box">
       <div class="b-lazy image abid"></div>
     </div>
-    <FloatingImage image="red" class="intro_item--image small red-image" />
+    <FloatingImage image="red" class="intro_item--image small red-image" title="Me talking to people excitedly" />
     <p class="intro_item text thirdpara">
       I’ll then iterate on possible designs,
       <br>theorizing what could solve the problem
       <br>and testing to see what does.
     </p>
-    <FloatingImage image="sra" class="intro_item--image small sra-image" />
+    <FloatingImage image="sra" class="intro_item--image small sra-image" title="Me with a big smile sitting on a staircase" />
     <p class="intro_item text fourthpara">
       And finally, I’ll develop the solution in code
       <br>so that I can deploy it to real people

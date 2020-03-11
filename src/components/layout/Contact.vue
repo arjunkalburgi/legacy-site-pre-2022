@@ -28,12 +28,12 @@
     return {
         number_of_leaves: 24,
         list: [
-          {link: "https://arjunkalburgi.com/writing",     icon: "edit"},
+          {link: "https://arjunkalburgi.com/writing",     icon: "blog"},
           {link: "https://twitter.com/arjunkalburgi",     icon: "twitter"},
           {link: "https://github.com/arjunkalburgi",      icon: "github"},
           {link: "https://linkedin.com/in/arjunkalburgi", icon: "linkedin"},
           {link: "https://codepen.io/arjunkalburgi",      icon: "codepen"},
-          {link: "mailto:askalburgi@gmail.com",           icon: "envelope"},
+          {link: "mailto:askalburgi@gmail.com",           icon: "email"},
         ]
     }
     },
@@ -58,7 +58,7 @@
     background: linear-gradient(white, #259f66 0%);
     background-size: cover;
     margin: 0;
-    min-height: 400px;
+    min-height: 300px;
 
     &_contents {
       padding: 10vh 0;
@@ -71,7 +71,7 @@
 
       &--title {
         color: #ffffff;
-        margin: 20px 0 0 0;
+        margin: 0;
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;

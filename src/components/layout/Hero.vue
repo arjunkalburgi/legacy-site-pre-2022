@@ -30,7 +30,7 @@
           {link: "https://github.com/arjunkalburgi",      icon: "github"},
           {link: "https://linkedin.com/in/arjunkalburgi", icon: "linkedin"},
           {link: "https://codepen.io/arjunkalburgi",      icon: "codepen"},
-          {link: "mailto:askalburgi@gmail.com",           icon: "envelope"},
+          {link: "mailto:askalburgi@gmail.com",           icon: "email"},
         ]
       }
     },

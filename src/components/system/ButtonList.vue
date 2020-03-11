@@ -6,7 +6,7 @@
     </li>
 
     <li v-for="item in list" :key="item.icon" class="icon">
-      <a :href="item.link" class="buttonlist_icon" :class="hasButton ? '' : 'light'">
+      <a :href="item.link" class="buttonlist_icon" :class="hasButton ? '' : 'light'" :title="item.icon" >
         <font-awesome-icon :icon="icon[item.icon]" />
       </a>
     </li>
@@ -32,8 +32,8 @@
     data () {
       return {
         icon: {
-          envelope: faEnvelope,
-          edit: faEdit,
+          email: faEnvelope,
+          blog: faEdit,
           twitter: faTwitter,
           github: faGithub,
           linkedin: faLinkedinIn,
