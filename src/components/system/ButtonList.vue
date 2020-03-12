@@ -63,11 +63,9 @@
 
       a.buttonlist_icon {
         font: var(--icon-text);
-        color: var(--brand-contrastdark);
+        color: var(--brand-textcolour);
 
-        &.light {
-          color: var(--brand-contrastlight);
-        }
+        &.light { color: var(--brand-contrastlight); }
       }
     }
   }
