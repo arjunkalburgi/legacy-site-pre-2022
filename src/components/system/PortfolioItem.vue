@@ -49,7 +49,7 @@
     grid-template-rows: 18% 18% 43% auto;
     margin: 15vh 0;
 
-    @media screen and (max-width: 40em) { grid-template-columns: 100%; }
+    @media screen and (max-width: 40em) { display: block; }
 
     > * { margin: 0; }
 
