@@ -41,7 +41,7 @@
       position: relative;
 
       &--color {
-        background: #12A962;
+        background: var(--brand-colour);
         float: left;
         z-index: -1;
       }

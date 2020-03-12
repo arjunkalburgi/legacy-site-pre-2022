@@ -55,7 +55,7 @@
     width: 100%;
     position: relative;
     bottom: 0;
-    background: linear-gradient(white, #259f66 0%);
+    background: var(--brand-colour);
     background-size: cover;
     margin: 0;
     min-height: 300px;

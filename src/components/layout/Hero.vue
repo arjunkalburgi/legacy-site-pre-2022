@@ -1,7 +1,8 @@
 <template lang="html">
 
   <section class="hero section">
-		<img class="hero_nameImg b-lazy" src="../../assets/pics/BlackFull.svg" title="Arjun Kalburgi" />
+		<img class="hero_nameImg light" src="../../assets/pics/LogoFull.svg" title="Arjun Kalburgi" />
+		<img class="hero_nameImg dark" src="../../assets/pics/WhiteFull.svg" title="Arjun Kalburgi" />
 		<p class="hero_text--tag">learning, finding, designing, developing impact</p>
 		<p class="hero_text--intro"> I am a developer and designer but I don't care much for titles or roles. Instead I like to learn as much as I can because I believe that every random thing I learn will somehow help me make an impact in this world. I'm currently based out of Toronto, where I take every chance I get to explore culture and build something new.</p>
     <ButtonList :hasButton=true v-bind:button='button' v-bind:list='list' />

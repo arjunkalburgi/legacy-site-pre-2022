@@ -39,8 +39,11 @@ export default {
 
   :root {
     --brand-colour: #12A962;
-    --brand-contrastlight: white;
-    --brand-contrastdark: #2c3e50;
+    
+    --brand-contrastlight: #efefef;
+    --brand-contrastdark: #081A11;
+
+    --brand-textcolour: --brand-contrastdark;
 
     --brand-text: normal 18px/1.3 'Lato';
     --bold-text: normal 700 30px/1.3 'Raleway';
@@ -50,7 +53,7 @@ export default {
 
   #app {
     font: var(--brand-text);
-    color: var(--brand-contrastdark);
+    color: var(--brand-textcolour);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -74,6 +77,22 @@ export default {
     background-position: center;
     height: 100%;
     border-radius: 3px;
+  }
+
+  .hero_nameImg { 
+    &.light { display: block; }
+    &.dark { display: none; }
+  }
+
+  // DARK MODE 
+  @media (prefers-color-scheme: dark) {
+    :root { --brand-colour: #005d31; --brand-textcolour: var(--brand-contrastlight); }
+    body, .contact { background: var(--brand-contrastdark) !important; }
+    .image { filter: brightness(0.6); }
+    .hero_nameImg { 
+      &.light { display: none; }
+      &.dark { display: block; }
+    }
   }
 
 </style>

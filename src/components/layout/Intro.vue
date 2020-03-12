@@ -93,6 +93,7 @@
           grid-row-start: 1;
           grid-row-end: 2;
           width: 80%;
+          z-index: 0;
           @media screen and (max-width: 40em) { width: 100%; }
         }
 
