@@ -39,6 +39,7 @@ export default {
 
   :root {
     --brand-colour: #12A962;
+    --brand-colourdark: #005d31;
     
     --brand-contrastlight: #efefef;
     --brand-contrastdark: #081A11;
@@ -86,7 +87,7 @@ export default {
 
   // DARK MODE 
   @media (prefers-color-scheme: dark) {
-    :root { --brand-colour: #005d31; --brand-textcolour: var(--brand-contrastlight); }
+    :root { --brand-colour: var(--brand-colourdark); --brand-textcolour: var(--brand-contrastlight); }
     body, .contact { background: var(--brand-contrastdark) !important; }
     .image { filter: brightness(0.6); }
     .hero_nameImg { 

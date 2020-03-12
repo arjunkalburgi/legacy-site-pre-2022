@@ -60,7 +60,7 @@
     }
   }
 
-  .image.abid { background-image: url("../../assets/pics/abid.jpg"); }
+  .image.abid { background-image: url("../../assets/pics/abid.jpg"); background-position-y: top; }
   .image.red { background-image: url("../../assets/pics/red.jpg"); }
   .image.sra { background-image: url("../../assets/pics/sra.jpg"); }
 </style>

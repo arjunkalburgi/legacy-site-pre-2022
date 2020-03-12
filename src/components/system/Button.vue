@@ -28,7 +28,7 @@
 
 <style scoped lang="scss">
   .button {
-    background: var(--brand-colour);
+    background-color: var(--brand-colour);
     color: var(--brand-contrastlight);
     font: var(--button-text);
     text-transform: uppercase;
@@ -39,5 +39,8 @@
     margin: 20px 0;
     border-radius: 3px;
     text-decoration: none;
+
+    transition: background-color 500ms;
+
   }
 </style>
