@@ -1,11 +1,13 @@
 <template lang="html">
 
   <div class="portfolioitem">
-    <h2 class="portfolioitem_title">{{item.title}}</h2>
-    <small class="portfolioitem_tags">{{item.tags}}</small>
-    <p class="portfolioitem_description">{{item.description}}</p>
-    <div>
-      <Button class="portfolioitem_button" :link="item.buttonlink" :text="item.buttontext" />
+    <div class="portfolioitem_left">
+      <h2 class="portfolioitem_title">{{item.title}}</h2>
+      <small class="portfolioitem_tags">{{item.tags}}</small>
+      <p class="portfolioitem_description">{{item.description}}</p>
+      <div>
+        <Button class="portfolioitem_button" :link="item.buttonlink" :text="item.buttontext" />
+      </div>
     </div>
     <div class="portfolioitem_image">
       <div class="image b-lazy" :class="item.image" :title="item.alt"></div>
@@ -53,37 +55,28 @@
 
     > * { margin: 0; }
 
-    &_title {
+    &_left {
       grid-column-start: 1;
-      grid-column-end: 1;
+      grid-column-end: 2;
       grid-row-start: 1;
-      grid-row-end: 2;
+      grid-row-end: 5;
+    }
+
+    &_title {
       margin-bottom: 1vh;
       white-space: nowrap; 
       @media screen and (max-width: 40em) { white-space: unset; }
     }
 
     &_tags {
-      grid-column-start: 1;
-      grid-column-end: 1;
-      grid-row-start: 2;
-      grid-row-end: 3;
       margin-bottom: 3vh;
     }
 
     &_description {
-      grid-column-start: 1;
-      grid-column-end: 1;
-      grid-row-start: 3;
-      grid-row-end: 4;
       margin-bottom: 3vh;
     }
 
     &_button {
-      grid-column-start: 1;
-      grid-column-end: 1;
-      grid-row-start: 4;
-      grid-row-end: 5;
     }
 
     &_image {
