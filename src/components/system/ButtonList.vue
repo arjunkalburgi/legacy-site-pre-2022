@@ -55,17 +55,22 @@
   .buttonlist {
     position: absolute;
     padding-left: 0px;
+    margin-top: calc(18px - 6px); // needs to = 30px
   
     li {
       float: left;
       list-style: none;
       &:not(:first-of-type) { margin: 0 0 0 20px; }
 
+      .buttonlist_button { margin: 0; }
+
       a.buttonlist_icon {
         font: var(--icon-text);
         color: var(--brand-textcolour);
+        line-height: 45px;
 
         &.light { color: var(--brand-contrastlight); }
+        &:focus { color: var(--brand-colour); }
       }
     }
   }
