@@ -69,7 +69,11 @@
         color: var(--brand-textcolour);
         line-height: 45px;
 
-        &.light { color: var(--brand-contrastlight); }
+        &.light {
+          color: var(--brand-contrastlight);
+          &:focus { color: var(--brand-colourdark); }
+        }
+        
         &:focus { color: var(--brand-colour); }
       }
     }
