@@ -55,7 +55,8 @@
         background-position: 50% 50%;
         background-image: none;
         left: 20px;
-        top: -20px;
+        top: -25px;
+      }
       }
     }
   }
