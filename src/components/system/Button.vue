@@ -1,5 +1,5 @@
 <template lang="html">
-  <a class="button" :href="link" :title="text" :target="newTab ? 'blank' : ''">{{text}}</a>
+  <button class="button" :href="link" :title="text" :target="newTab ? 'blank' : ''">{{text}}</button>
 </template>
 
 <script lang="js">
@@ -39,8 +39,18 @@
     margin: 20px 0;
     border-radius: 3px;
     text-decoration: none;
+    border: 0;
 
     transition: background-color 500ms;
 
+    &:focus {
+      background-color: #109155;
+      @media (prefers-color-scheme: dark) { background-color: #068047; }
+    }
+
+    &:hover {
+      background-color: #0e824c;
+      @media (prefers-color-scheme: dark) { background-color: #036f3d; }
+    }
   }
 </style>
