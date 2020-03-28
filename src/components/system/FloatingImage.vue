@@ -1,34 +1,24 @@
 <template lang="html">
   <div class="FloatingImage" v-parallax="-0.15">
     <div class="FloatingImage_box FloatingImage_box--color"></div>
-    <div class="FloatingImage_box FloatingImage_box--container">
-      <div class="b-lazy image" :class="image"></div>
-    </div>
+    <theImage class="FloatingImage_box FloatingImage_box--image" :path="image" :alttext="alttext" />
   </div>
 </template>
 
 <script lang="js">
+  import theImage from './Image.vue'
 
   export default  {
     name: 'FloatingImage',
-    props: ["image"],
-    mounted () {
-
+    props: ["image", "alttext"],
+    components: {
+      theImage,
     },
-    data () {
-      return {
-
-      }
-    },
-    methods: {
-
-    },
-    computed: {
-
-    }
-}
-
-
+    mounted () { },
+    data () { return { } },
+    methods: { },
+    computed: { }
+  }
 </script>
 
 <style lang="scss">
@@ -46,7 +36,7 @@
         z-index: -1;
       }
 
-      &--container {
+      &--image {
         box-shadow: -20px 26px 54px rgba(51, 51, 51, 0.28);
         z-index: -1;
         background-size: cover;
@@ -55,7 +45,7 @@
         background-position: 50% 50%;
         background-image: none;
         left: 20px;
-        top: -25px;
+        top: -275px;
       }
     }
   }

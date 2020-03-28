@@ -3,30 +3,28 @@
   <section class="intro section" id="intro">
     <BackgroundAnimation class="intro_bgani" :total='number_of_leaves' />
 
-    <div class="intro_item--image image big mobile"></div>
-    <h2 class="intro_item text big">Products work like magic when everyone is focused on the people it’s for.</h2>
-    <p class="intro_item text firstpara">
+    <theImage class="intro_image intro_image--innovation mobile" :path="innovationimage.path" :alttext="innovationimage.alttext" />
+    <h2 class="intro_text intro_text--title">Products work like magic when everyone is focused on the people it’s for.</h2>
+    <p class="intro_text intro_text--firstpara">
       I love developing websites and apps
       <br>that deliver magical experiences
       <br>by providing real value.
     </p>
-    <p class="intro_item text secondpara">
+    <p class="intro_text intro_text--secondpara">
       First I learn everything I can about
       <br>who and what I need to build so that
       <br>I find the problems that need to be solved.
     </p>
-    <FloatingImage image="abid" class="intro_item--image small abid-image" title="Me laughing with one of my best friends" />
-    <div class="intro_item--image mobile abid-image FloatingImage_box">
-      <div class="b-lazy image abid"></div>
-    </div>
-    <FloatingImage image="red" class="intro_item--image small red-image" title="Me talking to people excitedly" />
-    <p class="intro_item text thirdpara">
+    <FloatingImage class="intro_image intro_image--abid" :image="abidimage.path" :alttext="abidimage.alttext" />
+    <theImage class="intro_image mobile mobile-only" :path="abidimage.path" :alttext="abidimage.alttext" />
+    <FloatingImage class="intro_image intro_image--red" :image="redimage.path" :alttext="redimage.alttext" />
+    <p class="intro_text intro_text--thirdpara">
       I’ll then iterate on possible designs,
       <br>theorizing what could solve the problem
       <br>and testing to see what does.
     </p>
-    <FloatingImage image="sra" class="intro_item--image small sra-image" title="Me with a big smile sitting on a staircase" />
-    <p class="intro_item text fourthpara">
+    <FloatingImage class="intro_image intro_image--sra" :image="sraimage.path" :alttext="sraimage.alttext" />
+    <p class="intro_text intro_text--fourthpara">
       And finally, I’ll develop the solution in code
       <br>so that I can deploy it to real people
       <br>and create a real impact.
@@ -37,33 +35,41 @@
 
 <script lang="js">
 
+  import theImage from './../system/Image.vue'
   import FloatingImage from './../system/FloatingImage.vue'
   import BackgroundAnimation from './../system/BackgroundAnimation.vue'
 
   export default  {
     name: 'intro',
     components: {
+      theImage,
       FloatingImage,
       BackgroundAnimation
     },
     props: [],
-    mounted () {
-
-    },
-    data () {
-      return {
-        number_of_leaves: 40
-      }
-    },
-    methods: {
-
-    },
-    computed: {
-
-    }
-}
-
-
+    mounted () { },
+    data () { return { 
+      number_of_leaves: 40,
+      innovationimage: {
+        path: "innovation.jpg",
+        alttext: "When you combine Domain Knowledge, Tech and Design, you get to the Users. That's the receipe for Innovation."
+      },
+      abidimage: {
+        path: "abid.jpg",
+        alttext: "Interviews and in-person 1 on 1s gather unique and invaluable insights, these softskills help start great products."
+      },
+      sraimage: {
+        path: "sra.jpg",
+        alttext: "Remaining happy and optimistic helps battle stress of deadlines, these softskills help glue together great teams."
+      },
+      redimage: {
+        path: "red.jpg",
+        alttext: "Discussion, presentation and collaboration are grease for the engine, these softskills unlock great work."
+      },
+    } },
+    methods: { },
+    computed: { }
+  }
 </script>
 
 <style scoped lang="scss">
@@ -86,8 +92,8 @@
         }
       }
 
-      &_item.text {
-        &.big {
+      &_text {
+        &--title {
           grid-column-start: 2;
           grid-column-end: 4;
           grid-row-start: 1;
@@ -97,25 +103,23 @@
           @media screen and (max-width: 40em) { width: 100%; }
         }
 
-        &:not(.big) {
-          @media screen and (min-width: 40em) { padding: 10%; }
-        }
+        &:not(.item_text--title) { @media screen and (min-width: 40em) { padding: 10%; } }
 
-        &.firstpara {
+        &--firstpara {
           grid-column-start: 3;
           grid-column-end: 4;
           grid-row-start: 2;
           grid-row-end: 3;
         }
         
-        &.secondpara {
+        &--secondpara {
           grid-column-start: 2;
           grid-column-end: 4;
           grid-row-start: 3;
           grid-row-end: 5;
         }
 
-        &.thirdpara {
+        &--thirdpara {
           grid-column-start: 1;
           grid-column-end: 2;
           grid-row-start: 6;
@@ -123,7 +127,7 @@
           @media screen and (min-width: 40em) { padding: 0 10%; }
         }
 
-        &.fourthpara {
+        &--fourthpara {
           grid-column-start: 3;
           grid-column-end: 4;
           grid-row-start: 7;
@@ -131,56 +135,52 @@
         }
       }
 
-      &_item--image {
-        &.big {
+      &_image {
+        &--innovation {
           grid-column-start: 1;
           grid-column-end: 3;
           grid-row-start: 1;
           grid-row-end: 3;
-          background-size: cover;
-          background-image: url("../../assets/pics/innovation.jpg");
-          background-position-y: center !important;
+          width: 100%;
         }
 
-        &.small {
-          @media screen and (max-width: 40em) { display: none; }
-          
-          &.abid-image {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 4;
-            grid-row-end: 6;
-            margin-left: 5%;
-          }
-
-          &.red-image {
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 5;
-            grid-row-end: 6;
-            margin-left: 10%;
-          }
-
-          &.sra-image {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 7;
-            grid-row-end: 8;
-            justify-self: center;
-            margin-top: 10vh;
-            margin-left: 20%;
-          }
+        &--abid {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 4;
+          grid-row-end: 6;
+          margin-left: 5%;
         }
+
+        &--red {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 5;
+          grid-row-end: 6;
+          margin-left: 10%;
+        }
+
+        &--sra {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 7;
+          grid-row-end: 8;
+          justify-self: center;
+          margin-top: 10vh;
+          margin-left: 20%;
+        }
+
+        &:not(.mobile) { @media screen and (max-width: 40em) { display: none; } }
 
         &.mobile {
-          &.abid-image { display: none; }
+          &-only { display: none; }
           
           @media screen and (max-width: 40em) {
             display: block !important;
             width: 90%;
             max-height: 200px;
             height: 200px;
-            background-position-y: top;
+            object-position: top;
           }
         }
       }

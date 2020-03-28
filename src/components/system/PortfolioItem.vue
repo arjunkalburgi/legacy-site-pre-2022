@@ -9,36 +9,26 @@
         <Button class="portfolioitem_button" :link="item.buttonlink" :text="item.buttontext" />
       </div>
     </div>
-    <div class="portfolioitem_image">
-      <div class="image b-lazy" :class="item.image" :title="item.alt"></div>
-    </div>
+    <theImage class="portfolioitem_image" :path="item.image" :alttext="item.alt" />
   </div>
 
 </template>
 
 <script lang="js">
+  import theImage from './Image.vue'
   import Button from './../system/Button.vue'
 
   export default  {
     name: 'PortfolioItem',
     components: {
+      theImage,
       Button,
     },
     props: ["item"],
-    mounted () {
-
-    },
-    data () {
-      return {
-
-      }
-    },
-    methods: {
-
-    },
-    computed: {
-
-    }
+    mounted () { },
+    data () { return { } },
+    methods: { },
+    computed: { }
   }
 </script>
 
@@ -85,6 +75,7 @@
       grid-row-start: 1;
       grid-row-end: 5;
       margin: 20px;
+      width: 100%;
 
       @media screen and (max-width: 40em) { display: none; }
     }

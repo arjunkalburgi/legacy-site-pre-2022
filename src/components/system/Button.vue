@@ -1,26 +1,16 @@
 <template lang="html">
-  <a class="button" :href="link" :title="text" :target="newTab ? 'blank' : ''">{{text}}</a>
+  <a class="button" :href="link" :target="newTab ? 'blank' : ''" :alt="alttext | ''" >{{text}}</a>
 </template>
 
 <script lang="js">
 
   export default  {
     name: 'src-components-system-button',
-    props: ['link', 'text', 'new-tab'],
-    mounted () {
-
-    },
-    data () {
-      return {
-
-      }
-    },
-    methods: {
-
-    },
-    computed: {
-
-    }
+    props: ['link', 'text', 'new-tab', 'alttext'],
+    mounted () { },
+    data () { return { } },
+    methods: { },
+    computed: { }
 }
 
 

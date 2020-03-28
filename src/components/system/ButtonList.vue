@@ -1,12 +1,12 @@
 <template lang="html">
-  <ul class="buttonlist">
+  <ul class="buttonlist" role="navigation">
 
     <li v-if="hasButton" :key="button.text" class="button">
-      <Button class="buttonlist_button" :link="button.link" :text="button.text" />
+      <Button class="buttonlist_button" :link="button.link" :text="button.text" :alttext="button.alt" />
     </li>
 
     <li v-for="item in list" :key="item.icon" class="icon">
-      <a :href="item.link" class="buttonlist_icon" :class="hasButton ? '' : 'light'" :title="item.icon" >
+      <a :href="item.link" class="buttonlist_icon" :class="hasButton ? '' : 'light'" :aria-label="item.alt" >
         <font-awesome-icon :icon="icon[item.icon]" />
       </a>
     </li>
@@ -26,9 +26,7 @@
       FontAwesomeIcon
     },
     props: ['hasButton', 'button', 'list'],
-    mounted () {
-
-    },
+    mounted () { },
     data () {
       return {
         icon: {
@@ -41,12 +39,8 @@
         }
       }
     },
-    methods: {
-
-    },
-    computed: {
-
-    }
+    methods: { },
+    computed: { }
   }
 
 </script>
@@ -67,14 +61,16 @@
       a.buttonlist_icon {
         font: var(--icon-text);
         color: var(--brand-textcolour);
-        line-height: 45px;
+        &:hover { color: var(--brand-colourlight); }
+        &:focus { color: var(--brand-colourdark); }
 
         &.light {
           color: var(--brand-contrastlight);
-          &:focus { color: var(--brand-colourdark); }
+          &:hover { color: var(--brand-colourdark); }
+          @media (prefers-color-scheme: dark) {
+            &:hover { color: var(--brand-colourlight); }
+          }
         }
-        
-        &:focus { color: var(--brand-colour); }
       }
     }
   }
