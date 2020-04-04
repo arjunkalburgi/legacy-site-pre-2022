@@ -32,7 +32,6 @@
 
       &--color {
         background: var(--brand-colour);
-        float: left;
         z-index: -1;
       }
 

@@ -103,7 +103,7 @@
           @media screen and (max-width: 40em) { width: 100%; }
         }
 
-        &:not(.item_text--title) { @media screen and (min-width: 40em) { padding: 10%; } }
+        &:not(.intro_text--title) { @media screen and (min-width: 40em) { padding: 10%; } }
 
         &--firstpara {
           grid-column-start: 3;
@@ -142,6 +142,7 @@
           grid-row-start: 1;
           grid-row-end: 3;
           width: 100%;
+          height: 100%;
         }
 
         &--abid {
