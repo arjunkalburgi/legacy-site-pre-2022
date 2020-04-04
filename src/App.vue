@@ -61,11 +61,7 @@ export default {
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .portfolioitem_title,
-  .text.big,
-  .contact_contents--title {
-    font: var(--bold-text);
-  }
+  *[class$="title"] { font: var(--bold-text); }
 
   // SPACING
   .section {
