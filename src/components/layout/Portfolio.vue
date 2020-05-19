@@ -53,7 +53,7 @@
             title: "Persevering using details",
             tags: "Growth Mindset, Travel",
             description: "I was still falling an hour and a half after everyone else in the beginners class was able to stand, but my mind I was focused on the details of what I was doing, because the details are where you find success.",
-            buttonlink: "https://www.arjunkalburgi.com/writing/Learning-to-Surf---a-Mindset-practice",
+            buttonlink: "https://www.arjunkalburgi.com/writing/learning-to-surf-a-mindset-practice",
             buttontext: "Read the Story",
             image: "surf.jpg",
             alt: "Stock photo of a surfer dude waving his hand out of the water, signaling he's ok"
@@ -62,7 +62,7 @@
             title: "Developing Behaviour",
             tags: "Behavioural Design, Angular",
             description: "Reading Carol Dweck taught me that every challenge needs the right mindset. At the same time, my peers in my design course were being overwhelmed by the workload. I experimented with how a tool could help them change.",
-            buttonlink: "https://www.arjunkalburgi.com/writing/Stressful-Tasks--a-behavioural-design-experiment",
+            buttonlink: "https://www.arjunkalburgi.com/writing/stressful-tasks-a-behavioural-design-experiment",
             buttontext: "Read the Story",
             image: "tasks.jpg",
             alt: "Stock photo of a silhouette of a man thinking"
