@@ -103,10 +103,13 @@ export default  {
   }
 
   &_bgani {
-    @media screen and (min-width: 40em) {
-      left: -15vw;
-      bottom: -10vw;
-      right: -15vw;
+    left: calc((0.3 * 100vw) / -2);
+    bottom: -10vw;
+    right: calc((0.3 * 100vw) / -2);
+
+    @media screen and (max-width: 80em) {
+      left: calc((0.15 * 100vw) / -2);
+      right: calc((0.15 * 100vw) / -2);
     }
   }
 
