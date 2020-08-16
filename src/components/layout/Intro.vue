@@ -1,10 +1,12 @@
 <template lang="html">
-
   <section class="intro section" id="intro">
-    <BackgroundAnimation class="intro_bgani" :total='number_of_leaves' />
+    <BackgroundAnimation class="intro_bgani" :total="number_of_leaves" />
 
-    <theImage class="intro_image intro_image--innovation mobile" :path="innovationimage.path" :alttext="innovationimage.alttext" />
-    <h2 class="intro_text intro_text--title">Products work like magic when everyone is focused on the people it’s for.</h2>
+    <theImage
+      class="intro_image intro_image--innovation mobile"
+      :path="innovationimage.path"
+      :alttext="innovationimage.alttext"
+    />
     <p class="intro_text intro_text--firstpara">
       I love developing websites and apps
       <br>that deliver magical experiences
@@ -15,22 +17,37 @@
       <br>who and what I need to build so that
       <br>I find the problems that need to be solved.
     </p>
-    <FloatingImage class="intro_image intro_image--abid" :image="abidimage.path" :alttext="abidimage.alttext" />
-    <theImage class="intro_image mobile mobile-only" :path="abidimage.path" :alttext="abidimage.alttext" />
-    <FloatingImage class="intro_image intro_image--red" :image="redimage.path" :alttext="redimage.alttext" />
+    <FloatingImage
+      class="intro_image intro_image--abid"
+      :image="abidimage.path"
+      :alttext="abidimage.alttext"
+    />
+    <theImage
+      class="intro_image mobile mobile-only"
+      :path="abidimage.path"
+      :alttext="abidimage.alttext"
+    />
+    <FloatingImage
+      class="intro_image intro_image--red"
+      :image="redimage.path"
+      :alttext="redimage.alttext"
+    />
     <p class="intro_text intro_text--thirdpara">
       I’ll then iterate on possible designs,
       <br>theorizing what could solve the problem
       <br>and testing to see what does.
     </p>
-    <FloatingImage class="intro_image intro_image--sra" :image="sraimage.path" :alttext="sraimage.alttext" />
+    <FloatingImage
+      class="intro_image intro_image--sra"
+      :image="sraimage.path"
+      :alttext="sraimage.alttext"
+    />
     <p class="intro_text intro_text--fourthpara">
       And finally, I’ll develop the solution in code
       <br>so that I can deploy it to real people
       <br>and create a real impact.
     </p>
   </section>
-
 </template>
 
 <script lang="js">
@@ -171,10 +188,16 @@
           margin-left: 20%;
         }
 
-        &:not(.mobile) { @media screen and (max-width: 40em) { display: none; } }
+    &:not(.mobile) {
+      @media screen and (max-width: 40em) {
+        display: none;
+      }
+    }
 
         &.mobile {
-          &-only { display: none; }
+      &-only {
+        display: none;
+      }
           
           @media screen and (max-width: 40em) {
             display: block !important;

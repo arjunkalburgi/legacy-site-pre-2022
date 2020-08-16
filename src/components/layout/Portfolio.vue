@@ -1,18 +1,20 @@
 <template lang="html">
-
   <section class="portfolio section" id="portfolio">
 		<div class="portfolio-intro">
 			<p>Working on these products requires constant learning and work.</p>
 			<div class="portfolio_introbuttons">
         <Button class="portfolio_introbutton" link="writing" text="Learning" />
-        <Button class="portfolio_introbutton" link="https://github.com/arjunkalburgi" text="Work" />
+        <Button
+          class="portfolio_introbutton"
+          link="https://github.com/arjunkalburgi"
+          text="Work"
+        />
 			</div>
 			<small>View all my content or some highlights below.</small>
 		</div>
 
     <PortfolioItem v-for="item in portfolio_items" :key="item.image" v-bind:item="item" />
   </section>
-
 </template>
 
 <script lang="js">
@@ -77,20 +79,22 @@
 
     }
 }
-
-
 </script>
 
 <style scoped lang="scss">
   .portfolio {
     &-intro { 
       text-align: center;
-      @media screen and (max-width: 40em) { text-align: left; }
+    @media screen and (max-width: 40em) {
+      text-align: left;
+    }
     }
 
     &_introbutton { 
       display: inline-block;
-      &:first-of-type  { margin-right: 10px; }
+    &:first-of-type {
+      margin-right: 10px;
+    }
     }
   }
 </style>

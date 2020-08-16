@@ -1,13 +1,15 @@
 <template lang="html">
-
   <footer class="contact contact-style b-loaded" id="contact">
-    <BackgroundAnimation :total='number_of_leaves' />
-		<div class="contact_contents">
-			<h2 class="contact_contents--title">More</h2>
-      <ButtonList class="contact_contents--links" :hasButton=false v-bind:list='list' />
-		</div>
+    <BackgroundAnimation :total="number_of_leaves" />
+    <div class="contact_contents">
+      <h2 class="contact_contents--title">More</h2>
+      <ButtonList
+        class="contact_contents--links"
+        :hasButton="false"
+        v-bind:list="list"
+      />
+    </div>
   </footer>
-
 </template>
 
 <script lang="js">
@@ -44,48 +46,46 @@
 
     }
 }
-
-
 </script>
 
 <style scoped lang="scss">
-  .contact {
-    z-index: 1;
-    text-align: center;
+.contact {
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: var(--brand-colour);
+  background-size: cover;
+  margin: 0;
+  min-height: 300px;
+
+  &_contents {
+    padding: 10vh 0;
     width: 100%;
-    position: relative;
-    bottom: 0;
-    background: var(--brand-colour);
-    background-size: cover;
-    margin: 0;
-    min-height: 300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 2.5vh;
 
-    &_contents {
-      padding: 10vh 0;
-      width: 100%;
+    &--title {
+      color: #ffffff;
+      margin: 0;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &--links {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      position: relative;
       margin: auto;
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: auto auto;
-      grid-row-gap: 2.5vh;
-
-      &--title {
-        color: #ffffff;
-        margin: 0;
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 1;
-        grid-row-end: 2;
-      }
-
-      &--links {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        position: relative;
-        margin: auto;
-      }
     }
   }
+}
 </style>

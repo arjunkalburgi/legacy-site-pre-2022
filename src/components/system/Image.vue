@@ -3,36 +3,36 @@
 </template>
 
 <script lang="js">
-  export default  {
-    name: 'theImage',
-    components: { },
-    props: ["path", "alttext"],
-    mounted () { },
-    data () { return { } },
-    methods: { },
-    computed: {
-      getImage() {
-        return require("../../assets/pics/" + this.path);
-      }
+export default  {
+  name: 'theImage',
+  components: { },
+  props: ["path", "alttext"],
+  mounted () { },
+  data () { return { } },
+  methods: { },
+  computed: {
+    getImage() {
+      return require("../../assets/pics/" + this.path);
     }
   }
+}
 </script>
 
 <style scoped lang="scss">
-  .Image {
-    object-fit: cover;
-    object-position: center;
+.Image {
+  object-fit: cover;
+  object-position: center;
 
-    background: linear-gradient(135deg, #dedede 0%, #dedede 40%, #bfbfbf 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    border-radius: 3px;
+  background: linear-gradient(135deg, #dedede 0%, #dedede 40%, #bfbfbf 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    // DARK MODE 
-    @media (prefers-color-scheme: dark) {
-      filter: brightness(0.6);
-    }
+  border-radius: 3px;
+
+  // DARK MODE
+  @media (prefers-color-scheme: dark) {
+    filter: brightness(0.6);
   }
+}
 </style>

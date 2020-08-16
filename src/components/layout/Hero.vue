@@ -1,12 +1,17 @@
 <template lang="html">
-
   <section class="hero section">
     <LogoImage class="hero_nameImg" />
-		<p class="hero_text--tag">learning, finding, designing, developing impact</p>
-		<p class="hero_text--intro"> I'm a UX Developer that is always trying to learn as much as I can, this is because I believe that every random thing I learn will somehow help me make an impact in this world. I'm currently based out of Toronto, where I take every chance I get to explore culture and build something new.</p>
-    <ButtonList :hasButton=true v-bind:button='button' v-bind:list='list' />
+    <p class="hero_text--tag">
+      learning, finding, designing, developing impact
+    </p>
+    <p class="hero_text--intro">
+      I'm a UX Developer that is always trying to learn as much as I can, this
+      is because I believe that every random thing I learn will somehow help me
+      make an impact in this world. I'm currently based out of Toronto, where I
+      take every chance I get to explore culture and build something new.
+    </p>
+    <ButtonList :hasButton="true" v-bind:button="button" v-bind:list="list" />
   </section>
-
 </template>
 
 <script lang="js">
@@ -43,22 +48,24 @@
 
     }
 }
-
-
 </script>
 
 <style scoped lang="scss">
-  .hero {
-    > * {
-      width: 50%;
-      @media screen and (max-width: 40em) { width: unset; }
-    }
-
-    &_nameImg { width: 200px; }
-
-    &_text--tag {
-      margin-top: 7px;
-      margin-bottom: 30px;
+.hero {
+  > * {
+    width: 50%;
+    @media screen and (max-width: 40em) {
+      width: unset;
     }
   }
+
+  &_nameImg {
+    width: 200px;
+  }
+
+  &_text--tag {
+    margin-top: 7px;
+    margin-bottom: 30px;
+  }
+}
 </style>

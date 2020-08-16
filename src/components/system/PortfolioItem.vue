@@ -1,12 +1,15 @@
 <template lang="html">
-
   <div class="portfolioitem">
     <div class="portfolioitem_left">
       <h2 class="portfolioitem_title">{{item.title}}</h2>
       <small class="portfolioitem_tags">{{item.tags}}</small>
       <p class="portfolioitem_description">{{item.description}}</p>
       <div>
-        <Button class="portfolioitem_button" :link="item.buttonlink" :text="item.buttontext" />
+      <Button
+        class="portfolioitem_button"
+        :link="item.buttonlink"
+        :text="item.buttontext"
+      />
       </div>
     </div>
     <theImage class="portfolioitem_image" :path="item.image" :alttext="item.alt" />
@@ -33,7 +36,6 @@
 </script>
 
 <style scoped lang="scss">
-
   .portfolioitem {
     display: grid;
     grid-template-columns: 50% auto;
@@ -41,9 +43,13 @@
     grid-template-rows: 18% 18% 43% auto;
     margin: 15vh 0;
 
-    @media screen and (max-width: 40em) { display: block; }
+  @media screen and (max-width: 40em) {
+    display: block;
+  }
 
-    > * { margin: 0; }
+  > * {
+    margin: 0;
+  }
 
     &_left {
       grid-column-start: 1;
@@ -55,7 +61,9 @@
     &_title {
       margin-bottom: 1vh;
       white-space: nowrap; 
-      @media screen and (max-width: 40em) { white-space: unset; }
+    @media screen and (max-width: 40em) {
+      white-space: unset;
+    }
     }
 
     &_tags {
