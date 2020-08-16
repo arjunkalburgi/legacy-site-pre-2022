@@ -1,19 +1,25 @@
 <template lang="html">
   <section class="portfolio section" id="portfolio">
-		<div class="portfolio-intro">
-			<p>Working on these products requires constant learning and work.</p>
-			<div class="portfolio_introbuttons">
+    <div class="portfolio-intro">
+      <p>Working on these products requires constant learning and work.</p>
+      <div class="portfolio_introbuttons">
         <Button class="portfolio_introbutton" link="writing" text="Learning" />
         <Button
           class="portfolio_introbutton"
           link="https://github.com/arjunkalburgi"
           text="Work"
         />
-			</div>
-			<small>View all my content or some highlights below.</small>
-		</div>
+      </div>
+      <small>View all my content or some highlights below.</small>
+    </div>
 
-    <PortfolioItem v-for="item in portfolio_items" :key="item.image" v-bind:item="item" />
+    <div class="portfolio-items">
+      <PortfolioItem
+        v-for="item in portfolio_items"
+        :key="item.image"
+        v-bind:item="item"
+      />
+    </div>
   </section>
 </template>
 
@@ -39,8 +45,6 @@
             description: "After a bad year, the culture of the Computer Engineering Club needed to change so that we could make the largest student hackathon in Alberta even larger. My solution was custom Slack emojis and I built a way to democratize them.",
             buttonlink: "https://github.com/arjunkalburgi/slackify",
             buttontext: "View on Github",
-            image: "slack.jpeg",
-            alt: "Stock photo of someone having a good time at their work desk"
           },
           {
             title: "Coding a Business Model",
@@ -48,8 +52,6 @@
             description: "Personal stylists can take on more clients using image detection, data science and a mobile app. Creating User flows and ER diagrams helped me build an app that can bring stylists to the amount of business personal trainers enjoy.",
             buttonlink: "https://github.com/arjunkalburgi/stylist-assistant",
             buttontext: "View on Github",
-            image: "style.jpg",
-            alt: "Stock photo of an outfit laid out on the floor"
           },
           {
             title: "Persevering using details",
@@ -57,8 +59,6 @@
             description: "I was still falling an hour and a half after everyone else in the beginners class was able to stand, but my mind I was focused on the details of what I was doing, because the details are where you find success.",
             buttonlink: "https://www.arjunkalburgi.com/writing/learning-to-surf-a-mindset-practice",
             buttontext: "Read the Story",
-            image: "surf.jpg",
-            alt: "Stock photo of a surfer dude waving his hand out of the water, signaling he's ok"
           },
           {
             title: "Developing Behaviour",
@@ -66,8 +66,6 @@
             description: "Reading Carol Dweck taught me that every challenge needs the right mindset. At the same time, my peers in my design course were being overwhelmed by the workload. I experimented with how a tool could help them change.",
             buttonlink: "https://www.arjunkalburgi.com/writing/stressful-tasks-a-behavioural-design-experiment",
             buttontext: "Read the Story",
-            image: "tasks.jpg",
-            alt: "Stock photo of a silhouette of a man thinking"
           },
         ]
       }
@@ -82,19 +80,29 @@
 </script>
 
 <style scoped lang="scss">
-  .portfolio {
-    &-intro { 
-      text-align: center;
+.portfolio {
+  &-intro {
+    text-align: center;
     @media screen and (max-width: 40em) {
       text-align: left;
     }
-    }
+  }
 
-    &_introbutton { 
-      display: inline-block;
+  &_introbutton {
+    display: inline-block;
     &:first-of-type {
       margin-right: 10px;
     }
+  }
+
+  &-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: calc(min(15%, 8rem));
+
+    @media screen and (max-width: 40em) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
+}
 </style>

@@ -67,7 +67,9 @@ export default {
 .section {
   width: 70%;
   margin: 25vh auto 15vh;
-    @media screen and (max-width: 40em) { width: 85%; }
+  @media screen and (max-width: 80em) {
+    width: 85%;
+  }
 }
 
 // DARK MODE
