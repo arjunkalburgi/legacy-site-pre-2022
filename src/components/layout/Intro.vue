@@ -98,7 +98,7 @@ export default  {
   grid-template-columns: 50% 50px auto;
   grid-template-rows: 230px 200px 7.5rem 7.5rem 8rem 12.5rem 15rem;
   @media screen and (max-width: 40em) {
-    padding: 100px 7.5% 0px;
+    padding: 100px 0 0;
     display: block;
   }
 
