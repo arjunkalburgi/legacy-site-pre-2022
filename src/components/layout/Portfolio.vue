@@ -74,10 +74,10 @@
             buttontext: "View on Github",
           },
           {
-            title: "Persevering using details",
-            tags: "Growth Mindset, Travel",
-            description: "I was still falling an hour and a half after everyone else in the beginners class was able to stand, but my mind I was focused on the details of what I was doing, because the details are where you find success.",
-            buttonlink: "https://www.arjunkalburgi.com/writing/learning-to-surf-a-mindset-practice",
+            title: "Shaping a Project",
+            tags: "Project Management, Startup",
+            description: "I've learned to approach all new projects with a spec document, it helps to manage the scope as it changes and keep conversations productive. I used BaseCamp's Shape Up to add new layers to my process.",
+            buttonlink: "https://www.arjunkalburgi.com/writing/shaping-an-app-spec/",
             buttontext: "Read the Story",
           },
           {
