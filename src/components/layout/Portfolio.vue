@@ -13,10 +13,17 @@
       <small>View all my content or some highlights below.</small>
     </div>
 
+    <theImage
+      class="portfolio_projimage"
+      :path="titnProj.image.path"
+      :alttext="titnProj.image.alttext"
+    />
+    <PortfolioItem v-bind:item="titnProj" />
+
     <div class="portfolio-items">
       <PortfolioItem
         v-for="item in portfolio_items"
-        :key="item.image"
+        :key="item.title"
         v-bind:item="item"
       />
     </div>
@@ -25,12 +32,14 @@
 
 <script lang="js">
 
+  import theImage from './../system/Image.vue'
   import Button from './../system/Button.vue'
   import PortfolioItem from './../system/PortfolioItem.vue'
 
   export default  {
     name: 'portfolio',
     components: {
+      theImage,
       Button,
       PortfolioItem
     },
@@ -38,6 +47,17 @@
     mounted () { },
     data () {
       return {
+        titnProj: {
+            title: "Titan96 Marketing Site",
+            tags: "FinTech, Marketing, Website",
+            description: "",
+            buttonlink: "https://www.titan96.com",
+            buttontext: "View Live",
+            image: {
+              path: "titn.png",
+              alttext: "Images of the Titan96 Website in different screensizes."
+            }
+        },
         portfolio_items: [
           {
             title: "Creating Team Bonding",

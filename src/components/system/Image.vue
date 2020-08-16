@@ -23,7 +23,6 @@ export default  {
   object-fit: cover;
   object-position: center;
 
-  background: linear-gradient(135deg, #dedede 0%, #dedede 40%, #bfbfbf 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
