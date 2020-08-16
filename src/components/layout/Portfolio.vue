@@ -124,5 +124,16 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
+
+  &_projimage {
+    width: 80%;
+    margin: 10vh auto -6vh;
+    display: block;
+
+    @media screen and (max-width: 40em) {
+      margin: 8vh auto -4vh;
+      width: 100%;
+    }
+  }
 }
 </style>

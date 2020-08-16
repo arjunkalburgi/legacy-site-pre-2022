@@ -3,7 +3,7 @@
     class="button"
     :href="link"
     :target="newTab ? 'blank' : ''"
-    :alt="alttext | ''"
+    :alt="alttext || ''"
     >{{ text }}</a
   >
 </template>
