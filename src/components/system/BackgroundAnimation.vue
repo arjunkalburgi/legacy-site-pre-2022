@@ -1,5 +1,5 @@
 <template lang="html">
-  <div ref="bgani" class="BackgroundAnimation b-lazy">
+  <div ref="bgani" class="BackgroundAnimation">
     <div
       v-for="index in total"
       :key="index"
