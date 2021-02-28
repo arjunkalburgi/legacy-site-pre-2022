@@ -8,15 +8,16 @@
       :alttext="innovationimage.alttext"
     />
     <h2 class="intro_text intro_text--title">
-      The Goal: Products that work like magic.
+      The Mission: Connect 🤙🏾 Make 🔨 Smile 😁
     </h2>
     <p class="intro_text intro_text--firstpara">
-      I love developing websites and apps
-      <br />that deliver magical experiences <br />by providing real value.
+      I'm a doer. <br />
+      What can I say, I got that extrovert energy.
     </p>
     <p class="intro_text intro_text--secondpara">
-      In the last 5 years I’ve learned loads of
-      <br />small details, trying to create magic.
+      I think being a people-person fuels my curiosity. <br />
+      I mean, how crazy would it be to build something at scale, <br />
+      that just works for so many unique personalities?
     </p>
     <FloatingImage
       class="intro_image intro_image--abid"
@@ -34,9 +35,9 @@
       :alttext="redimage.alttext"
     />
     <p class="intro_text intro_text--thirdpara">
-      I’ve been a developer, a designer,
-      <br />organized project specs, business <br />models and talked to experts
-      in all <br />kinds of different fields.
+      For that dream, I've been a developer, a designer, <br />
+      organized project specs, mapped out business models <br />
+      and talked to experts in all kinds of different fields.
     </p>
     <FloatingImage
       class="intro_image intro_image--sra"
@@ -44,9 +45,8 @@
       :alttext="sraimage.alttext"
     />
     <p class="intro_text intro_text--fourthpara">
-      Through all that I learned that humans
-      <br />come first, there’s nothing better than <br />putting a smile on
-      someone’s face.
+      Human beings are so complicated, <br />
+      peace out I gotta go learn more!
     </p>
   </section>
 </template>
