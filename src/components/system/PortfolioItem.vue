@@ -57,10 +57,10 @@ export default  {
   }
 
   &_tags {
-    margin-bottom: 3vh;
   }
 
   &_description {
+    margin-top: 1vh;
     margin-bottom: 3vh;
   }
 
