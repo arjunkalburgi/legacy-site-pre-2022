@@ -26,7 +26,7 @@
 import Button from './../system/Button.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faEnvelope, faEdit } from '@fortawesome/free-regular-svg-icons'
-import { faTwitter, faGithub, faLinkedinIn, faCodepen } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 export default  {
   name: 'ButtonList',
@@ -44,7 +44,6 @@ export default  {
         twitter: faTwitter,
         github: faGithub,
         linkedin: faLinkedinIn,
-        codepen: faCodepen,
       }
     }
   },
