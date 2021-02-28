@@ -2,13 +2,13 @@
   <section class="hero section">
     <LogoImage class="hero_nameImg" />
     <p class="hero_text--tag">
-      learning, finding, designing, developing impact
+      learning, finding, designing, developing
     </p>
     <p class="hero_text--intro">
-      I'm a UX Developer that is always trying to learn as much as I can, this
-      is because I believe that every random thing I learn will somehow help me
-      make an impact in this world. I'm currently based out of Toronto, where I
-      take every chance I get to explore culture and build something new.
+      Hey fam! My name is Arjun and I'm a UX Developer, meaning I pair my 
+      building skills with my creativity to tryna get that magic ✨. I've ended 
+      up in a whole bunch of different roles and situations, learning all kinds 
+      of random things. Right now I'm in Toronto, doing my best to explore, enjoy and build.
     </p>
     <ButtonList :hasButton="true" v-bind:button="button" v-bind:list="list" />
   </section>
