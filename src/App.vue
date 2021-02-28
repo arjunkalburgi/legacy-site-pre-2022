@@ -49,6 +49,13 @@ body {
 	background: linear-gradient(-45deg, var(--neue-bg-colours));
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
+
+}
+
+@media screen and (max-width: 40em) {
+  body {
+    background-size: 3200vw 100%;
+  }
 }
 
 @keyframes gradient {
