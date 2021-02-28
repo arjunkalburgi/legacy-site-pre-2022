@@ -5,10 +5,10 @@
       learning, finding, designing, developing
     </p>
     <p class="hero_text--intro">
-      Hey fam! My name is Arjun and I'm a UX Developer, meaning I pair my 
-      building skills with my creativity to tryna get that magic ✨. I've ended 
+      Hey fam! My name is Arjun and I'm a UX Developer, I pair my 
+      building skills with my creativity - I'm after that magic ✨. I've ended 
       up in a whole bunch of different roles and situations, learning all kinds 
-      of random things. Right now I'm in Toronto, doing my best to explore, enjoy and build.
+      of random things. These days I'm in Toronto, doing my best to explore, enjoy and build.
     </p>
     <ButtonList :hasButton="true" v-bind:button="button" v-bind:list="list" />
   </section>

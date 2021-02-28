@@ -17,7 +17,7 @@
     <p class="intro_text intro_text--secondpara">
       I think being a people-person fuels my curiosity. <br />
       I mean, how crazy would it be to build something at scale, <br />
-      that just works for so many unique personalities?
+      that just works, for so many unique personalities?
     </p>
     <FloatingImage
       class="intro_image intro_image--abid"
