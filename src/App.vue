@@ -35,7 +35,7 @@ export default {
 
   --brand-textcolour: --brand-contrastdark;
 
-  --neue-bg-colours: #e2cdd6, #dccee4, #cedee4, #cce4de;
+  --neue-bg-colours: #ffecf4, #f9efff, #effbff, #f0fffb;
   --neue-dark-bg-colours: #2e0b18, #230d30, #0e2c33, #081a11;
 
   --brand-text: normal 18px/1.3 "Lato";
@@ -48,7 +48,7 @@ export default {
 body {
 	background: linear-gradient(-45deg, var(--neue-bg-colours));
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
@@ -103,9 +103,6 @@ body {
     --brand-colour: var(--brand-colourdark);
     --brand-textcolour: var(--brand-contrastlight);
     --neue-bg-colours: var(--neue-dark-bg-colours);
-  }
-  .contact {
-    background: transparent !important;
   }
 }
 // #endregion DARK MODE

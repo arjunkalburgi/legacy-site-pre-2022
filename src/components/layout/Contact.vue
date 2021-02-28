@@ -54,7 +54,6 @@
   width: 100%;
   position: relative;
   bottom: 0;
-  background: var(--brand-colour);
   background-size: cover;
   margin: 0;
   min-height: 300px;
@@ -69,7 +68,6 @@
     grid-row-gap: 2.5vh;
 
     &--title {
-      color: #ffffff;
       margin: 0;
       grid-column-start: 1;
       grid-column-end: 1;

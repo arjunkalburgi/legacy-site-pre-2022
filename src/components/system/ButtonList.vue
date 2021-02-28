@@ -13,7 +13,6 @@
       <a
         :href="item.link"
         class="buttonlist_icon"
-        :class="hasButton ? '' : 'light'"
         :aria-label="item.alt"
       >
         <font-awesome-icon :icon="icon[item.icon]" />
@@ -77,18 +76,6 @@ export default  {
       }
       &:focus {
         color: var(--brand-colourdark);
-      }
-
-      &.light {
-        color: var(--brand-contrastlight);
-        &:hover {
-          color: var(--brand-colourdark);
-        }
-        @media (prefers-color-scheme: dark) {
-          &:hover {
-            color: var(--brand-colourlight);
-          }
-        }
       }
     }
   }

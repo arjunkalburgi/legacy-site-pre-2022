@@ -2,11 +2,6 @@
   <section class="intro section" id="intro">
     <BackgroundAnimation class="intro_bgani" :total="number_of_leaves" />
 
-    <theImage
-      class="intro_image intro_image--innovation mobile"
-      :path="innovationimage.path"
-      :alttext="innovationimage.alttext"
-    />
     <h2 class="intro_text intro_text--title">
       The Mission: Connect 🤙🏾 Make 🔨 Smile 😁
     </h2>
@@ -68,10 +63,6 @@ export default  {
   mounted () { },
   data () { return {
     number_of_leaves: 40,
-    innovationimage: {
-      path: "innovation.jpg",
-      alttext: "When you combine Domain Knowledge, Tech and Design, you get to the Users. That's the receipe for Innovation."
-    },
     abidimage: {
       path: "abid.jpg",
       alttext: "Interviews and in-person 1 on 1s gather unique and invaluable insights, these softskills help start great products."
@@ -96,7 +87,7 @@ export default  {
   padding: 100px 0 0;
   display: grid;
   grid-template-columns: 50% 50px auto;
-  grid-template-rows: 230px 15rem 10rem 13rem 9rem 15rem 15rem;
+  grid-template-rows: 100px 12rem 6rem 15rem 9rem 15rem 15rem;
   @media screen and (max-width: 40em) {
     padding: 100px 0 0;
     display: block;
@@ -115,7 +106,7 @@ export default  {
 
   &_text {
     &--title {
-      grid-column-start: 2;
+      grid-column-start: 1;
       grid-column-end: 4;
       grid-row-start: 1;
       grid-row-end: 2;
@@ -128,12 +119,12 @@ export default  {
 
     &:not(.intro_text--title) {
       @media screen and (min-width: 40em) {
-        padding: 10%;
+        padding: 0 10%;
       }
     }
 
     &--firstpara {
-      grid-column-start: 3;
+      grid-column-start: 1;
       grid-column-end: 4;
       grid-row-start: 2;
       grid-row-end: 3;
@@ -165,16 +156,6 @@ export default  {
   }
 
   &_image {
-    &--innovation {
-      filter: blur(8px); // TODO: remove after replacing image
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 3;
-      width: 100%;
-      height: 100%;
-    }
-
     &--abid {
       grid-column-start: 1;
       grid-column-end: 2;
