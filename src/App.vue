@@ -25,16 +25,6 @@ export default {
 </script>
 
 <style lang="scss">
-@font-face {
-  font-family: "Lato";
-  src: url("./assets/fonts/Lato-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url("./assets/fonts/Raleway-Bold.ttf");
-}
-
 :root {
   --brand-colour: #12a962;
   --brand-colourlight: #12a962;
@@ -45,13 +35,46 @@ export default {
 
   --brand-textcolour: --brand-contrastdark;
 
+  --neue-bg-colours: #e2cdd6, #dccee4, #cedee4, #cce4de;
+  --neue-dark-bg-colours: #2e0b18, #230d30, #0e2c33, #081a11;
+
   --brand-text: normal 18px/1.3 "Lato";
   --bold-text: normal 700 30px/1.3 "Raleway";
   --button-text: normal 15px "Raleway";
   --icon-text: normal 20px/1.3 "Lato";
 }
 
-// FONTS
+// #region BACKGROUND EFFECT
+body {
+	background: linear-gradient(-45deg, var(--neue-bg-colours));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+// #endregion BACKGROUND EFFECT
+
+// #region FONTS
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/fonts/Raleway-Bold.ttf");
+}
+
 #app {
   font: var(--brand-text);
   color: var(--brand-textcolour);
@@ -62,8 +85,9 @@ export default {
 *[class$="title"] {
   font: var(--bold-text);
 }
+// #endregion FONTS
 
-// SPACING
+// #region SPACING
 .section {
   width: 70%;
   margin: 25vh auto 15vh;
@@ -71,16 +95,18 @@ export default {
     width: 85%;
   }
 }
+// #endregion SPACING
 
-// DARK MODE
+// #region DARK MODE
 @media (prefers-color-scheme: dark) {
   :root {
     --brand-colour: var(--brand-colourdark);
     --brand-textcolour: var(--brand-contrastlight);
+    --neue-bg-colours: var(--neue-dark-bg-colours);
   }
-  body,
   .contact {
-    background: var(--brand-contrastdark) !important;
+    background: transparent !important;
   }
 }
+// #endregion DARK MODE
 </style>

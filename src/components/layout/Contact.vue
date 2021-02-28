@@ -34,7 +34,6 @@
           {link: "https://twitter.com/arjunkalburgi",     icon: "twitter",  alt: "View my Twitter" },
           {link: "https://github.com/arjunkalburgi",      icon: "github",   alt: "View my GitHub" },
           {link: "https://linkedin.com/in/arjunkalburgi", icon: "linkedin", alt: "View my Linked In" },
-          {link: "https://codepen.io/arjunkalburgi",      icon: "codepen",  alt: "View my Code Pen" },
           {link: "mailto:askalburgi@gmail.com",           icon: "email",    alt: "Send me an Email" },
         ]
     }

@@ -1,13 +1,12 @@
 <template lang="html">
   <section class="portfolio section" id="portfolio">
     <div class="portfolio-intro">
-      <p>Working on these products requires constant learning and work.</p>
       <div class="portfolio_introbuttons">
-        <Button class="portfolio_introbutton" link="writing" text="Learning" />
+        <Button class="portfolio_introbutton" link="writing" text="Learnings" />
         <Button
           class="portfolio_introbutton"
           link="https://github.com/arjunkalburgi"
-          text="Work"
+          text="Works"
         />
       </div>
       <small>View all my content or some highlights below.</small>
