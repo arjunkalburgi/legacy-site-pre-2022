@@ -166,6 +166,7 @@ export default  {
 
   &_image {
     &--innovation {
+      filter: blur(8px); // TODO: remove after replacing image
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 1;
