@@ -97,7 +97,7 @@ body {
 // #region SPACING
 .section {
   width: 70%;
-  margin: 25vh auto 15vh;
+  margin: 15vh auto 10vh;
   @media screen and (max-width: 80em) {
     width: 85%;
   }
